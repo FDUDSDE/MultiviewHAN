@@ -1,0 +1,101 @@
+,function_name,first_sent,id
+0,canonical_perm_path,Make sure the path starts with but does n t end with,0
+1,add_handle_to_iocp,Add a specific HANDLE to an I O Completion Port,1
+2,get_handle_of_path,Get the HANDLE of a repo directory for latter use in ReadDirectoryChangesW,2
+3,seaf_clone_manager_gen_default_worktree,Generate a conflict free path to be used as worktree,3
+4,get_argv_utf8,Get the commandline arguments in unicode then convert them to utf8,4
+5,commit_tree_from_changeset,This function does two things calculate dir id from bottom up create and save seaf dir objects,5
+6,need_notify_sync,Check the notify setting by user,6
+7,check_locked_file_before_remove,Returns whether the file should be removed from index,7
+8,ignore_xlsx_update,Excel first writes update to a temporary file and then rename the file to xlsx,8
+9,move_repo_stores,Move commits fs stores into deleted_store directory,9
+10,seaf_repo_manager_get_repo,Return the internal Repo in hashtable,10
+11,seaf_repo_free_ignore_files,Free ignored file list,11
+12,is_valid_ipaddr,return 1 if addr_str is a valid ipv4 or ipv6 address,12
+13,readn,Read n bytes from a descriptor,13
+14,writen,Write n bytes to a descriptor,14
+15,recvn,Read n bytes from a descriptor,15
+16,sendn,Write n bytes to a descriptor,16
+17,ccnet_key_file_get_string,handle the empty string problem,17
+18,ccnet_locale_to_utf8,convert locale specific input to utf8 encoded string,18
+19,ccnet_locale_from_utf8,convert utf8 input to locale specific string,19
+20,find_process_in_dirent,read the link of proc 123 exe and compare with process_name,20
+21,process_is_running,read the proc fs to determine whether some process is running,21
+22,strtok_r, code directly from glibc git string  c since windows does n t have it,22
+23,is_fast_forward,Returns true if src_head is ahead of dst_head,23
+24,get_file_modifier_mtime,Get the user who last changed a file and the mtime,24
+25,remove_index_entry_at,Remove entry return true if there are more entries to go,25
+26,remove_marked_cache_entries,Remove all cache ententries marked for removal that is where CE_REMOVE is set in ce_flags,26
+27,icase_hash,This removes bit 5 if bit 6 is set,27
+28,lookup_hash_entry,Look up a hash entry in the hash table,28
+29,insert_hash_entry,Insert a new hash entry pointer into the table,29
+30,fls32,Find last set most significant bit,30
+31,rabin_checksum,a simple 32 bit checksum that can be upadted from end,31
+32,isValidString,Check if a memory address points to a valid null terminated UTF 8 string,32
+33,getStackCursor,Get the backtrace for the specified machine context,33
+34,writeArrayContents,Write an array to the report,34
+35,writeMemoryContentsIfNotable,Write the contents of a memory location only if it contains notable data,35
+36,writeAddressReferencedByString,Look for a hex value in a string and try to write whatever it references,36
+37,writeBasicRegisters,Write the contents of all regular registers to the report,37
+38,writeExceptionRegisters,Write the contents of all exception registers to the report,38
+39,writeRegisters,Write all applicable registers,39
+40,writeNotableRegisters,Write any notable addresses contained in the CPU registers,40
+41,writeNotableAddresses,Write any notable addresses in the stack or registers to the report,41
+42,writeBinaryImages,Write information about all images to the report,42
+43,writeMemoryInfo,Write information about system memory to the report,43
+44,writeProcessState,Write information about this process,44
+45,writeReportInfo,Write basic report information,45
+46,prepareReportWriter,Prepare a report writer for use,46
+47,onUserDump,Called when a user dump occurs,47
+48,addJSONData,Callback for adding JSON data,48
+49,ksdebug_isBeingTraced,Check if the current process is being traced or not,49
+50,getClassDataFromTaggedPointer,Get class data for a tagged pointer,50
+51,isTaggedPointerNSNumber,Check if a tagged pointer is a number,51
+52,isTaggedPointerNSString,Check if a tagged pointer is a string,52
+53,isTaggedPointerNSDate,Check if a tagged pointer is a date,53
+54,extractTaggedNSNumber,Extract an integer from a tagged NSNumber,54
+55,extractTaggedNSDate,Extract a tagged NSDate s time value as an absolute time,55
+56,getClassData,Get any special class metadata we have about the specified class,56
+57,addEscapedString,Escape a string for use with JSON and send to data handler,57
+58,addQuotedEscapedString,Escape and quote a string for use with JSON and send to data handler,58
+59,isFPChar,Check if a character is valid for representing part of a floating point number,59
+60,firstCmdAfterHeader,Get the address of the first command following a header which will be of type struct load_command,60
+61,xh_elf_hash,ELF hash func,61
+62,xh_elf_gnu_hash,GNU hash func,62
+63,sqlite3Update,Process an UPDATE statement,63
+64,sqlite3ExprAffinity,Return the affinity of the expression pExpr if any,64
+65,sqlite3CompareAffinity,pExpr is an operand of a comparison operator,65
+66,sqlite3ExprAnd,Join two expressions using an AND operator,66
+67,sqlite3ExprSpan,Set the Expr span field of the given expression to span all text between the two given tokens,67
+68,sqlite3ExprFunction,Construct a new expression node for a function with multiple arguments,68
+69,sqlite3ExprDelete,Recursively delete an expression tree,69
+70,sqlite3ExprListDelete,Delete an entire expression list,70
+71,walkExprTree,Walk an expression tree,71
+72,walkExprList,Call walkExprTree for every expression in list p,72
+73,exprNodeIsConstant,This routine is designed as an xFunc for walkExprTree,73
+74,sqlite3ExprIsConstant,Walk an expression tree,74
+75,sqlite3ExprIsConstantOrFunction,Walk an expression tree,75
+76,sqlite3IsRowid,Return TRUE if the given string is a row id column name,76
+77,addAggInfoColumn,Add a new element to the pAggInfo aCol array,77
+78,addAggInfoFunc,Add a new element to the pAggInfo aFunc array,78
+79,sqlite3ParserTokenName,This function returns the symbolic name associated with a token value,79
+80,sqlite3ParserAlloc,This function allocates a new parser,80
+81,yy_pop_parser_stack,Pop the parser s stack once,81
+82,sqlite3ParserFree,Deallocate and destroy a parser,82
+83,yy_find_reduce_action,Find the appropriate action for a parser given the non terminal look ahead token iLookAhead,83
+84,yy_parse_failed,The following code executes when the parse fails,84
+85,yy_syntax_error,The following code executes when a syntax error first occurs,85
+86,yy_accept,The following is executed when the parser accepts,86
+87,threadLockingTest,The testThreadLockingBehavior routine launches two separate threads on this routine,87
+88,locktypeName,Helper function for printing out trace information from debugging binaries,88
+89,sqlite3UnixDelete,Delete the named file,89
+90,sqlite3UnixFileExists,Return TRUE if the named file exists,90
+91,unixOpenDirectory,Attempt to open a file descriptor for the directory that contains a file,91
+92,sqlite3UnixIsDirWritable,Check that a given pathname is a directory and is writable,92
+93,seekAndRead,Seek to the offset in id offset then read cnt bytes into pBuf,93
+94,unixRead,Read data from a file into a buffer,94
+95,seekAndWrite,Seek to the offset in id offset then read cnt bytes into pBuf,95
+96,unixWrite,Write data from a buffer into a file,96
+97,unixSeek,Move the read write pointer in a file,97
+98,full_fsync,The fsync system call does not work as advertised on many unix systems,98
+99,sqlite3UnixSyncDirectory,Sync the directory zDirname,99
