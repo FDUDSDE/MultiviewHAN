@@ -1,0 +1,8 @@
+,function_name,id,number,first,next,type
+0,check_locked_file_before_remove,0,3074457345618258674,METHOD,"ANY check_locked_file_before_remove (LockedFileSet *fset,const char *path)",0
+0,check_locked_file_before_remove,1,3074457345618258675,PARAM,LockedFileSet *fset,0
+0,check_locked_file_before_remove,2,3074457345618258676,PARAM,const char *path,0
+0,check_locked_file_before_remove,3,3074457345618258677,BLOCK,<empty>,0
+0,check_locked_file_before_remove,4,3074457345618258678,RETURN,return TRUE;,0
+0,check_locked_file_before_remove,5,3074457345618258679,IDENTIFIER,TRUE,0
+0,check_locked_file_before_remove,6,3074457345618258680,METHOD_RETURN,ANY,0

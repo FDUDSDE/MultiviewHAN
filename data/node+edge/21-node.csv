@@ -1,0 +1,65 @@
+,function_name,id,number,first,next,type
+0,process_is_running,0,3074457345618258674,METHOD,gboolean process_is_running (const char *process_name),0
+0,process_is_running,1,3074457345618258675,PARAM,const char *process_name,0
+0,process_is_running,2,3074457345618258676,BLOCK,<empty>,0
+0,process_is_running,3,3074457345618258677,LOCAL,DIR proc_dir,0
+0,process_is_running,4,3074457345618258678,assignment,"*proc_dir = opendir(""/proc"")",1
+0,process_is_running,5,3074457345618258679,IDENTIFIER,proc_dir,0
+0,process_is_running,6,3074457345618258680,opendir,"opendir(""/proc"")",0
+0,process_is_running,7,3074457345618258681,LITERAL,"""/proc""",0
+0,process_is_running,8,3074457345618258682,CONTROL_STRUCTURE,if (!proc_dir),0
+0,process_is_running,9,3074457345618258683,logicalNot,!proc_dir,1
+0,process_is_running,10,3074457345618258684,IDENTIFIER,proc_dir,0
+0,process_is_running,11,3074457345618258685,BLOCK,<empty>,0
+0,process_is_running,12,3074457345618258686,fprintf,"fprintf (stderr, ""failed to open /proc/ dir\n"")",0
+0,process_is_running,13,3074457345618258687,IDENTIFIER,stderr,0
+0,process_is_running,14,3074457345618258688,LITERAL,"""failed to open /proc/ dir\n""",0
+0,process_is_running,15,3074457345618258689,RETURN,return FALSE;,0
+0,process_is_running,16,3074457345618258690,IDENTIFIER,FALSE,0
+0,process_is_running,17,3074457345618258691,LOCAL,struct dirent* subdir,0
+0,process_is_running,18,3074457345618258692,assignment,*subdir = NULL,1
+0,process_is_running,19,3074457345618258693,IDENTIFIER,subdir,0
+0,process_is_running,20,3074457345618258694,IDENTIFIER,NULL,0
+0,process_is_running,21,3074457345618258695,CONTROL_STRUCTURE,while ((subdir = readdir(proc_dir))),0
+0,process_is_running,22,3074457345618258696,assignment,subdir = readdir(proc_dir),1
+0,process_is_running,23,3074457345618258697,IDENTIFIER,subdir,0
+0,process_is_running,24,3074457345618258698,readdir,readdir(proc_dir),0
+0,process_is_running,25,3074457345618258699,IDENTIFIER,proc_dir,0
+0,process_is_running,26,3074457345618258700,BLOCK,<empty>,0
+0,process_is_running,27,3074457345618258701,LOCAL,char first,0
+0,process_is_running,28,3074457345618258702,assignment,first = subdir->d_name[0],1
+0,process_is_running,29,3074457345618258703,IDENTIFIER,first,0
+0,process_is_running,30,3074457345618258704,indirectIndexAccess,subdir->d_name[0],1
+0,process_is_running,31,3074457345618258705,indirectFieldAccess,subdir->d_name,1
+0,process_is_running,32,3074457345618258706,IDENTIFIER,subdir,0
+0,process_is_running,33,3074457345618258707,FIELD_IDENTIFIER,d_name,0
+0,process_is_running,34,3074457345618258708,LITERAL,0,0
+0,process_is_running,35,3074457345618258709,CONTROL_STRUCTURE,if (first > '9' || first < '1'),0
+0,process_is_running,36,3074457345618258710,logicalOr,first > '9' || first < '1',1
+0,process_is_running,37,3074457345618258711,greaterThan,first > '9',1
+0,process_is_running,38,3074457345618258712,IDENTIFIER,first,0
+0,process_is_running,39,3074457345618258713,LITERAL,'9',0
+0,process_is_running,40,3074457345618258714,lessThan,first < '1',1
+0,process_is_running,41,3074457345618258715,IDENTIFIER,first,0
+0,process_is_running,42,3074457345618258716,LITERAL,'1',0
+0,process_is_running,43,3074457345618258717,CONTROL_STRUCTURE,continue;,0
+0,process_is_running,44,3074457345618258718,LOCAL,int pid,0
+0,process_is_running,45,3074457345618258719,assignment,"pid = find_process_in_dirent(subdir, process_name)",1
+0,process_is_running,46,3074457345618258720,IDENTIFIER,pid,0
+0,process_is_running,47,3074457345618258721,find_process_in_dirent,"find_process_in_dirent(subdir, process_name)",0
+0,process_is_running,48,3074457345618258722,IDENTIFIER,subdir,0
+0,process_is_running,49,3074457345618258723,IDENTIFIER,process_name,0
+0,process_is_running,50,3074457345618258724,CONTROL_STRUCTURE,if (pid > 0),0
+0,process_is_running,51,3074457345618258725,greaterThan,pid > 0,1
+0,process_is_running,52,3074457345618258726,IDENTIFIER,pid,0
+0,process_is_running,53,3074457345618258727,LITERAL,0,0
+0,process_is_running,54,3074457345618258728,BLOCK,<empty>,0
+0,process_is_running,55,3074457345618258729,closedir,closedir(proc_dir),0
+0,process_is_running,56,3074457345618258730,IDENTIFIER,proc_dir,0
+0,process_is_running,57,3074457345618258731,RETURN,return TRUE;,0
+0,process_is_running,58,3074457345618258732,IDENTIFIER,TRUE,0
+0,process_is_running,59,3074457345618258733,closedir,closedir(proc_dir),0
+0,process_is_running,60,3074457345618258734,IDENTIFIER,proc_dir,0
+0,process_is_running,61,3074457345618258735,RETURN,return FALSE;,0
+0,process_is_running,62,3074457345618258736,IDENTIFIER,FALSE,0
+0,process_is_running,63,3074457345618258737,METHOD_RETURN,gboolean,0

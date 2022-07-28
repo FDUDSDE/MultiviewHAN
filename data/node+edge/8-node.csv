@@ -1,0 +1,31 @@
+,function_name,id,number,first,next,type
+0,ignore_xlsx_update,0,3074457345618258674,METHOD,"ANY ignore_xlsx_update (const char *src_path,const char *dst_path)",0
+0,ignore_xlsx_update,1,3074457345618258675,PARAM,const char *src_path,0
+0,ignore_xlsx_update,2,3074457345618258676,PARAM,const char *dst_path,0
+0,ignore_xlsx_update,3,3074457345618258677,BLOCK,<empty>,0
+0,ignore_xlsx_update,4,3074457345618258678,LOCAL,GPatternSpec pattern,0
+0,ignore_xlsx_update,5,3074457345618258679,assignment,"*pattern = g_pattern_spec_new (""*.xlsx"")",1
+0,ignore_xlsx_update,6,3074457345618258680,IDENTIFIER,pattern,0
+0,ignore_xlsx_update,7,3074457345618258681,g_pattern_spec_new,"g_pattern_spec_new (""*.xlsx"")",0
+0,ignore_xlsx_update,8,3074457345618258682,LITERAL,"""*.xlsx""",0
+0,ignore_xlsx_update,9,3074457345618258683,LOCAL,int ret,0
+0,ignore_xlsx_update,10,3074457345618258684,assignment,ret = FALSE,1
+0,ignore_xlsx_update,11,3074457345618258685,IDENTIFIER,ret,0
+0,ignore_xlsx_update,12,3074457345618258686,IDENTIFIER,FALSE,0
+0,ignore_xlsx_update,13,3074457345618258687,CONTROL_STRUCTURE,"if (!g_pattern_match_string(pattern, src_path) && g_pattern_match_string(pattern, dst_path))",0
+0,ignore_xlsx_update,14,3074457345618258688,logicalAnd,"!g_pattern_match_string(pattern, src_path) && g_pattern_match_string(pattern, dst_path)",1
+0,ignore_xlsx_update,15,3074457345618258689,logicalNot,"!g_pattern_match_string(pattern, src_path)",1
+0,ignore_xlsx_update,16,3074457345618258690,g_pattern_match_string,"g_pattern_match_string(pattern, src_path)",0
+0,ignore_xlsx_update,17,3074457345618258691,IDENTIFIER,pattern,0
+0,ignore_xlsx_update,18,3074457345618258692,IDENTIFIER,src_path,0
+0,ignore_xlsx_update,19,3074457345618258693,g_pattern_match_string,"g_pattern_match_string(pattern, dst_path)",0
+0,ignore_xlsx_update,20,3074457345618258694,IDENTIFIER,pattern,0
+0,ignore_xlsx_update,21,3074457345618258695,IDENTIFIER,dst_path,0
+0,ignore_xlsx_update,22,3074457345618258696,assignment,ret = TRUE,1
+0,ignore_xlsx_update,23,3074457345618258697,IDENTIFIER,ret,0
+0,ignore_xlsx_update,24,3074457345618258698,IDENTIFIER,TRUE,0
+0,ignore_xlsx_update,25,3074457345618258699,g_pattern_spec_free,g_pattern_spec_free (pattern),0
+0,ignore_xlsx_update,26,3074457345618258700,IDENTIFIER,pattern,0
+0,ignore_xlsx_update,27,3074457345618258701,RETURN,return ret;,0
+0,ignore_xlsx_update,28,3074457345618258702,IDENTIFIER,ret,0
+0,ignore_xlsx_update,29,3074457345618258703,METHOD_RETURN,ANY,0

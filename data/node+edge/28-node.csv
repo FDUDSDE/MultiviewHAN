@@ -1,0 +1,53 @@
+,function_name,id,number,first,next,type
+0,lookup_hash_entry,0,3074457345618258674,METHOD,"struct hash_table_entry lookup_hash_entry (unsigned int hash,const struct hash_table *table)",0
+0,lookup_hash_entry,1,3074457345618258675,PARAM,unsigned int hash,0
+0,lookup_hash_entry,2,3074457345618258676,PARAM,const struct hash_table *table,0
+0,lookup_hash_entry,3,3074457345618258677,BLOCK,<empty>,0
+0,lookup_hash_entry,4,3074457345618258678,LOCAL,unsigned int size,0
+0,lookup_hash_entry,5,3074457345618258679,LOCAL,unsigned int nr,0
+0,lookup_hash_entry,6,3074457345618258680,assignment,size = table->size,1
+0,lookup_hash_entry,7,3074457345618258681,IDENTIFIER,size,0
+0,lookup_hash_entry,8,3074457345618258682,indirectFieldAccess,table->size,1
+0,lookup_hash_entry,9,3074457345618258683,IDENTIFIER,table,0
+0,lookup_hash_entry,10,3074457345618258684,FIELD_IDENTIFIER,size,0
+0,lookup_hash_entry,11,3074457345618258685,assignment,nr = hash % size,1
+0,lookup_hash_entry,12,3074457345618258686,IDENTIFIER,nr,0
+0,lookup_hash_entry,13,3074457345618258687,modulo,hash % size,1
+0,lookup_hash_entry,14,3074457345618258688,IDENTIFIER,hash,0
+0,lookup_hash_entry,15,3074457345618258689,IDENTIFIER,size,0
+0,lookup_hash_entry,16,3074457345618258690,LOCAL,struct hash_table_entry* array,0
+0,lookup_hash_entry,17,3074457345618258691,assignment,*array = table->array,1
+0,lookup_hash_entry,18,3074457345618258692,IDENTIFIER,array,0
+0,lookup_hash_entry,19,3074457345618258693,indirectFieldAccess,table->array,1
+0,lookup_hash_entry,20,3074457345618258694,IDENTIFIER,table,0
+0,lookup_hash_entry,21,3074457345618258695,FIELD_IDENTIFIER,array,0
+0,lookup_hash_entry,22,3074457345618258696,CONTROL_STRUCTURE,while (array[nr].ptr),0
+0,lookup_hash_entry,23,3074457345618258697,fieldAccess,array[nr].ptr,1
+0,lookup_hash_entry,24,3074457345618258698,indirectIndexAccess,array[nr],1
+0,lookup_hash_entry,25,3074457345618258699,IDENTIFIER,array,0
+0,lookup_hash_entry,26,3074457345618258700,IDENTIFIER,nr,0
+0,lookup_hash_entry,27,3074457345618258701,FIELD_IDENTIFIER,ptr,0
+0,lookup_hash_entry,28,3074457345618258702,BLOCK,<empty>,0
+0,lookup_hash_entry,29,3074457345618258703,CONTROL_STRUCTURE,if (array[nr].hash == hash),0
+0,lookup_hash_entry,30,3074457345618258704,equals,array[nr].hash == hash,1
+0,lookup_hash_entry,31,3074457345618258705,fieldAccess,array[nr].hash,1
+0,lookup_hash_entry,32,3074457345618258706,indirectIndexAccess,array[nr],1
+0,lookup_hash_entry,33,3074457345618258707,IDENTIFIER,array,0
+0,lookup_hash_entry,34,3074457345618258708,IDENTIFIER,nr,0
+0,lookup_hash_entry,35,3074457345618258709,FIELD_IDENTIFIER,hash,0
+0,lookup_hash_entry,36,3074457345618258710,IDENTIFIER,hash,0
+0,lookup_hash_entry,37,3074457345618258711,CONTROL_STRUCTURE,break;,0
+0,lookup_hash_entry,38,3074457345618258712,postIncrement,nr++,1
+0,lookup_hash_entry,39,3074457345618258713,IDENTIFIER,nr,0
+0,lookup_hash_entry,40,3074457345618258714,CONTROL_STRUCTURE,if (nr >= size),0
+0,lookup_hash_entry,41,3074457345618258715,greaterEqualsThan,nr >= size,1
+0,lookup_hash_entry,42,3074457345618258716,IDENTIFIER,nr,0
+0,lookup_hash_entry,43,3074457345618258717,IDENTIFIER,size,0
+0,lookup_hash_entry,44,3074457345618258718,assignment,nr = 0,1
+0,lookup_hash_entry,45,3074457345618258719,IDENTIFIER,nr,0
+0,lookup_hash_entry,46,3074457345618258720,LITERAL,0,0
+0,lookup_hash_entry,47,3074457345618258721,RETURN,return array + nr;,0
+0,lookup_hash_entry,48,3074457345618258722,addition,array + nr,1
+0,lookup_hash_entry,49,3074457345618258723,IDENTIFIER,array,0
+0,lookup_hash_entry,50,3074457345618258724,IDENTIFIER,nr,0
+0,lookup_hash_entry,51,3074457345618258725,METHOD_RETURN,struct hash_table_entry,0

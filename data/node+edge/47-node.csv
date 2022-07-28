@@ -1,0 +1,68 @@
+,function_name,id,number,first,next,type
+0,onUserDump,0,3074457345618258674,METHOD,"void onUserDump (struct KSCrash_MonitorContext* monitorContext,const char* dumpFilePath)",0
+0,onUserDump,1,3074457345618258675,PARAM,struct KSCrash_MonitorContext* monitorContext,0
+0,onUserDump,2,3074457345618258676,PARAM,const char* dumpFilePath,0
+0,onUserDump,3,3074457345618258677,BLOCK,<empty>,0
+0,onUserDump,4,3074457345618258678,KSLOG_DEBUG,"KSLOG_DEBUG(""UserDump"")",0
+0,onUserDump,5,3074457345618258679,LITERAL,"""UserDump""",0
+0,onUserDump,6,3074457345618258680,assignment,monitorContext->consoleLogPath = g_shouldAddConsoleLogToReport ? g_consoleLogPath : NULL,1
+0,onUserDump,7,3074457345618258681,indirectFieldAccess,monitorContext->consoleLogPath,1
+0,onUserDump,8,3074457345618258682,IDENTIFIER,monitorContext,0
+0,onUserDump,9,3074457345618258683,FIELD_IDENTIFIER,consoleLogPath,0
+0,onUserDump,10,3074457345618258684,conditional,g_shouldAddConsoleLogToReport ? g_consoleLogPath : NULL,1
+0,onUserDump,11,3074457345618258685,IDENTIFIER,g_shouldAddConsoleLogToReport,0
+0,onUserDump,12,3074457345618258686,IDENTIFIER,g_consoleLogPath,0
+0,onUserDump,13,3074457345618258687,IDENTIFIER,NULL,0
+0,onUserDump,14,3074457345618258688,CONTROL_STRUCTURE,if (g_customShortVersion != NULL && g_customFullVersion != NULL),0
+0,onUserDump,15,3074457345618258689,logicalAnd,g_customShortVersion != NULL && g_customFullVersion != NULL,1
+0,onUserDump,16,3074457345618258690,notEquals,g_customShortVersion != NULL,1
+0,onUserDump,17,3074457345618258691,IDENTIFIER,g_customShortVersion,0
+0,onUserDump,18,3074457345618258692,IDENTIFIER,NULL,0
+0,onUserDump,19,3074457345618258693,notEquals,g_customFullVersion != NULL,1
+0,onUserDump,20,3074457345618258694,IDENTIFIER,g_customFullVersion,0
+0,onUserDump,21,3074457345618258695,IDENTIFIER,NULL,0
+0,onUserDump,22,3074457345618258696,BLOCK,<empty>,0
+0,onUserDump,23,3074457345618258697,assignment,monitorContext->UserDefinedVersion.bundleShortVersion = g_customShortVersion,1
+0,onUserDump,24,3074457345618258698,fieldAccess,monitorContext->UserDefinedVersion.bundleShortVersion,1
+0,onUserDump,25,3074457345618258699,indirectFieldAccess,monitorContext->UserDefinedVersion,1
+0,onUserDump,26,3074457345618258700,IDENTIFIER,monitorContext,0
+0,onUserDump,27,3074457345618258701,FIELD_IDENTIFIER,UserDefinedVersion,0
+0,onUserDump,28,3074457345618258702,FIELD_IDENTIFIER,bundleShortVersion,0
+0,onUserDump,29,3074457345618258703,IDENTIFIER,g_customShortVersion,0
+0,onUserDump,30,3074457345618258704,assignment,monitorContext->UserDefinedVersion.bundleVersion = g_customFullVersion,1
+0,onUserDump,31,3074457345618258705,fieldAccess,monitorContext->UserDefinedVersion.bundleVersion,1
+0,onUserDump,32,3074457345618258706,indirectFieldAccess,monitorContext->UserDefinedVersion,1
+0,onUserDump,33,3074457345618258707,IDENTIFIER,monitorContext,0
+0,onUserDump,34,3074457345618258708,FIELD_IDENTIFIER,UserDefinedVersion,0
+0,onUserDump,35,3074457345618258709,FIELD_IDENTIFIER,bundleVersion,0
+0,onUserDump,36,3074457345618258710,IDENTIFIER,g_customFullVersion,0
+0,onUserDump,37,3074457345618258711,CONTROL_STRUCTURE,else,0
+0,onUserDump,38,3074457345618258712,BLOCK,<empty>,0
+0,onUserDump,39,3074457345618258713,assignment,"monitorContext->UserDefinedVersion.bundleShortVersion = ""unknown""",1
+0,onUserDump,40,3074457345618258714,fieldAccess,monitorContext->UserDefinedVersion.bundleShortVersion,1
+0,onUserDump,41,3074457345618258715,indirectFieldAccess,monitorContext->UserDefinedVersion,1
+0,onUserDump,42,3074457345618258716,IDENTIFIER,monitorContext,0
+0,onUserDump,43,3074457345618258717,FIELD_IDENTIFIER,UserDefinedVersion,0
+0,onUserDump,44,3074457345618258718,FIELD_IDENTIFIER,bundleShortVersion,0
+0,onUserDump,45,3074457345618258719,LITERAL,"""unknown""",0
+0,onUserDump,46,3074457345618258720,assignment,"monitorContext->UserDefinedVersion.bundleVersion = ""unknown""",1
+0,onUserDump,47,3074457345618258721,fieldAccess,monitorContext->UserDefinedVersion.bundleVersion,1
+0,onUserDump,48,3074457345618258722,indirectFieldAccess,monitorContext->UserDefinedVersion,1
+0,onUserDump,49,3074457345618258723,IDENTIFIER,monitorContext,0
+0,onUserDump,50,3074457345618258724,FIELD_IDENTIFIER,UserDefinedVersion,0
+0,onUserDump,51,3074457345618258725,FIELD_IDENTIFIER,bundleVersion,0
+0,onUserDump,52,3074457345618258726,LITERAL,"""unknown""",0
+0,onUserDump,53,3074457345618258727,CONTROL_STRUCTURE,if (monitorContext->crashedDuringCrashHandling),0
+0,onUserDump,54,3074457345618258728,indirectFieldAccess,monitorContext->crashedDuringCrashHandling,1
+0,onUserDump,55,3074457345618258729,IDENTIFIER,monitorContext,0
+0,onUserDump,56,3074457345618258730,FIELD_IDENTIFIER,crashedDuringCrashHandling,0
+0,onUserDump,57,3074457345618258731,BLOCK,<empty>,0
+0,onUserDump,58,3074457345618258732,kscrashreport_writeRecrashReport,"kscrashreport_writeRecrashReport(monitorContext, dumpFilePath)",0
+0,onUserDump,59,3074457345618258733,IDENTIFIER,monitorContext,0
+0,onUserDump,60,3074457345618258734,IDENTIFIER,dumpFilePath,0
+0,onUserDump,61,3074457345618258735,CONTROL_STRUCTURE,else,0
+0,onUserDump,62,3074457345618258736,BLOCK,<empty>,0
+0,onUserDump,63,3074457345618258737,kscrashreport_writeStandardReport,"kscrashreport_writeStandardReport(monitorContext, dumpFilePath)",0
+0,onUserDump,64,3074457345618258738,IDENTIFIER,monitorContext,0
+0,onUserDump,65,3074457345618258739,IDENTIFIER,dumpFilePath,0
+0,onUserDump,66,3074457345618258740,METHOD_RETURN,void,0

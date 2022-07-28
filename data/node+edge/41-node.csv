@@ -1,0 +1,27 @@
+,function_name,id,number,first,next,type
+0,writeNotableAddresses,0,3074457345618258674,METHOD,"void writeNotableAddresses (const KSCrashReportWriter* const writer,const char* const key,const struct KSMachineContext* const machineContext)",0
+0,writeNotableAddresses,1,3074457345618258675,PARAM,const KSCrashReportWriter* const writer,0
+0,writeNotableAddresses,2,3074457345618258676,PARAM,const char* const key,0
+0,writeNotableAddresses,3,3074457345618258677,PARAM,const struct KSMachineContext* const machineContext,0
+0,writeNotableAddresses,4,3074457345618258678,BLOCK,<empty>,0
+0,writeNotableAddresses,5,3074457345618258679,writer->beginObject,"writer->beginObject(writer, key)",0
+0,writeNotableAddresses,6,3074457345618258680,indirectFieldAccess,writer->beginObject,1
+0,writeNotableAddresses,7,3074457345618258681,IDENTIFIER,writer,0
+0,writeNotableAddresses,8,3074457345618258682,FIELD_IDENTIFIER,beginObject,0
+0,writeNotableAddresses,9,3074457345618258683,IDENTIFIER,writer,0
+0,writeNotableAddresses,10,3074457345618258684,IDENTIFIER,key,0
+0,writeNotableAddresses,11,3074457345618258685,BLOCK,<empty>,0
+0,writeNotableAddresses,12,3074457345618258686,writeNotableRegisters,"writeNotableRegisters(writer, machineContext)",0
+0,writeNotableAddresses,13,3074457345618258687,IDENTIFIER,writer,0
+0,writeNotableAddresses,14,3074457345618258688,IDENTIFIER,machineContext,0
+0,writeNotableAddresses,15,3074457345618258689,writeNotableStackContents,"writeNotableStackContents(writer,   machineContext,   kStackNotableSearchBackDistance,   kStackNotableSearchForwardDistance)",0
+0,writeNotableAddresses,16,3074457345618258690,IDENTIFIER,writer,0
+0,writeNotableAddresses,17,3074457345618258691,IDENTIFIER,machineContext,0
+0,writeNotableAddresses,18,3074457345618258692,IDENTIFIER,kStackNotableSearchBackDistance,0
+0,writeNotableAddresses,19,3074457345618258693,IDENTIFIER,kStackNotableSearchForwardDistance,0
+0,writeNotableAddresses,20,3074457345618258694,writer->endContainer,writer->endContainer(writer),0
+0,writeNotableAddresses,21,3074457345618258695,indirectFieldAccess,writer->endContainer,1
+0,writeNotableAddresses,22,3074457345618258696,IDENTIFIER,writer,0
+0,writeNotableAddresses,23,3074457345618258697,FIELD_IDENTIFIER,endContainer,0
+0,writeNotableAddresses,24,3074457345618258698,IDENTIFIER,writer,0
+0,writeNotableAddresses,25,3074457345618258699,METHOD_RETURN,void,0

@@ -1,0 +1,33 @@
+,function_name,id,number,first,next,type
+0,getStackCursor,0,3074457345618258674,METHOD,"bool getStackCursor (const KSCrash_MonitorContext* const crash,const struct KSMachineContext* const machineContext,KSStackCursor *cursor)",0
+0,getStackCursor,1,3074457345618258675,PARAM,const KSCrash_MonitorContext* const crash,0
+0,getStackCursor,2,3074457345618258676,PARAM,const struct KSMachineContext* const machineContext,0
+0,getStackCursor,3,3074457345618258677,PARAM,KSStackCursor *cursor,0
+0,getStackCursor,4,3074457345618258678,BLOCK,<empty>,0
+0,getStackCursor,5,3074457345618258679,CONTROL_STRUCTURE,if (ksmc_getThreadFromContext(machineContext) == ksmc_getThreadFromContext(crash->offendingMachineContext)),0
+0,getStackCursor,6,3074457345618258680,equals,ksmc_getThreadFromContext(machineContext) == ksmc_getThreadFromContext(crash->offendingMachineContext),1
+0,getStackCursor,7,3074457345618258681,ksmc_getThreadFromContext,ksmc_getThreadFromContext(machineContext),0
+0,getStackCursor,8,3074457345618258682,IDENTIFIER,machineContext,0
+0,getStackCursor,9,3074457345618258683,ksmc_getThreadFromContext,ksmc_getThreadFromContext(crash->offendingMachineContext),0
+0,getStackCursor,10,3074457345618258684,indirectFieldAccess,crash->offendingMachineContext,1
+0,getStackCursor,11,3074457345618258685,IDENTIFIER,crash,0
+0,getStackCursor,12,3074457345618258686,FIELD_IDENTIFIER,offendingMachineContext,0
+0,getStackCursor,13,3074457345618258687,BLOCK,<empty>,0
+0,getStackCursor,14,3074457345618258688,assignment,*cursor = *((KSStackCursor*)crash->stackCursor),1
+0,getStackCursor,15,3074457345618258689,indirection,*cursor,1
+0,getStackCursor,16,3074457345618258690,IDENTIFIER,cursor,0
+0,getStackCursor,17,3074457345618258691,indirection,*((KSStackCursor*)crash->stackCursor),1
+0,getStackCursor,18,3074457345618258692,cast,(KSStackCursor*)crash->stackCursor,1
+0,getStackCursor,19,3074457345618258693,UNKNOWN,KSStackCursor*,0
+0,getStackCursor,20,3074457345618258694,indirectFieldAccess,crash->stackCursor,1
+0,getStackCursor,21,3074457345618258695,IDENTIFIER,crash,0
+0,getStackCursor,22,3074457345618258696,FIELD_IDENTIFIER,stackCursor,0
+0,getStackCursor,23,3074457345618258697,RETURN,return true;,0
+0,getStackCursor,24,3074457345618258698,IDENTIFIER,true,0
+0,getStackCursor,25,3074457345618258699,kssc_initWithMachineContext,"kssc_initWithMachineContext(cursor, KSSC_STACK_OVERFLOW_THRESHOLD, machineContext)",0
+0,getStackCursor,26,3074457345618258700,IDENTIFIER,cursor,0
+0,getStackCursor,27,3074457345618258701,IDENTIFIER,KSSC_STACK_OVERFLOW_THRESHOLD,0
+0,getStackCursor,28,3074457345618258702,IDENTIFIER,machineContext,0
+0,getStackCursor,29,3074457345618258703,RETURN,return true;,0
+0,getStackCursor,30,3074457345618258704,IDENTIFIER,true,0
+0,getStackCursor,31,3074457345618258705,METHOD_RETURN,bool,0

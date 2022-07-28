@@ -1,0 +1,21 @@
+,function_name,id,number,first,next,type
+0,writeMemoryContentsIfNotable,0,3074457345618258674,METHOD,"void writeMemoryContentsIfNotable (const KSCrashReportWriter* const writer,const char* const key,const uintptr_t address)",0
+0,writeMemoryContentsIfNotable,1,3074457345618258675,PARAM,const KSCrashReportWriter* const writer,0
+0,writeMemoryContentsIfNotable,2,3074457345618258676,PARAM,const char* const key,0
+0,writeMemoryContentsIfNotable,3,3074457345618258677,PARAM,const uintptr_t address,0
+0,writeMemoryContentsIfNotable,4,3074457345618258678,BLOCK,<empty>,0
+0,writeMemoryContentsIfNotable,5,3074457345618258679,CONTROL_STRUCTURE,if (isNotableAddress(address)),0
+0,writeMemoryContentsIfNotable,6,3074457345618258680,isNotableAddress,isNotableAddress(address),0
+0,writeMemoryContentsIfNotable,7,3074457345618258681,IDENTIFIER,address,0
+0,writeMemoryContentsIfNotable,8,3074457345618258682,BLOCK,<empty>,0
+0,writeMemoryContentsIfNotable,9,3074457345618258683,LOCAL,int limit,0
+0,writeMemoryContentsIfNotable,10,3074457345618258684,assignment,limit = kDefaultMemorySearchDepth,1
+0,writeMemoryContentsIfNotable,11,3074457345618258685,IDENTIFIER,limit,0
+0,writeMemoryContentsIfNotable,12,3074457345618258686,IDENTIFIER,kDefaultMemorySearchDepth,0
+0,writeMemoryContentsIfNotable,13,3074457345618258687,writeMemoryContents,"writeMemoryContents(writer, key, address, &limit)",0
+0,writeMemoryContentsIfNotable,14,3074457345618258688,IDENTIFIER,writer,0
+0,writeMemoryContentsIfNotable,15,3074457345618258689,IDENTIFIER,key,0
+0,writeMemoryContentsIfNotable,16,3074457345618258690,IDENTIFIER,address,0
+0,writeMemoryContentsIfNotable,17,3074457345618258691,addressOf,&limit,1
+0,writeMemoryContentsIfNotable,18,3074457345618258692,IDENTIFIER,limit,0
+0,writeMemoryContentsIfNotable,19,3074457345618258693,METHOD_RETURN,void,0

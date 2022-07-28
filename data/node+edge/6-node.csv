@@ -1,0 +1,34 @@
+,function_name,id,number,first,next,type
+0,need_notify_sync,0,3074457345618258674,METHOD,ANY need_notify_sync (SeafRepo *repo),0
+0,need_notify_sync,1,3074457345618258675,PARAM,SeafRepo *repo,0
+0,need_notify_sync,2,3074457345618258676,BLOCK,<empty>,0
+0,need_notify_sync,3,3074457345618258677,LOCAL,char* notify_setting,0
+0,need_notify_sync,4,3074457345618258678,assignment,"*notify_setting = seafile_session_config_get_string(seaf, ""notify_sync"")",1
+0,need_notify_sync,5,3074457345618258679,IDENTIFIER,notify_setting,0
+0,need_notify_sync,6,3074457345618258680,seafile_session_config_get_string,"seafile_session_config_get_string(seaf, ""notify_sync"")",0
+0,need_notify_sync,7,3074457345618258681,IDENTIFIER,seaf,0
+0,need_notify_sync,8,3074457345618258682,LITERAL,"""notify_sync""",0
+0,need_notify_sync,9,3074457345618258683,CONTROL_STRUCTURE,if (notify_setting == NULL),0
+0,need_notify_sync,10,3074457345618258684,equals,notify_setting == NULL,1
+0,need_notify_sync,11,3074457345618258685,IDENTIFIER,notify_setting,0
+0,need_notify_sync,12,3074457345618258686,IDENTIFIER,NULL,0
+0,need_notify_sync,13,3074457345618258687,BLOCK,<empty>,0
+0,need_notify_sync,14,3074457345618258688,seafile_session_config_set_string,"seafile_session_config_set_string(seaf, ""notify_sync"", ""on"")",0
+0,need_notify_sync,15,3074457345618258689,IDENTIFIER,seaf,0
+0,need_notify_sync,16,3074457345618258690,LITERAL,"""notify_sync""",0
+0,need_notify_sync,17,3074457345618258691,LITERAL,"""on""",0
+0,need_notify_sync,18,3074457345618258692,RETURN,return TRUE;,0
+0,need_notify_sync,19,3074457345618258693,IDENTIFIER,TRUE,0
+0,need_notify_sync,20,3074457345618258694,LOCAL,gboolean result,0
+0,need_notify_sync,21,3074457345618258695,assignment,"result = (g_strcmp0(notify_setting, ""on"") == 0)",1
+0,need_notify_sync,22,3074457345618258696,IDENTIFIER,result,0
+0,need_notify_sync,23,3074457345618258697,equals,"g_strcmp0(notify_setting, ""on"") == 0",1
+0,need_notify_sync,24,3074457345618258698,g_strcmp0,"g_strcmp0(notify_setting, ""on"")",0
+0,need_notify_sync,25,3074457345618258699,IDENTIFIER,notify_setting,0
+0,need_notify_sync,26,3074457345618258700,LITERAL,"""on""",0
+0,need_notify_sync,27,3074457345618258701,LITERAL,0,0
+0,need_notify_sync,28,3074457345618258702,g_free,g_free (notify_setting),0
+0,need_notify_sync,29,3074457345618258703,IDENTIFIER,notify_setting,0
+0,need_notify_sync,30,3074457345618258704,RETURN,return result;,0
+0,need_notify_sync,31,3074457345618258705,IDENTIFIER,result,0
+0,need_notify_sync,32,3074457345618258706,METHOD_RETURN,ANY,0

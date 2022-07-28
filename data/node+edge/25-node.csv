@@ -1,0 +1,59 @@
+,function_name,id,number,first,next,type
+0,remove_index_entry_at,0,3074457345618258674,METHOD,"int remove_index_entry_at (struct index_state *istate,int pos)",0
+0,remove_index_entry_at,1,3074457345618258675,PARAM,struct index_state *istate,0
+0,remove_index_entry_at,2,3074457345618258676,PARAM,int pos,0
+0,remove_index_entry_at,3,3074457345618258677,BLOCK,<empty>,0
+0,remove_index_entry_at,4,3074457345618258678,LOCAL,struct cache_entry* ce,0
+0,remove_index_entry_at,5,3074457345618258679,assignment,*ce = istate->cache[pos],1
+0,remove_index_entry_at,6,3074457345618258680,IDENTIFIER,ce,0
+0,remove_index_entry_at,7,3074457345618258681,indirectIndexAccess,istate->cache[pos],1
+0,remove_index_entry_at,8,3074457345618258682,indirectFieldAccess,istate->cache,1
+0,remove_index_entry_at,9,3074457345618258683,IDENTIFIER,istate,0
+0,remove_index_entry_at,10,3074457345618258684,FIELD_IDENTIFIER,cache,0
+0,remove_index_entry_at,11,3074457345618258685,IDENTIFIER,pos,0
+0,remove_index_entry_at,12,3074457345618258686,remove_name_hash,"remove_name_hash(istate, ce)",0
+0,remove_index_entry_at,13,3074457345618258687,IDENTIFIER,istate,0
+0,remove_index_entry_at,14,3074457345618258688,IDENTIFIER,ce,0
+0,remove_index_entry_at,15,3074457345618258689,cache_entry_free,cache_entry_free (ce),0
+0,remove_index_entry_at,16,3074457345618258690,IDENTIFIER,ce,0
+0,remove_index_entry_at,17,3074457345618258691,assignment,istate->cache_changed = 1,1
+0,remove_index_entry_at,18,3074457345618258692,indirectFieldAccess,istate->cache_changed,1
+0,remove_index_entry_at,19,3074457345618258693,IDENTIFIER,istate,0
+0,remove_index_entry_at,20,3074457345618258694,FIELD_IDENTIFIER,cache_changed,0
+0,remove_index_entry_at,21,3074457345618258695,LITERAL,1,0
+0,remove_index_entry_at,22,3074457345618258696,postDecrement,istate->cache_nr--,1
+0,remove_index_entry_at,23,3074457345618258697,indirectFieldAccess,istate->cache_nr,1
+0,remove_index_entry_at,24,3074457345618258698,IDENTIFIER,istate,0
+0,remove_index_entry_at,25,3074457345618258699,FIELD_IDENTIFIER,cache_nr,0
+0,remove_index_entry_at,26,3074457345618258700,CONTROL_STRUCTURE,if (pos >= istate->cache_nr),0
+0,remove_index_entry_at,27,3074457345618258701,greaterEqualsThan,pos >= istate->cache_nr,1
+0,remove_index_entry_at,28,3074457345618258702,IDENTIFIER,pos,0
+0,remove_index_entry_at,29,3074457345618258703,indirectFieldAccess,istate->cache_nr,1
+0,remove_index_entry_at,30,3074457345618258704,IDENTIFIER,istate,0
+0,remove_index_entry_at,31,3074457345618258705,FIELD_IDENTIFIER,cache_nr,0
+0,remove_index_entry_at,32,3074457345618258706,RETURN,return 0;,0
+0,remove_index_entry_at,33,3074457345618258707,LITERAL,0,0
+0,remove_index_entry_at,34,3074457345618258708,memmove,"memmove(istate->cache + pos, istate->cache + pos + 1, (istate->cache_nr - pos) * sizeof(struct cache_entry *))",0
+0,remove_index_entry_at,35,3074457345618258709,addition,istate->cache + pos,1
+0,remove_index_entry_at,36,3074457345618258710,indirectFieldAccess,istate->cache,1
+0,remove_index_entry_at,37,3074457345618258711,IDENTIFIER,istate,0
+0,remove_index_entry_at,38,3074457345618258712,FIELD_IDENTIFIER,cache,0
+0,remove_index_entry_at,39,3074457345618258713,IDENTIFIER,pos,0
+0,remove_index_entry_at,40,3074457345618258714,addition,istate->cache + pos + 1,1
+0,remove_index_entry_at,41,3074457345618258715,addition,istate->cache + pos,1
+0,remove_index_entry_at,42,3074457345618258716,indirectFieldAccess,istate->cache,1
+0,remove_index_entry_at,43,3074457345618258717,IDENTIFIER,istate,0
+0,remove_index_entry_at,44,3074457345618258718,FIELD_IDENTIFIER,cache,0
+0,remove_index_entry_at,45,3074457345618258719,IDENTIFIER,pos,0
+0,remove_index_entry_at,46,3074457345618258720,LITERAL,1,0
+0,remove_index_entry_at,47,3074457345618258721,multiplication,(istate->cache_nr - pos) * sizeof(struct cache_entry *),1
+0,remove_index_entry_at,48,3074457345618258722,subtraction,istate->cache_nr - pos,1
+0,remove_index_entry_at,49,3074457345618258723,indirectFieldAccess,istate->cache_nr,1
+0,remove_index_entry_at,50,3074457345618258724,IDENTIFIER,istate,0
+0,remove_index_entry_at,51,3074457345618258725,FIELD_IDENTIFIER,cache_nr,0
+0,remove_index_entry_at,52,3074457345618258726,IDENTIFIER,pos,0
+0,remove_index_entry_at,53,3074457345618258727,sizeOf,sizeof(struct cache_entry *),1
+0,remove_index_entry_at,54,3074457345618258728,IDENTIFIER,struct cache_entry,0
+0,remove_index_entry_at,55,3074457345618258729,RETURN,return 1;,0
+0,remove_index_entry_at,56,3074457345618258730,LITERAL,1,0
+0,remove_index_entry_at,57,3074457345618258731,METHOD_RETURN,int,0

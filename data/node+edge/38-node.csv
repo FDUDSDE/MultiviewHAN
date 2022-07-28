@@ -1,0 +1,63 @@
+,function_name,id,number,first,next,type
+0,writeExceptionRegisters,0,3074457345618258674,METHOD,"void writeExceptionRegisters (const KSCrashReportWriter* const writer,const char* const key,const struct KSMachineContext* const machineContext)",0
+0,writeExceptionRegisters,1,3074457345618258675,PARAM,const KSCrashReportWriter* const writer,0
+0,writeExceptionRegisters,2,3074457345618258676,PARAM,const char* const key,0
+0,writeExceptionRegisters,3,3074457345618258677,PARAM,const struct KSMachineContext* const machineContext,0
+0,writeExceptionRegisters,4,3074457345618258678,BLOCK,<empty>,0
+0,writeExceptionRegisters,5,3074457345618258679,LOCAL,char[30] registerNameBuff,0
+0,writeExceptionRegisters,6,3074457345618258680,LOCAL,const char* registerName,0
+0,writeExceptionRegisters,7,3074457345618258681,writer->beginObject,"writer->beginObject(writer, key)",0
+0,writeExceptionRegisters,8,3074457345618258682,indirectFieldAccess,writer->beginObject,1
+0,writeExceptionRegisters,9,3074457345618258683,IDENTIFIER,writer,0
+0,writeExceptionRegisters,10,3074457345618258684,FIELD_IDENTIFIER,beginObject,0
+0,writeExceptionRegisters,11,3074457345618258685,IDENTIFIER,writer,0
+0,writeExceptionRegisters,12,3074457345618258686,IDENTIFIER,key,0
+0,writeExceptionRegisters,13,3074457345618258687,BLOCK,<empty>,0
+0,writeExceptionRegisters,14,3074457345618258688,LOCAL,const int numRegisters,0
+0,writeExceptionRegisters,15,3074457345618258689,assignment,numRegisters = kscpu_numExceptionRegisters(),1
+0,writeExceptionRegisters,16,3074457345618258690,IDENTIFIER,numRegisters,0
+0,writeExceptionRegisters,17,3074457345618258691,kscpu_numExceptionRegisters,kscpu_numExceptionRegisters(),0
+0,writeExceptionRegisters,18,3074457345618258692,CONTROL_STRUCTURE,for (int reg = 0;reg < numRegisters;reg++),0
+0,writeExceptionRegisters,19,3074457345618258693,LOCAL,int reg,0
+0,writeExceptionRegisters,20,3074457345618258694,assignment,reg = 0,1
+0,writeExceptionRegisters,21,3074457345618258695,IDENTIFIER,reg,0
+0,writeExceptionRegisters,22,3074457345618258696,LITERAL,0,0
+0,writeExceptionRegisters,23,3074457345618258697,lessThan,reg < numRegisters,1
+0,writeExceptionRegisters,24,3074457345618258698,IDENTIFIER,reg,0
+0,writeExceptionRegisters,25,3074457345618258699,IDENTIFIER,numRegisters,0
+0,writeExceptionRegisters,26,3074457345618258700,postIncrement,reg++,1
+0,writeExceptionRegisters,27,3074457345618258701,IDENTIFIER,reg,0
+0,writeExceptionRegisters,28,3074457345618258702,BLOCK,<empty>,0
+0,writeExceptionRegisters,29,3074457345618258703,assignment,registerName = kscpu_exceptionRegisterName(reg),1
+0,writeExceptionRegisters,30,3074457345618258704,IDENTIFIER,registerName,0
+0,writeExceptionRegisters,31,3074457345618258705,kscpu_exceptionRegisterName,kscpu_exceptionRegisterName(reg),0
+0,writeExceptionRegisters,32,3074457345618258706,IDENTIFIER,reg,0
+0,writeExceptionRegisters,33,3074457345618258707,CONTROL_STRUCTURE,if (registerName == NULL),0
+0,writeExceptionRegisters,34,3074457345618258708,equals,registerName == NULL,1
+0,writeExceptionRegisters,35,3074457345618258709,IDENTIFIER,registerName,0
+0,writeExceptionRegisters,36,3074457345618258710,IDENTIFIER,NULL,0
+0,writeExceptionRegisters,37,3074457345618258711,BLOCK,<empty>,0
+0,writeExceptionRegisters,38,3074457345618258712,snprintf,"snprintf(registerNameBuff, sizeof(registerNameBuff), ""r%d"", reg)",0
+0,writeExceptionRegisters,39,3074457345618258713,IDENTIFIER,registerNameBuff,0
+0,writeExceptionRegisters,40,3074457345618258714,sizeOf,sizeof(registerNameBuff),1
+0,writeExceptionRegisters,41,3074457345618258715,IDENTIFIER,registerNameBuff,0
+0,writeExceptionRegisters,42,3074457345618258716,LITERAL,"""r%d""",0
+0,writeExceptionRegisters,43,3074457345618258717,IDENTIFIER,reg,0
+0,writeExceptionRegisters,44,3074457345618258718,assignment,registerName = registerNameBuff,1
+0,writeExceptionRegisters,45,3074457345618258719,IDENTIFIER,registerName,0
+0,writeExceptionRegisters,46,3074457345618258720,IDENTIFIER,registerNameBuff,0
+0,writeExceptionRegisters,47,3074457345618258721,writer->addUIntegerElement,"writer->addUIntegerElement(writer,registerName,    kscpu_exceptionRegisterValue(machineContext, reg))",0
+0,writeExceptionRegisters,48,3074457345618258722,indirectFieldAccess,writer->addUIntegerElement,1
+0,writeExceptionRegisters,49,3074457345618258723,IDENTIFIER,writer,0
+0,writeExceptionRegisters,50,3074457345618258724,FIELD_IDENTIFIER,addUIntegerElement,0
+0,writeExceptionRegisters,51,3074457345618258725,IDENTIFIER,writer,0
+0,writeExceptionRegisters,52,3074457345618258726,IDENTIFIER,registerName,0
+0,writeExceptionRegisters,53,3074457345618258727,kscpu_exceptionRegisterValue,"kscpu_exceptionRegisterValue(machineContext, reg)",0
+0,writeExceptionRegisters,54,3074457345618258728,IDENTIFIER,machineContext,0
+0,writeExceptionRegisters,55,3074457345618258729,IDENTIFIER,reg,0
+0,writeExceptionRegisters,56,3074457345618258730,writer->endContainer,writer->endContainer(writer),0
+0,writeExceptionRegisters,57,3074457345618258731,indirectFieldAccess,writer->endContainer,1
+0,writeExceptionRegisters,58,3074457345618258732,IDENTIFIER,writer,0
+0,writeExceptionRegisters,59,3074457345618258733,FIELD_IDENTIFIER,endContainer,0
+0,writeExceptionRegisters,60,3074457345618258734,IDENTIFIER,writer,0
+0,writeExceptionRegisters,61,3074457345618258735,METHOD_RETURN,void,0

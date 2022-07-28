@@ -1,0 +1,29 @@
+,function_name,id,number,first,next,type
+0,seaf_repo_free_ignore_files,0,3074457345618258674,METHOD,void seaf_repo_free_ignore_files (GList *ignore_list),0
+0,seaf_repo_free_ignore_files,1,3074457345618258675,PARAM,GList *ignore_list,0
+0,seaf_repo_free_ignore_files,2,3074457345618258676,BLOCK,<empty>,0
+0,seaf_repo_free_ignore_files,3,3074457345618258677,LOCAL,GList p,0
+0,seaf_repo_free_ignore_files,4,3074457345618258678,CONTROL_STRUCTURE,if (ignore_list == NULL),0
+0,seaf_repo_free_ignore_files,5,3074457345618258679,equals,ignore_list == NULL,1
+0,seaf_repo_free_ignore_files,6,3074457345618258680,IDENTIFIER,ignore_list,0
+0,seaf_repo_free_ignore_files,7,3074457345618258681,IDENTIFIER,NULL,0
+0,seaf_repo_free_ignore_files,8,3074457345618258682,RETURN,return;,0
+0,seaf_repo_free_ignore_files,9,3074457345618258683,CONTROL_STRUCTURE,for (p = ignore_list;p != NULL;p = p->next),0
+0,seaf_repo_free_ignore_files,10,3074457345618258684,assignment,p = ignore_list,1
+0,seaf_repo_free_ignore_files,11,3074457345618258685,IDENTIFIER,p,0
+0,seaf_repo_free_ignore_files,12,3074457345618258686,IDENTIFIER,ignore_list,0
+0,seaf_repo_free_ignore_files,13,3074457345618258687,notEquals,p != NULL,1
+0,seaf_repo_free_ignore_files,14,3074457345618258688,IDENTIFIER,p,0
+0,seaf_repo_free_ignore_files,15,3074457345618258689,IDENTIFIER,NULL,0
+0,seaf_repo_free_ignore_files,16,3074457345618258690,assignment,p = p->next,1
+0,seaf_repo_free_ignore_files,17,3074457345618258691,IDENTIFIER,p,0
+0,seaf_repo_free_ignore_files,18,3074457345618258692,indirectFieldAccess,p->next,1
+0,seaf_repo_free_ignore_files,19,3074457345618258693,IDENTIFIER,p,0
+0,seaf_repo_free_ignore_files,20,3074457345618258694,FIELD_IDENTIFIER,next,0
+0,seaf_repo_free_ignore_files,21,3074457345618258695,free,free(p->data),0
+0,seaf_repo_free_ignore_files,22,3074457345618258696,indirectFieldAccess,p->data,1
+0,seaf_repo_free_ignore_files,23,3074457345618258697,IDENTIFIER,p,0
+0,seaf_repo_free_ignore_files,24,3074457345618258698,FIELD_IDENTIFIER,data,0
+0,seaf_repo_free_ignore_files,25,3074457345618258699,g_list_free,g_list_free (ignore_list),0
+0,seaf_repo_free_ignore_files,26,3074457345618258700,IDENTIFIER,ignore_list,0
+0,seaf_repo_free_ignore_files,27,3074457345618258701,METHOD_RETURN,void,0

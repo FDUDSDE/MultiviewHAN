@@ -1,0 +1,20 @@
+,function_name,id,number,first,next,type
+0,commit_tree_from_changeset,0,3074457345618258674,METHOD,ANY commit_tree_from_changeset (ChangeSet *changeset),0
+0,commit_tree_from_changeset,1,3074457345618258675,PARAM,ChangeSet *changeset,0
+0,commit_tree_from_changeset,2,3074457345618258676,BLOCK,<empty>,0
+0,commit_tree_from_changeset,3,3074457345618258677,LOCAL,gint64 mtime,0
+0,commit_tree_from_changeset,4,3074457345618258678,LOCAL,char* root_id,0
+0,commit_tree_from_changeset,5,3074457345618258679,assignment,"*root_id = commit_tree_recursive (changeset->repo_id,    changeset->tree_root,    &mtime)",1
+0,commit_tree_from_changeset,6,3074457345618258680,IDENTIFIER,root_id,0
+0,commit_tree_from_changeset,7,3074457345618258681,commit_tree_recursive,"commit_tree_recursive (changeset->repo_id,    changeset->tree_root,    &mtime)",0
+0,commit_tree_from_changeset,8,3074457345618258682,indirectFieldAccess,changeset->repo_id,1
+0,commit_tree_from_changeset,9,3074457345618258683,IDENTIFIER,changeset,0
+0,commit_tree_from_changeset,10,3074457345618258684,FIELD_IDENTIFIER,repo_id,0
+0,commit_tree_from_changeset,11,3074457345618258685,indirectFieldAccess,changeset->tree_root,1
+0,commit_tree_from_changeset,12,3074457345618258686,IDENTIFIER,changeset,0
+0,commit_tree_from_changeset,13,3074457345618258687,FIELD_IDENTIFIER,tree_root,0
+0,commit_tree_from_changeset,14,3074457345618258688,addressOf,&mtime,1
+0,commit_tree_from_changeset,15,3074457345618258689,IDENTIFIER,mtime,0
+0,commit_tree_from_changeset,16,3074457345618258690,RETURN,return root_id;,0
+0,commit_tree_from_changeset,17,3074457345618258691,IDENTIFIER,root_id,0
+0,commit_tree_from_changeset,18,3074457345618258692,METHOD_RETURN,ANY,0

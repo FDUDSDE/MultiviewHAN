@@ -1,0 +1,53 @@
+,function_name,id,number,first,next,type
+0,ksdebug_isBeingTraced,0,3074457345618258674,METHOD,bool ksdebug_isBeingTraced (void),0
+0,ksdebug_isBeingTraced,1,3074457345618258675,PARAM,void,0
+0,ksdebug_isBeingTraced,2,3074457345618258676,BLOCK,<empty>,0
+0,ksdebug_isBeingTraced,3,3074457345618258677,LOCAL,struct kinfo_proc procInfo,0
+0,ksdebug_isBeingTraced,4,3074457345618258678,LOCAL,size_t structSize,0
+0,ksdebug_isBeingTraced,5,3074457345618258679,assignment,structSize = sizeof(procInfo),1
+0,ksdebug_isBeingTraced,6,3074457345618258680,IDENTIFIER,structSize,0
+0,ksdebug_isBeingTraced,7,3074457345618258681,sizeOf,sizeof(procInfo),1
+0,ksdebug_isBeingTraced,8,3074457345618258682,IDENTIFIER,procInfo,0
+0,ksdebug_isBeingTraced,9,3074457345618258683,LOCAL,int[] mib,0
+0,ksdebug_isBeingTraced,10,3074457345618258684,assignment,"mib[] = {CTL_KERN, KERN_PROC, KERN_PROC_PID, getpid()}",1
+0,ksdebug_isBeingTraced,11,3074457345618258685,IDENTIFIER,mib,0
+0,ksdebug_isBeingTraced,12,3074457345618258686,arrayInitializer,"{CTL_KERN, KERN_PROC, KERN_PROC_PID, getpid()}",1
+0,ksdebug_isBeingTraced,13,3074457345618258687,IDENTIFIER,CTL_KERN,0
+0,ksdebug_isBeingTraced,14,3074457345618258688,IDENTIFIER,KERN_PROC,0
+0,ksdebug_isBeingTraced,15,3074457345618258689,IDENTIFIER,KERN_PROC_PID,0
+0,ksdebug_isBeingTraced,16,3074457345618258690,getpid,getpid(),0
+0,ksdebug_isBeingTraced,17,3074457345618258691,CONTROL_STRUCTURE,"if (sysctl(mib, sizeof(mib)/sizeof(*mib), &procInfo, &structSize, NULL, 0) != 0)",0
+0,ksdebug_isBeingTraced,18,3074457345618258692,notEquals,"sysctl(mib, sizeof(mib)/sizeof(*mib), &procInfo, &structSize, NULL, 0) != 0",1
+0,ksdebug_isBeingTraced,19,3074457345618258693,sysctl,"sysctl(mib, sizeof(mib)/sizeof(*mib), &procInfo, &structSize, NULL, 0)",0
+0,ksdebug_isBeingTraced,20,3074457345618258694,IDENTIFIER,mib,0
+0,ksdebug_isBeingTraced,21,3074457345618258695,division,sizeof(mib)/sizeof(*mib),1
+0,ksdebug_isBeingTraced,22,3074457345618258696,sizeOf,sizeof(mib),1
+0,ksdebug_isBeingTraced,23,3074457345618258697,IDENTIFIER,mib,0
+0,ksdebug_isBeingTraced,24,3074457345618258698,sizeOf,sizeof(*mib),1
+0,ksdebug_isBeingTraced,25,3074457345618258699,indirection,*mib,1
+0,ksdebug_isBeingTraced,26,3074457345618258700,IDENTIFIER,mib,0
+0,ksdebug_isBeingTraced,27,3074457345618258701,addressOf,&procInfo,1
+0,ksdebug_isBeingTraced,28,3074457345618258702,IDENTIFIER,procInfo,0
+0,ksdebug_isBeingTraced,29,3074457345618258703,addressOf,&structSize,1
+0,ksdebug_isBeingTraced,30,3074457345618258704,IDENTIFIER,structSize,0
+0,ksdebug_isBeingTraced,31,3074457345618258705,IDENTIFIER,NULL,0
+0,ksdebug_isBeingTraced,32,3074457345618258706,LITERAL,0,0
+0,ksdebug_isBeingTraced,33,3074457345618258707,LITERAL,0,0
+0,ksdebug_isBeingTraced,34,3074457345618258708,BLOCK,<empty>,0
+0,ksdebug_isBeingTraced,35,3074457345618258709,KSLOG_ERROR,"KSLOG_ERROR(""sysctl: %s"", strerror(errno))",0
+0,ksdebug_isBeingTraced,36,3074457345618258710,LITERAL,"""sysctl: %s""",0
+0,ksdebug_isBeingTraced,37,3074457345618258711,strerror,strerror(errno),0
+0,ksdebug_isBeingTraced,38,3074457345618258712,IDENTIFIER,errno,0
+0,ksdebug_isBeingTraced,39,3074457345618258713,RETURN,return false;,0
+0,ksdebug_isBeingTraced,40,3074457345618258714,IDENTIFIER,false,0
+0,ksdebug_isBeingTraced,41,3074457345618258715,RETURN,return (procInfo.kp_proc.p_flag & P_TRACED) != 0;,0
+0,ksdebug_isBeingTraced,42,3074457345618258716,notEquals,(procInfo.kp_proc.p_flag & P_TRACED) != 0,1
+0,ksdebug_isBeingTraced,43,3074457345618258717,and,procInfo.kp_proc.p_flag & P_TRACED,1
+0,ksdebug_isBeingTraced,44,3074457345618258718,fieldAccess,procInfo.kp_proc.p_flag,1
+0,ksdebug_isBeingTraced,45,3074457345618258719,fieldAccess,procInfo.kp_proc,1
+0,ksdebug_isBeingTraced,46,3074457345618258720,IDENTIFIER,procInfo,0
+0,ksdebug_isBeingTraced,47,3074457345618258721,FIELD_IDENTIFIER,kp_proc,0
+0,ksdebug_isBeingTraced,48,3074457345618258722,FIELD_IDENTIFIER,p_flag,0
+0,ksdebug_isBeingTraced,49,3074457345618258723,IDENTIFIER,P_TRACED,0
+0,ksdebug_isBeingTraced,50,3074457345618258724,LITERAL,0,0
+0,ksdebug_isBeingTraced,51,3074457345618258725,METHOD_RETURN,bool,0

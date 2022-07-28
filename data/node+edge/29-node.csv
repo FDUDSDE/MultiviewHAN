@@ -1,0 +1,40 @@
+,function_name,id,number,first,next,type
+0,insert_hash_entry,0,3074457345618258674,METHOD,"void** insert_hash_entry (unsigned int hash,void *ptr,struct hash_table *table)",0
+0,insert_hash_entry,1,3074457345618258675,PARAM,unsigned int hash,0
+0,insert_hash_entry,2,3074457345618258676,PARAM,void *ptr,0
+0,insert_hash_entry,3,3074457345618258677,PARAM,struct hash_table *table,0
+0,insert_hash_entry,4,3074457345618258678,BLOCK,<empty>,0
+0,insert_hash_entry,5,3074457345618258679,LOCAL,struct hash_table_entry* entry,0
+0,insert_hash_entry,6,3074457345618258680,assignment,"*entry = lookup_hash_entry(hash, table)",1
+0,insert_hash_entry,7,3074457345618258681,IDENTIFIER,entry,0
+0,insert_hash_entry,8,3074457345618258682,lookup_hash_entry,"lookup_hash_entry(hash, table)",0
+0,insert_hash_entry,9,3074457345618258683,IDENTIFIER,hash,0
+0,insert_hash_entry,10,3074457345618258684,IDENTIFIER,table,0
+0,insert_hash_entry,11,3074457345618258685,CONTROL_STRUCTURE,if (!entry->ptr),0
+0,insert_hash_entry,12,3074457345618258686,logicalNot,!entry->ptr,1
+0,insert_hash_entry,13,3074457345618258687,indirectFieldAccess,entry->ptr,1
+0,insert_hash_entry,14,3074457345618258688,IDENTIFIER,entry,0
+0,insert_hash_entry,15,3074457345618258689,FIELD_IDENTIFIER,ptr,0
+0,insert_hash_entry,16,3074457345618258690,BLOCK,<empty>,0
+0,insert_hash_entry,17,3074457345618258691,assignment,entry->ptr = ptr,1
+0,insert_hash_entry,18,3074457345618258692,indirectFieldAccess,entry->ptr,1
+0,insert_hash_entry,19,3074457345618258693,IDENTIFIER,entry,0
+0,insert_hash_entry,20,3074457345618258694,FIELD_IDENTIFIER,ptr,0
+0,insert_hash_entry,21,3074457345618258695,IDENTIFIER,ptr,0
+0,insert_hash_entry,22,3074457345618258696,assignment,entry->hash = hash,1
+0,insert_hash_entry,23,3074457345618258697,indirectFieldAccess,entry->hash,1
+0,insert_hash_entry,24,3074457345618258698,IDENTIFIER,entry,0
+0,insert_hash_entry,25,3074457345618258699,FIELD_IDENTIFIER,hash,0
+0,insert_hash_entry,26,3074457345618258700,IDENTIFIER,hash,0
+0,insert_hash_entry,27,3074457345618258701,postIncrement,table->nr++,1
+0,insert_hash_entry,28,3074457345618258702,indirectFieldAccess,table->nr,1
+0,insert_hash_entry,29,3074457345618258703,IDENTIFIER,table,0
+0,insert_hash_entry,30,3074457345618258704,FIELD_IDENTIFIER,nr,0
+0,insert_hash_entry,31,3074457345618258705,RETURN,return NULL;,0
+0,insert_hash_entry,32,3074457345618258706,IDENTIFIER,NULL,0
+0,insert_hash_entry,33,3074457345618258707,RETURN,return &entry->ptr;,0
+0,insert_hash_entry,34,3074457345618258708,addressOf,&entry->ptr,1
+0,insert_hash_entry,35,3074457345618258709,indirectFieldAccess,entry->ptr,1
+0,insert_hash_entry,36,3074457345618258710,IDENTIFIER,entry,0
+0,insert_hash_entry,37,3074457345618258711,FIELD_IDENTIFIER,ptr,0
+0,insert_hash_entry,38,3074457345618258712,METHOD_RETURN,void**,0

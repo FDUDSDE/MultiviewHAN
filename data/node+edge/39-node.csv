@@ -1,0 +1,31 @@
+,function_name,id,number,first,next,type
+0,writeRegisters,0,3074457345618258674,METHOD,"void writeRegisters (const KSCrashReportWriter* const writer,const char* const key,const struct KSMachineContext* const machineContext)",0
+0,writeRegisters,1,3074457345618258675,PARAM,const KSCrashReportWriter* const writer,0
+0,writeRegisters,2,3074457345618258676,PARAM,const char* const key,0
+0,writeRegisters,3,3074457345618258677,PARAM,const struct KSMachineContext* const machineContext,0
+0,writeRegisters,4,3074457345618258678,BLOCK,<empty>,0
+0,writeRegisters,5,3074457345618258679,writer->beginObject,"writer->beginObject(writer, key)",0
+0,writeRegisters,6,3074457345618258680,indirectFieldAccess,writer->beginObject,1
+0,writeRegisters,7,3074457345618258681,IDENTIFIER,writer,0
+0,writeRegisters,8,3074457345618258682,FIELD_IDENTIFIER,beginObject,0
+0,writeRegisters,9,3074457345618258683,IDENTIFIER,writer,0
+0,writeRegisters,10,3074457345618258684,IDENTIFIER,key,0
+0,writeRegisters,11,3074457345618258685,BLOCK,<empty>,0
+0,writeRegisters,12,3074457345618258686,writeBasicRegisters,"writeBasicRegisters(writer, KSCrashField_Basic, machineContext)",0
+0,writeRegisters,13,3074457345618258687,IDENTIFIER,writer,0
+0,writeRegisters,14,3074457345618258688,IDENTIFIER,KSCrashField_Basic,0
+0,writeRegisters,15,3074457345618258689,IDENTIFIER,machineContext,0
+0,writeRegisters,16,3074457345618258690,CONTROL_STRUCTURE,if (ksmc_hasValidExceptionRegisters(machineContext)),0
+0,writeRegisters,17,3074457345618258691,ksmc_hasValidExceptionRegisters,ksmc_hasValidExceptionRegisters(machineContext),0
+0,writeRegisters,18,3074457345618258692,IDENTIFIER,machineContext,0
+0,writeRegisters,19,3074457345618258693,BLOCK,<empty>,0
+0,writeRegisters,20,3074457345618258694,writeExceptionRegisters,"writeExceptionRegisters(writer, KSCrashField_Exception, machineContext)",0
+0,writeRegisters,21,3074457345618258695,IDENTIFIER,writer,0
+0,writeRegisters,22,3074457345618258696,IDENTIFIER,KSCrashField_Exception,0
+0,writeRegisters,23,3074457345618258697,IDENTIFIER,machineContext,0
+0,writeRegisters,24,3074457345618258698,writer->endContainer,writer->endContainer(writer),0
+0,writeRegisters,25,3074457345618258699,indirectFieldAccess,writer->endContainer,1
+0,writeRegisters,26,3074457345618258700,IDENTIFIER,writer,0
+0,writeRegisters,27,3074457345618258701,FIELD_IDENTIFIER,endContainer,0
+0,writeRegisters,28,3074457345618258702,IDENTIFIER,writer,0
+0,writeRegisters,29,3074457345618258703,METHOD_RETURN,void,0

@@ -1,0 +1,39 @@
+,function_name,id,number,first,next,type
+0,writeAddressReferencedByString,0,3074457345618258674,METHOD,"void writeAddressReferencedByString (const KSCrashReportWriter* const writer,const char* const key,const char* string)",0
+0,writeAddressReferencedByString,1,3074457345618258675,PARAM,const KSCrashReportWriter* const writer,0
+0,writeAddressReferencedByString,2,3074457345618258676,PARAM,const char* const key,0
+0,writeAddressReferencedByString,3,3074457345618258677,PARAM,const char* string,0
+0,writeAddressReferencedByString,4,3074457345618258678,BLOCK,<empty>,0
+0,writeAddressReferencedByString,5,3074457345618258679,LOCAL,uint64_t address,0
+0,writeAddressReferencedByString,6,3074457345618258680,assignment,address = 0,1
+0,writeAddressReferencedByString,7,3074457345618258681,IDENTIFIER,address,0
+0,writeAddressReferencedByString,8,3074457345618258682,LITERAL,0,0
+0,writeAddressReferencedByString,9,3074457345618258683,CONTROL_STRUCTURE,"if (string == NULL || !ksstring_extractHexValue(string, (int)strlen(string), &address))",0
+0,writeAddressReferencedByString,10,3074457345618258684,logicalOr,"string == NULL || !ksstring_extractHexValue(string, (int)strlen(string), &address)",1
+0,writeAddressReferencedByString,11,3074457345618258685,equals,string == NULL,1
+0,writeAddressReferencedByString,12,3074457345618258686,IDENTIFIER,string,0
+0,writeAddressReferencedByString,13,3074457345618258687,IDENTIFIER,NULL,0
+0,writeAddressReferencedByString,14,3074457345618258688,logicalNot,"!ksstring_extractHexValue(string, (int)strlen(string), &address)",1
+0,writeAddressReferencedByString,15,3074457345618258689,ksstring_extractHexValue,"ksstring_extractHexValue(string, (int)strlen(string), &address)",0
+0,writeAddressReferencedByString,16,3074457345618258690,IDENTIFIER,string,0
+0,writeAddressReferencedByString,17,3074457345618258691,cast,(int)strlen(string),1
+0,writeAddressReferencedByString,18,3074457345618258692,UNKNOWN,int,0
+0,writeAddressReferencedByString,19,3074457345618258693,strlen,strlen(string),0
+0,writeAddressReferencedByString,20,3074457345618258694,IDENTIFIER,string,0
+0,writeAddressReferencedByString,21,3074457345618258695,addressOf,&address,1
+0,writeAddressReferencedByString,22,3074457345618258696,IDENTIFIER,address,0
+0,writeAddressReferencedByString,23,3074457345618258697,BLOCK,<empty>,0
+0,writeAddressReferencedByString,24,3074457345618258698,RETURN,return;,0
+0,writeAddressReferencedByString,25,3074457345618258699,LOCAL,int limit,0
+0,writeAddressReferencedByString,26,3074457345618258700,assignment,limit = kDefaultMemorySearchDepth,1
+0,writeAddressReferencedByString,27,3074457345618258701,IDENTIFIER,limit,0
+0,writeAddressReferencedByString,28,3074457345618258702,IDENTIFIER,kDefaultMemorySearchDepth,0
+0,writeAddressReferencedByString,29,3074457345618258703,writeMemoryContents,"writeMemoryContents(writer, key, (uintptr_t)address, &limit)",0
+0,writeAddressReferencedByString,30,3074457345618258704,IDENTIFIER,writer,0
+0,writeAddressReferencedByString,31,3074457345618258705,IDENTIFIER,key,0
+0,writeAddressReferencedByString,32,3074457345618258706,cast,(uintptr_t)address,1
+0,writeAddressReferencedByString,33,3074457345618258707,UNKNOWN,uintptr_t,0
+0,writeAddressReferencedByString,34,3074457345618258708,IDENTIFIER,address,0
+0,writeAddressReferencedByString,35,3074457345618258709,addressOf,&limit,1
+0,writeAddressReferencedByString,36,3074457345618258710,IDENTIFIER,limit,0
+0,writeAddressReferencedByString,37,3074457345618258711,METHOD_RETURN,void,0

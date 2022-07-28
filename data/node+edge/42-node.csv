@@ -1,0 +1,37 @@
+,function_name,id,number,first,next,type
+0,writeBinaryImages,0,3074457345618258674,METHOD,"void writeBinaryImages (const KSCrashReportWriter* const writer,const char* const key)",0
+0,writeBinaryImages,1,3074457345618258675,PARAM,const KSCrashReportWriter* const writer,0
+0,writeBinaryImages,2,3074457345618258676,PARAM,const char* const key,0
+0,writeBinaryImages,3,3074457345618258677,BLOCK,<empty>,0
+0,writeBinaryImages,4,3074457345618258678,LOCAL,const int imageCount,0
+0,writeBinaryImages,5,3074457345618258679,assignment,imageCount = ksdl_imageCount(),1
+0,writeBinaryImages,6,3074457345618258680,IDENTIFIER,imageCount,0
+0,writeBinaryImages,7,3074457345618258681,ksdl_imageCount,ksdl_imageCount(),0
+0,writeBinaryImages,8,3074457345618258682,writer->beginArray,"writer->beginArray(writer, key)",0
+0,writeBinaryImages,9,3074457345618258683,indirectFieldAccess,writer->beginArray,1
+0,writeBinaryImages,10,3074457345618258684,IDENTIFIER,writer,0
+0,writeBinaryImages,11,3074457345618258685,FIELD_IDENTIFIER,beginArray,0
+0,writeBinaryImages,12,3074457345618258686,IDENTIFIER,writer,0
+0,writeBinaryImages,13,3074457345618258687,IDENTIFIER,key,0
+0,writeBinaryImages,14,3074457345618258688,BLOCK,<empty>,0
+0,writeBinaryImages,15,3074457345618258689,CONTROL_STRUCTURE,for (int iImg = 0;iImg < imageCount;iImg++),0
+0,writeBinaryImages,16,3074457345618258690,LOCAL,int iImg,0
+0,writeBinaryImages,17,3074457345618258691,assignment,iImg = 0,1
+0,writeBinaryImages,18,3074457345618258692,IDENTIFIER,iImg,0
+0,writeBinaryImages,19,3074457345618258693,LITERAL,0,0
+0,writeBinaryImages,20,3074457345618258694,lessThan,iImg < imageCount,1
+0,writeBinaryImages,21,3074457345618258695,IDENTIFIER,iImg,0
+0,writeBinaryImages,22,3074457345618258696,IDENTIFIER,imageCount,0
+0,writeBinaryImages,23,3074457345618258697,postIncrement,iImg++,1
+0,writeBinaryImages,24,3074457345618258698,IDENTIFIER,iImg,0
+0,writeBinaryImages,25,3074457345618258699,BLOCK,<empty>,0
+0,writeBinaryImages,26,3074457345618258700,writeBinaryImage,"writeBinaryImage(writer, NULL, iImg)",0
+0,writeBinaryImages,27,3074457345618258701,IDENTIFIER,writer,0
+0,writeBinaryImages,28,3074457345618258702,IDENTIFIER,NULL,0
+0,writeBinaryImages,29,3074457345618258703,IDENTIFIER,iImg,0
+0,writeBinaryImages,30,3074457345618258704,writer->endContainer,writer->endContainer(writer),0
+0,writeBinaryImages,31,3074457345618258705,indirectFieldAccess,writer->endContainer,1
+0,writeBinaryImages,32,3074457345618258706,IDENTIFIER,writer,0
+0,writeBinaryImages,33,3074457345618258707,FIELD_IDENTIFIER,endContainer,0
+0,writeBinaryImages,34,3074457345618258708,IDENTIFIER,writer,0
+0,writeBinaryImages,35,3074457345618258709,METHOD_RETURN,void,0

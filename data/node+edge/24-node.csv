@@ -1,0 +1,34 @@
+,function_name,id,number,first,next,type
+0,get_file_modifier_mtime,0,3074457345618258674,METHOD,"ANY get_file_modifier_mtime (const char *repo_id,const char *store_id,int version,const char *head,const char *path,char **modifier,gint64 *mtime)",0
+0,get_file_modifier_mtime,1,3074457345618258675,PARAM,const char *repo_id,0
+0,get_file_modifier_mtime,2,3074457345618258676,PARAM,const char *store_id,0
+0,get_file_modifier_mtime,3,3074457345618258677,PARAM,int version,0
+0,get_file_modifier_mtime,4,3074457345618258678,PARAM,const char *head,0
+0,get_file_modifier_mtime,5,3074457345618258679,PARAM,const char *path,0
+0,get_file_modifier_mtime,6,3074457345618258680,PARAM,char **modifier,0
+0,get_file_modifier_mtime,7,3074457345618258681,PARAM,gint64 *mtime,0
+0,get_file_modifier_mtime,8,3074457345618258682,BLOCK,<empty>,0
+0,get_file_modifier_mtime,9,3074457345618258683,CONTROL_STRUCTURE,if (version > 0),0
+0,get_file_modifier_mtime,10,3074457345618258684,greaterThan,version > 0,1
+0,get_file_modifier_mtime,11,3074457345618258685,IDENTIFIER,version,0
+0,get_file_modifier_mtime,12,3074457345618258686,LITERAL,0,0
+0,get_file_modifier_mtime,13,3074457345618258687,RETURN,"return get_file_modifier_mtime_v1 (repo_id, store_id, version,    head, path,    modifier, mtime);",0
+0,get_file_modifier_mtime,14,3074457345618258688,get_file_modifier_mtime_v1,"get_file_modifier_mtime_v1 (repo_id, store_id, version,    head, path,    modifier, mtime)",0
+0,get_file_modifier_mtime,15,3074457345618258689,IDENTIFIER,repo_id,0
+0,get_file_modifier_mtime,16,3074457345618258690,IDENTIFIER,store_id,0
+0,get_file_modifier_mtime,17,3074457345618258691,IDENTIFIER,version,0
+0,get_file_modifier_mtime,18,3074457345618258692,IDENTIFIER,head,0
+0,get_file_modifier_mtime,19,3074457345618258693,IDENTIFIER,path,0
+0,get_file_modifier_mtime,20,3074457345618258694,IDENTIFIER,modifier,0
+0,get_file_modifier_mtime,21,3074457345618258695,IDENTIFIER,mtime,0
+0,get_file_modifier_mtime,22,3074457345618258696,CONTROL_STRUCTURE,else,0
+0,get_file_modifier_mtime,23,3074457345618258697,RETURN,"return get_file_modifier_mtime_v0 (repo_id, store_id, version,    head, path,    modifier, mtime);",0
+0,get_file_modifier_mtime,24,3074457345618258698,get_file_modifier_mtime_v0,"get_file_modifier_mtime_v0 (repo_id, store_id, version,    head, path,    modifier, mtime)",0
+0,get_file_modifier_mtime,25,3074457345618258699,IDENTIFIER,repo_id,0
+0,get_file_modifier_mtime,26,3074457345618258700,IDENTIFIER,store_id,0
+0,get_file_modifier_mtime,27,3074457345618258701,IDENTIFIER,version,0
+0,get_file_modifier_mtime,28,3074457345618258702,IDENTIFIER,head,0
+0,get_file_modifier_mtime,29,3074457345618258703,IDENTIFIER,path,0
+0,get_file_modifier_mtime,30,3074457345618258704,IDENTIFIER,modifier,0
+0,get_file_modifier_mtime,31,3074457345618258705,IDENTIFIER,mtime,0
+0,get_file_modifier_mtime,32,3074457345618258706,METHOD_RETURN,ANY,0

@@ -1,0 +1,50 @@
+,function_name,id,number,first,next,type
+0,get_handle_of_path,0,3074457345618258674,METHOD,ANY get_handle_of_path (const wchar_t *path),0
+0,get_handle_of_path,1,3074457345618258675,PARAM,const wchar_t *path,0
+0,get_handle_of_path,2,3074457345618258676,BLOCK,<empty>,0
+0,get_handle_of_path,3,3074457345618258677,LOCAL,HANDLE dir_handle,0
+0,get_handle_of_path,4,3074457345618258678,assignment,dir_handle = NULL,1
+0,get_handle_of_path,5,3074457345618258679,IDENTIFIER,dir_handle,0
+0,get_handle_of_path,6,3074457345618258680,IDENTIFIER,NULL,0
+0,get_handle_of_path,7,3074457345618258681,assignment,"dir_handle = CreateFileW (path,  /* file name */  FILE_LIST_DIRECTORY,   /* desired access */  FILE_SHARE_DELETE | FILE_SHARE_READ  | FILE_SHARE_WRITE,/* share mode */  NULL,  /* securitry attr */  OPEN_EXISTING, /* open options */  FILE_FLAG_BACKUP_SEMANTICS |  FILE_FLAG_OVERLAPPED,  /* flags needed for asynchronous IO*/  NULL)",1
+0,get_handle_of_path,8,3074457345618258682,IDENTIFIER,dir_handle,0
+0,get_handle_of_path,9,3074457345618258683,CreateFileW,"CreateFileW (path,  /* file name */  FILE_LIST_DIRECTORY,   /* desired access */  FILE_SHARE_DELETE | FILE_SHARE_READ  | FILE_SHARE_WRITE,/* share mode */  NULL,  /* securitry attr */  OPEN_EXISTING, /* open options */  FILE_FLAG_BACKUP_SEMANTICS |  FILE_FLAG_OVERLAPPED,  /* flags needed for asynchronous IO*/  NULL)",0
+0,get_handle_of_path,10,3074457345618258684,IDENTIFIER,path,0
+0,get_handle_of_path,11,3074457345618258685,IDENTIFIER,FILE_LIST_DIRECTORY,0
+0,get_handle_of_path,12,3074457345618258686,or,FILE_SHARE_DELETE | FILE_SHARE_READ  | FILE_SHARE_WRITE,1
+0,get_handle_of_path,13,3074457345618258687,or,FILE_SHARE_DELETE | FILE_SHARE_READ,1
+0,get_handle_of_path,14,3074457345618258688,IDENTIFIER,FILE_SHARE_DELETE,0
+0,get_handle_of_path,15,3074457345618258689,IDENTIFIER,FILE_SHARE_READ,0
+0,get_handle_of_path,16,3074457345618258690,IDENTIFIER,FILE_SHARE_WRITE,0
+0,get_handle_of_path,17,3074457345618258691,IDENTIFIER,NULL,0
+0,get_handle_of_path,18,3074457345618258692,IDENTIFIER,OPEN_EXISTING,0
+0,get_handle_of_path,19,3074457345618258693,or,FILE_FLAG_BACKUP_SEMANTICS |  FILE_FLAG_OVERLAPPED,1
+0,get_handle_of_path,20,3074457345618258694,IDENTIFIER,FILE_FLAG_BACKUP_SEMANTICS,0
+0,get_handle_of_path,21,3074457345618258695,IDENTIFIER,FILE_FLAG_OVERLAPPED,0
+0,get_handle_of_path,22,3074457345618258696,IDENTIFIER,NULL,0
+0,get_handle_of_path,23,3074457345618258697,CONTROL_STRUCTURE,if (dir_handle == INVALID_HANDLE_VALUE),0
+0,get_handle_of_path,24,3074457345618258698,equals,dir_handle == INVALID_HANDLE_VALUE,1
+0,get_handle_of_path,25,3074457345618258699,IDENTIFIER,dir_handle,0
+0,get_handle_of_path,26,3074457345618258700,IDENTIFIER,INVALID_HANDLE_VALUE,0
+0,get_handle_of_path,27,3074457345618258701,BLOCK,<empty>,0
+0,get_handle_of_path,28,3074457345618258702,LOCAL,char* path_utf8,0
+0,get_handle_of_path,29,3074457345618258703,assignment,"*path_utf8 = g_utf16_to_utf8 (path, -1, NULL, NULL, NULL)",1
+0,get_handle_of_path,30,3074457345618258704,IDENTIFIER,path_utf8,0
+0,get_handle_of_path,31,3074457345618258705,g_utf16_to_utf8,"g_utf16_to_utf8 (path, -1, NULL, NULL, NULL)",0
+0,get_handle_of_path,32,3074457345618258706,IDENTIFIER,path,0
+0,get_handle_of_path,33,3074457345618258707,minus,-1,1
+0,get_handle_of_path,34,3074457345618258708,LITERAL,1,0
+0,get_handle_of_path,35,3074457345618258709,IDENTIFIER,NULL,0
+0,get_handle_of_path,36,3074457345618258710,IDENTIFIER,NULL,0
+0,get_handle_of_path,37,3074457345618258711,IDENTIFIER,NULL,0
+0,get_handle_of_path,38,3074457345618258712,seaf_warning,"seaf_warning(""failed to create dir handle for path %s, ""  ""error code %lu"", path_utf8, GetLastError())",0
+0,get_handle_of_path,39,3074457345618258713,LITERAL,"""failed to create dir handle for path %s, ""  ""error code %lu""",0
+0,get_handle_of_path,40,3074457345618258714,IDENTIFIER,path_utf8,0
+0,get_handle_of_path,41,3074457345618258715,GetLastError,GetLastError(),0
+0,get_handle_of_path,42,3074457345618258716,g_free,g_free (path_utf8),0
+0,get_handle_of_path,43,3074457345618258717,IDENTIFIER,path_utf8,0
+0,get_handle_of_path,44,3074457345618258718,RETURN,return NULL;,0
+0,get_handle_of_path,45,3074457345618258719,IDENTIFIER,NULL,0
+0,get_handle_of_path,46,3074457345618258720,RETURN,return dir_handle;,0
+0,get_handle_of_path,47,3074457345618258721,IDENTIFIER,dir_handle,0
+0,get_handle_of_path,48,3074457345618258722,METHOD_RETURN,ANY,0

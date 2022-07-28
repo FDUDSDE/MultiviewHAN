@@ -1,0 +1,57 @@
+,function_name,id,number,first,next,type
+0,writeReportInfo,0,3074457345618258674,METHOD,"void writeReportInfo (const KSCrashReportWriter* const writer,const char* const key,const char* const type,const char* const reportID,const char* const processName)",0
+0,writeReportInfo,1,3074457345618258675,PARAM,const KSCrashReportWriter* const writer,0
+0,writeReportInfo,2,3074457345618258676,PARAM,const char* const key,0
+0,writeReportInfo,3,3074457345618258677,PARAM,const char* const type,0
+0,writeReportInfo,4,3074457345618258678,PARAM,const char* const reportID,0
+0,writeReportInfo,5,3074457345618258679,PARAM,const char* const processName,0
+0,writeReportInfo,6,3074457345618258680,BLOCK,<empty>,0
+0,writeReportInfo,7,3074457345618258681,writer->beginObject,"writer->beginObject(writer, key)",0
+0,writeReportInfo,8,3074457345618258682,indirectFieldAccess,writer->beginObject,1
+0,writeReportInfo,9,3074457345618258683,IDENTIFIER,writer,0
+0,writeReportInfo,10,3074457345618258684,FIELD_IDENTIFIER,beginObject,0
+0,writeReportInfo,11,3074457345618258685,IDENTIFIER,writer,0
+0,writeReportInfo,12,3074457345618258686,IDENTIFIER,key,0
+0,writeReportInfo,13,3074457345618258687,BLOCK,<empty>,0
+0,writeReportInfo,14,3074457345618258688,writer->addStringElement,"writer->addStringElement(writer, KSCrashField_Version, KSCRASH_REPORT_VERSION)",0
+0,writeReportInfo,15,3074457345618258689,indirectFieldAccess,writer->addStringElement,1
+0,writeReportInfo,16,3074457345618258690,IDENTIFIER,writer,0
+0,writeReportInfo,17,3074457345618258691,FIELD_IDENTIFIER,addStringElement,0
+0,writeReportInfo,18,3074457345618258692,IDENTIFIER,writer,0
+0,writeReportInfo,19,3074457345618258693,IDENTIFIER,KSCrashField_Version,0
+0,writeReportInfo,20,3074457345618258694,IDENTIFIER,KSCRASH_REPORT_VERSION,0
+0,writeReportInfo,21,3074457345618258695,writer->addStringElement,"writer->addStringElement(writer, KSCrashField_ID, reportID)",0
+0,writeReportInfo,22,3074457345618258696,indirectFieldAccess,writer->addStringElement,1
+0,writeReportInfo,23,3074457345618258697,IDENTIFIER,writer,0
+0,writeReportInfo,24,3074457345618258698,FIELD_IDENTIFIER,addStringElement,0
+0,writeReportInfo,25,3074457345618258699,IDENTIFIER,writer,0
+0,writeReportInfo,26,3074457345618258700,IDENTIFIER,KSCrashField_ID,0
+0,writeReportInfo,27,3074457345618258701,IDENTIFIER,reportID,0
+0,writeReportInfo,28,3074457345618258702,writer->addStringElement,"writer->addStringElement(writer, KSCrashField_ProcessName, processName)",0
+0,writeReportInfo,29,3074457345618258703,indirectFieldAccess,writer->addStringElement,1
+0,writeReportInfo,30,3074457345618258704,IDENTIFIER,writer,0
+0,writeReportInfo,31,3074457345618258705,FIELD_IDENTIFIER,addStringElement,0
+0,writeReportInfo,32,3074457345618258706,IDENTIFIER,writer,0
+0,writeReportInfo,33,3074457345618258707,IDENTIFIER,KSCrashField_ProcessName,0
+0,writeReportInfo,34,3074457345618258708,IDENTIFIER,processName,0
+0,writeReportInfo,35,3074457345618258709,writer->addIntegerElement,"writer->addIntegerElement(writer, KSCrashField_Timestamp, time(NULL))",0
+0,writeReportInfo,36,3074457345618258710,indirectFieldAccess,writer->addIntegerElement,1
+0,writeReportInfo,37,3074457345618258711,IDENTIFIER,writer,0
+0,writeReportInfo,38,3074457345618258712,FIELD_IDENTIFIER,addIntegerElement,0
+0,writeReportInfo,39,3074457345618258713,IDENTIFIER,writer,0
+0,writeReportInfo,40,3074457345618258714,IDENTIFIER,KSCrashField_Timestamp,0
+0,writeReportInfo,41,3074457345618258715,time,time(NULL),0
+0,writeReportInfo,42,3074457345618258716,IDENTIFIER,NULL,0
+0,writeReportInfo,43,3074457345618258717,writer->addStringElement,"writer->addStringElement(writer, KSCrashField_Type, type)",0
+0,writeReportInfo,44,3074457345618258718,indirectFieldAccess,writer->addStringElement,1
+0,writeReportInfo,45,3074457345618258719,IDENTIFIER,writer,0
+0,writeReportInfo,46,3074457345618258720,FIELD_IDENTIFIER,addStringElement,0
+0,writeReportInfo,47,3074457345618258721,IDENTIFIER,writer,0
+0,writeReportInfo,48,3074457345618258722,IDENTIFIER,KSCrashField_Type,0
+0,writeReportInfo,49,3074457345618258723,IDENTIFIER,type,0
+0,writeReportInfo,50,3074457345618258724,writer->endContainer,writer->endContainer(writer),0
+0,writeReportInfo,51,3074457345618258725,indirectFieldAccess,writer->endContainer,1
+0,writeReportInfo,52,3074457345618258726,IDENTIFIER,writer,0
+0,writeReportInfo,53,3074457345618258727,FIELD_IDENTIFIER,endContainer,0
+0,writeReportInfo,54,3074457345618258728,IDENTIFIER,writer,0
+0,writeReportInfo,55,3074457345618258729,METHOD_RETURN,void,0

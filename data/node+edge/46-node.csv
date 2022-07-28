@@ -1,0 +1,96 @@
+,function_name,id,number,first,next,type
+0,prepareReportWriter,0,3074457345618258674,METHOD,"void prepareReportWriter (KSCrashReportWriter* const writer,KSJSONEncodeContext* const context)",0
+0,prepareReportWriter,1,3074457345618258675,PARAM,KSCrashReportWriter* const writer,0
+0,prepareReportWriter,2,3074457345618258676,PARAM,KSJSONEncodeContext* const context,0
+0,prepareReportWriter,3,3074457345618258677,BLOCK,<empty>,0
+0,prepareReportWriter,4,3074457345618258678,assignment,writer->addBooleanElement = addBooleanElement,1
+0,prepareReportWriter,5,3074457345618258679,indirectFieldAccess,writer->addBooleanElement,1
+0,prepareReportWriter,6,3074457345618258680,IDENTIFIER,writer,0
+0,prepareReportWriter,7,3074457345618258681,FIELD_IDENTIFIER,addBooleanElement,0
+0,prepareReportWriter,8,3074457345618258682,IDENTIFIER,addBooleanElement,0
+0,prepareReportWriter,9,3074457345618258683,assignment,writer->addFloatingPointElement = addFloatingPointElement,1
+0,prepareReportWriter,10,3074457345618258684,indirectFieldAccess,writer->addFloatingPointElement,1
+0,prepareReportWriter,11,3074457345618258685,IDENTIFIER,writer,0
+0,prepareReportWriter,12,3074457345618258686,FIELD_IDENTIFIER,addFloatingPointElement,0
+0,prepareReportWriter,13,3074457345618258687,IDENTIFIER,addFloatingPointElement,0
+0,prepareReportWriter,14,3074457345618258688,assignment,writer->addIntegerElement = addIntegerElement,1
+0,prepareReportWriter,15,3074457345618258689,indirectFieldAccess,writer->addIntegerElement,1
+0,prepareReportWriter,16,3074457345618258690,IDENTIFIER,writer,0
+0,prepareReportWriter,17,3074457345618258691,FIELD_IDENTIFIER,addIntegerElement,0
+0,prepareReportWriter,18,3074457345618258692,IDENTIFIER,addIntegerElement,0
+0,prepareReportWriter,19,3074457345618258693,assignment,writer->addUIntegerElement = addUIntegerElement,1
+0,prepareReportWriter,20,3074457345618258694,indirectFieldAccess,writer->addUIntegerElement,1
+0,prepareReportWriter,21,3074457345618258695,IDENTIFIER,writer,0
+0,prepareReportWriter,22,3074457345618258696,FIELD_IDENTIFIER,addUIntegerElement,0
+0,prepareReportWriter,23,3074457345618258697,IDENTIFIER,addUIntegerElement,0
+0,prepareReportWriter,24,3074457345618258698,assignment,writer->addStringElement = addStringElement,1
+0,prepareReportWriter,25,3074457345618258699,indirectFieldAccess,writer->addStringElement,1
+0,prepareReportWriter,26,3074457345618258700,IDENTIFIER,writer,0
+0,prepareReportWriter,27,3074457345618258701,FIELD_IDENTIFIER,addStringElement,0
+0,prepareReportWriter,28,3074457345618258702,IDENTIFIER,addStringElement,0
+0,prepareReportWriter,29,3074457345618258703,assignment,writer->addTextFileElement = addTextFileElement,1
+0,prepareReportWriter,30,3074457345618258704,indirectFieldAccess,writer->addTextFileElement,1
+0,prepareReportWriter,31,3074457345618258705,IDENTIFIER,writer,0
+0,prepareReportWriter,32,3074457345618258706,FIELD_IDENTIFIER,addTextFileElement,0
+0,prepareReportWriter,33,3074457345618258707,IDENTIFIER,addTextFileElement,0
+0,prepareReportWriter,34,3074457345618258708,assignment,writer->addTextFileLinesElement = addTextLinesFromFile,1
+0,prepareReportWriter,35,3074457345618258709,indirectFieldAccess,writer->addTextFileLinesElement,1
+0,prepareReportWriter,36,3074457345618258710,IDENTIFIER,writer,0
+0,prepareReportWriter,37,3074457345618258711,FIELD_IDENTIFIER,addTextFileLinesElement,0
+0,prepareReportWriter,38,3074457345618258712,IDENTIFIER,addTextLinesFromFile,0
+0,prepareReportWriter,39,3074457345618258713,assignment,writer->addJSONFileElement = addJSONElementFromFile,1
+0,prepareReportWriter,40,3074457345618258714,indirectFieldAccess,writer->addJSONFileElement,1
+0,prepareReportWriter,41,3074457345618258715,IDENTIFIER,writer,0
+0,prepareReportWriter,42,3074457345618258716,FIELD_IDENTIFIER,addJSONFileElement,0
+0,prepareReportWriter,43,3074457345618258717,IDENTIFIER,addJSONElementFromFile,0
+0,prepareReportWriter,44,3074457345618258718,assignment,writer->addDataElement = addDataElement,1
+0,prepareReportWriter,45,3074457345618258719,indirectFieldAccess,writer->addDataElement,1
+0,prepareReportWriter,46,3074457345618258720,IDENTIFIER,writer,0
+0,prepareReportWriter,47,3074457345618258721,FIELD_IDENTIFIER,addDataElement,0
+0,prepareReportWriter,48,3074457345618258722,IDENTIFIER,addDataElement,0
+0,prepareReportWriter,49,3074457345618258723,assignment,writer->beginDataElement = beginDataElement,1
+0,prepareReportWriter,50,3074457345618258724,indirectFieldAccess,writer->beginDataElement,1
+0,prepareReportWriter,51,3074457345618258725,IDENTIFIER,writer,0
+0,prepareReportWriter,52,3074457345618258726,FIELD_IDENTIFIER,beginDataElement,0
+0,prepareReportWriter,53,3074457345618258727,IDENTIFIER,beginDataElement,0
+0,prepareReportWriter,54,3074457345618258728,assignment,writer->appendDataElement = appendDataElement,1
+0,prepareReportWriter,55,3074457345618258729,indirectFieldAccess,writer->appendDataElement,1
+0,prepareReportWriter,56,3074457345618258730,IDENTIFIER,writer,0
+0,prepareReportWriter,57,3074457345618258731,FIELD_IDENTIFIER,appendDataElement,0
+0,prepareReportWriter,58,3074457345618258732,IDENTIFIER,appendDataElement,0
+0,prepareReportWriter,59,3074457345618258733,assignment,writer->endDataElement = endDataElement,1
+0,prepareReportWriter,60,3074457345618258734,indirectFieldAccess,writer->endDataElement,1
+0,prepareReportWriter,61,3074457345618258735,IDENTIFIER,writer,0
+0,prepareReportWriter,62,3074457345618258736,FIELD_IDENTIFIER,endDataElement,0
+0,prepareReportWriter,63,3074457345618258737,IDENTIFIER,endDataElement,0
+0,prepareReportWriter,64,3074457345618258738,assignment,writer->addUUIDElement = addUUIDElement,1
+0,prepareReportWriter,65,3074457345618258739,indirectFieldAccess,writer->addUUIDElement,1
+0,prepareReportWriter,66,3074457345618258740,IDENTIFIER,writer,0
+0,prepareReportWriter,67,3074457345618258741,FIELD_IDENTIFIER,addUUIDElement,0
+0,prepareReportWriter,68,3074457345618258742,IDENTIFIER,addUUIDElement,0
+0,prepareReportWriter,69,3074457345618258743,assignment,writer->addJSONElement = addJSONElement,1
+0,prepareReportWriter,70,3074457345618258744,indirectFieldAccess,writer->addJSONElement,1
+0,prepareReportWriter,71,3074457345618258745,IDENTIFIER,writer,0
+0,prepareReportWriter,72,3074457345618258746,FIELD_IDENTIFIER,addJSONElement,0
+0,prepareReportWriter,73,3074457345618258747,IDENTIFIER,addJSONElement,0
+0,prepareReportWriter,74,3074457345618258748,assignment,writer->beginObject = beginObject,1
+0,prepareReportWriter,75,3074457345618258749,indirectFieldAccess,writer->beginObject,1
+0,prepareReportWriter,76,3074457345618258750,IDENTIFIER,writer,0
+0,prepareReportWriter,77,3074457345618258751,FIELD_IDENTIFIER,beginObject,0
+0,prepareReportWriter,78,3074457345618258752,IDENTIFIER,beginObject,0
+0,prepareReportWriter,79,3074457345618258753,assignment,writer->beginArray = beginArray,1
+0,prepareReportWriter,80,3074457345618258754,indirectFieldAccess,writer->beginArray,1
+0,prepareReportWriter,81,3074457345618258755,IDENTIFIER,writer,0
+0,prepareReportWriter,82,3074457345618258756,FIELD_IDENTIFIER,beginArray,0
+0,prepareReportWriter,83,3074457345618258757,IDENTIFIER,beginArray,0
+0,prepareReportWriter,84,3074457345618258758,assignment,writer->endContainer = endContainer,1
+0,prepareReportWriter,85,3074457345618258759,indirectFieldAccess,writer->endContainer,1
+0,prepareReportWriter,86,3074457345618258760,IDENTIFIER,writer,0
+0,prepareReportWriter,87,3074457345618258761,FIELD_IDENTIFIER,endContainer,0
+0,prepareReportWriter,88,3074457345618258762,IDENTIFIER,endContainer,0
+0,prepareReportWriter,89,3074457345618258763,assignment,writer->context = context,1
+0,prepareReportWriter,90,3074457345618258764,indirectFieldAccess,writer->context,1
+0,prepareReportWriter,91,3074457345618258765,IDENTIFIER,writer,0
+0,prepareReportWriter,92,3074457345618258766,FIELD_IDENTIFIER,context,0
+0,prepareReportWriter,93,3074457345618258767,IDENTIFIER,context,0
+0,prepareReportWriter,94,3074457345618258768,METHOD_RETURN,void,0

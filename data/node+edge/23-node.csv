@@ -1,0 +1,20 @@
+,function_name,id,number,first,next,type
+0,is_fast_forward,0,3074457345618258674,METHOD,"ANY is_fast_forward (const char *repo_id,int version,const char *src_head,const char *dst_head)",0
+0,is_fast_forward,1,3074457345618258675,PARAM,const char *repo_id,0
+0,is_fast_forward,2,3074457345618258676,PARAM,int version,0
+0,is_fast_forward,3,3074457345618258677,PARAM,const char *src_head,0
+0,is_fast_forward,4,3074457345618258678,PARAM,const char *dst_head,0
+0,is_fast_forward,5,3074457345618258679,BLOCK,<empty>,0
+0,is_fast_forward,6,3074457345618258680,LOCAL,VCCompareResult res,0
+0,is_fast_forward,7,3074457345618258681,assignment,"res = vc_compare_commits (repo_id, version, src_head, dst_head)",1
+0,is_fast_forward,8,3074457345618258682,IDENTIFIER,res,0
+0,is_fast_forward,9,3074457345618258683,vc_compare_commits,"vc_compare_commits (repo_id, version, src_head, dst_head)",0
+0,is_fast_forward,10,3074457345618258684,IDENTIFIER,repo_id,0
+0,is_fast_forward,11,3074457345618258685,IDENTIFIER,version,0
+0,is_fast_forward,12,3074457345618258686,IDENTIFIER,src_head,0
+0,is_fast_forward,13,3074457345618258687,IDENTIFIER,dst_head,0
+0,is_fast_forward,14,3074457345618258688,RETURN,return (res == VC_FAST_FORWARD);,0
+0,is_fast_forward,15,3074457345618258689,equals,res == VC_FAST_FORWARD,1
+0,is_fast_forward,16,3074457345618258690,IDENTIFIER,res,0
+0,is_fast_forward,17,3074457345618258691,IDENTIFIER,VC_FAST_FORWARD,0
+0,is_fast_forward,18,3074457345618258692,METHOD_RETURN,ANY,0

@@ -1,0 +1,49 @@
+,function_name,id,number,first,next,type
+0,writeNotableRegisters,0,3074457345618258674,METHOD,"void writeNotableRegisters (const KSCrashReportWriter* const writer,const struct KSMachineContext* const machineContext)",0
+0,writeNotableRegisters,1,3074457345618258675,PARAM,const KSCrashReportWriter* const writer,0
+0,writeNotableRegisters,2,3074457345618258676,PARAM,const struct KSMachineContext* const machineContext,0
+0,writeNotableRegisters,3,3074457345618258677,BLOCK,<empty>,0
+0,writeNotableRegisters,4,3074457345618258678,LOCAL,char[30] registerNameBuff,0
+0,writeNotableRegisters,5,3074457345618258679,LOCAL,const char* registerName,0
+0,writeNotableRegisters,6,3074457345618258680,LOCAL,const int numRegisters,0
+0,writeNotableRegisters,7,3074457345618258681,assignment,numRegisters = kscpu_numRegisters(),1
+0,writeNotableRegisters,8,3074457345618258682,IDENTIFIER,numRegisters,0
+0,writeNotableRegisters,9,3074457345618258683,kscpu_numRegisters,kscpu_numRegisters(),0
+0,writeNotableRegisters,10,3074457345618258684,CONTROL_STRUCTURE,for (int reg = 0;reg < numRegisters;reg++),0
+0,writeNotableRegisters,11,3074457345618258685,LOCAL,int reg,0
+0,writeNotableRegisters,12,3074457345618258686,assignment,reg = 0,1
+0,writeNotableRegisters,13,3074457345618258687,IDENTIFIER,reg,0
+0,writeNotableRegisters,14,3074457345618258688,LITERAL,0,0
+0,writeNotableRegisters,15,3074457345618258689,lessThan,reg < numRegisters,1
+0,writeNotableRegisters,16,3074457345618258690,IDENTIFIER,reg,0
+0,writeNotableRegisters,17,3074457345618258691,IDENTIFIER,numRegisters,0
+0,writeNotableRegisters,18,3074457345618258692,postIncrement,reg++,1
+0,writeNotableRegisters,19,3074457345618258693,IDENTIFIER,reg,0
+0,writeNotableRegisters,20,3074457345618258694,BLOCK,<empty>,0
+0,writeNotableRegisters,21,3074457345618258695,assignment,registerName = kscpu_registerName(reg),1
+0,writeNotableRegisters,22,3074457345618258696,IDENTIFIER,registerName,0
+0,writeNotableRegisters,23,3074457345618258697,kscpu_registerName,kscpu_registerName(reg),0
+0,writeNotableRegisters,24,3074457345618258698,IDENTIFIER,reg,0
+0,writeNotableRegisters,25,3074457345618258699,CONTROL_STRUCTURE,if (registerName == NULL),0
+0,writeNotableRegisters,26,3074457345618258700,equals,registerName == NULL,1
+0,writeNotableRegisters,27,3074457345618258701,IDENTIFIER,registerName,0
+0,writeNotableRegisters,28,3074457345618258702,IDENTIFIER,NULL,0
+0,writeNotableRegisters,29,3074457345618258703,BLOCK,<empty>,0
+0,writeNotableRegisters,30,3074457345618258704,snprintf,"snprintf(registerNameBuff, sizeof(registerNameBuff), ""r%d"", reg)",0
+0,writeNotableRegisters,31,3074457345618258705,IDENTIFIER,registerNameBuff,0
+0,writeNotableRegisters,32,3074457345618258706,sizeOf,sizeof(registerNameBuff),1
+0,writeNotableRegisters,33,3074457345618258707,IDENTIFIER,registerNameBuff,0
+0,writeNotableRegisters,34,3074457345618258708,LITERAL,"""r%d""",0
+0,writeNotableRegisters,35,3074457345618258709,IDENTIFIER,reg,0
+0,writeNotableRegisters,36,3074457345618258710,assignment,registerName = registerNameBuff,1
+0,writeNotableRegisters,37,3074457345618258711,IDENTIFIER,registerName,0
+0,writeNotableRegisters,38,3074457345618258712,IDENTIFIER,registerNameBuff,0
+0,writeNotableRegisters,39,3074457345618258713,writeMemoryContentsIfNotable,"writeMemoryContentsIfNotable(writer,  registerName,  (uintptr_t)kscpu_registerValue(machineContext, reg))",0
+0,writeNotableRegisters,40,3074457345618258714,IDENTIFIER,writer,0
+0,writeNotableRegisters,41,3074457345618258715,IDENTIFIER,registerName,0
+0,writeNotableRegisters,42,3074457345618258716,cast,"(uintptr_t)kscpu_registerValue(machineContext, reg)",1
+0,writeNotableRegisters,43,3074457345618258717,UNKNOWN,uintptr_t,0
+0,writeNotableRegisters,44,3074457345618258718,kscpu_registerValue,"kscpu_registerValue(machineContext, reg)",0
+0,writeNotableRegisters,45,3074457345618258719,IDENTIFIER,machineContext,0
+0,writeNotableRegisters,46,3074457345618258720,IDENTIFIER,reg,0
+0,writeNotableRegisters,47,3074457345618258721,METHOD_RETURN,void,0

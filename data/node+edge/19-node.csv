@@ -1,0 +1,45 @@
+,function_name,id,number,first,next,type
+0,ccnet_locale_from_utf8,0,3074457345618258674,METHOD,char* ccnet_locale_from_utf8 (const gchar *src),0
+0,ccnet_locale_from_utf8,1,3074457345618258675,PARAM,const gchar *src,0
+0,ccnet_locale_from_utf8,2,3074457345618258676,BLOCK,<empty>,0
+0,ccnet_locale_from_utf8,3,3074457345618258677,CONTROL_STRUCTURE,if (!src),0
+0,ccnet_locale_from_utf8,4,3074457345618258678,logicalNot,!src,1
+0,ccnet_locale_from_utf8,5,3074457345618258679,IDENTIFIER,src,0
+0,ccnet_locale_from_utf8,6,3074457345618258680,RETURN,return NULL;,0
+0,ccnet_locale_from_utf8,7,3074457345618258681,IDENTIFIER,NULL,0
+0,ccnet_locale_from_utf8,8,3074457345618258682,LOCAL,gsize bytes_read,0
+0,ccnet_locale_from_utf8,9,3074457345618258683,assignment,bytes_read = 0,1
+0,ccnet_locale_from_utf8,10,3074457345618258684,IDENTIFIER,bytes_read,0
+0,ccnet_locale_from_utf8,11,3074457345618258685,LITERAL,0,0
+0,ccnet_locale_from_utf8,12,3074457345618258686,LOCAL,gsize bytes_written,0
+0,ccnet_locale_from_utf8,13,3074457345618258687,assignment,bytes_written = 0,1
+0,ccnet_locale_from_utf8,14,3074457345618258688,IDENTIFIER,bytes_written,0
+0,ccnet_locale_from_utf8,15,3074457345618258689,LITERAL,0,0
+0,ccnet_locale_from_utf8,16,3074457345618258690,LOCAL,GError error,0
+0,ccnet_locale_from_utf8,17,3074457345618258691,assignment,*error = NULL,1
+0,ccnet_locale_from_utf8,18,3074457345618258692,IDENTIFIER,error,0
+0,ccnet_locale_from_utf8,19,3074457345618258693,IDENTIFIER,NULL,0
+0,ccnet_locale_from_utf8,20,3074457345618258694,LOCAL,gchar dst,0
+0,ccnet_locale_from_utf8,21,3074457345618258695,assignment,*dst = NULL,1
+0,ccnet_locale_from_utf8,22,3074457345618258696,IDENTIFIER,dst,0
+0,ccnet_locale_from_utf8,23,3074457345618258697,IDENTIFIER,NULL,0
+0,ccnet_locale_from_utf8,24,3074457345618258698,assignment,"dst = g_locale_from_utf8 (src,   /* locale specific string */  strlen(src),   /* len of src */  &bytes_read,   /* length processed */  &bytes_written,/* output length */  &error)",1
+0,ccnet_locale_from_utf8,25,3074457345618258699,IDENTIFIER,dst,0
+0,ccnet_locale_from_utf8,26,3074457345618258700,g_locale_from_utf8,"g_locale_from_utf8 (src,   /* locale specific string */  strlen(src),   /* len of src */  &bytes_read,   /* length processed */  &bytes_written,/* output length */  &error)",0
+0,ccnet_locale_from_utf8,27,3074457345618258701,IDENTIFIER,src,0
+0,ccnet_locale_from_utf8,28,3074457345618258702,strlen,strlen(src),0
+0,ccnet_locale_from_utf8,29,3074457345618258703,IDENTIFIER,src,0
+0,ccnet_locale_from_utf8,30,3074457345618258704,addressOf,&bytes_read,1
+0,ccnet_locale_from_utf8,31,3074457345618258705,IDENTIFIER,bytes_read,0
+0,ccnet_locale_from_utf8,32,3074457345618258706,addressOf,&bytes_written,1
+0,ccnet_locale_from_utf8,33,3074457345618258707,IDENTIFIER,bytes_written,0
+0,ccnet_locale_from_utf8,34,3074457345618258708,addressOf,&error,1
+0,ccnet_locale_from_utf8,35,3074457345618258709,IDENTIFIER,error,0
+0,ccnet_locale_from_utf8,36,3074457345618258710,CONTROL_STRUCTURE,if (error),0
+0,ccnet_locale_from_utf8,37,3074457345618258711,IDENTIFIER,error,0
+0,ccnet_locale_from_utf8,38,3074457345618258712,BLOCK,<empty>,0
+0,ccnet_locale_from_utf8,39,3074457345618258713,RETURN,return NULL;,0
+0,ccnet_locale_from_utf8,40,3074457345618258714,IDENTIFIER,NULL,0
+0,ccnet_locale_from_utf8,41,3074457345618258715,RETURN,return dst;,0
+0,ccnet_locale_from_utf8,42,3074457345618258716,IDENTIFIER,dst,0
+0,ccnet_locale_from_utf8,43,3074457345618258717,METHOD_RETURN,char*,0

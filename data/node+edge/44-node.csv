@@ -1,0 +1,81 @@
+,function_name,id,number,first,next,type
+0,writeProcessState,0,3074457345618258674,METHOD,"void writeProcessState (const KSCrashReportWriter* const writer,const char* const key,const KSCrash_MonitorContext* const monitorContext)",0
+0,writeProcessState,1,3074457345618258675,PARAM,const KSCrashReportWriter* const writer,0
+0,writeProcessState,2,3074457345618258676,PARAM,const char* const key,0
+0,writeProcessState,3,3074457345618258677,PARAM,const KSCrash_MonitorContext* const monitorContext,0
+0,writeProcessState,4,3074457345618258678,BLOCK,<empty>,0
+0,writeProcessState,5,3074457345618258679,writer->beginObject,"writer->beginObject(writer, key)",0
+0,writeProcessState,6,3074457345618258680,indirectFieldAccess,writer->beginObject,1
+0,writeProcessState,7,3074457345618258681,IDENTIFIER,writer,0
+0,writeProcessState,8,3074457345618258682,FIELD_IDENTIFIER,beginObject,0
+0,writeProcessState,9,3074457345618258683,IDENTIFIER,writer,0
+0,writeProcessState,10,3074457345618258684,IDENTIFIER,key,0
+0,writeProcessState,11,3074457345618258685,BLOCK,<empty>,0
+0,writeProcessState,12,3074457345618258686,CONTROL_STRUCTURE,if (monitorContext->ZombieException.address != 0),0
+0,writeProcessState,13,3074457345618258687,notEquals,monitorContext->ZombieException.address != 0,1
+0,writeProcessState,14,3074457345618258688,fieldAccess,monitorContext->ZombieException.address,1
+0,writeProcessState,15,3074457345618258689,indirectFieldAccess,monitorContext->ZombieException,1
+0,writeProcessState,16,3074457345618258690,IDENTIFIER,monitorContext,0
+0,writeProcessState,17,3074457345618258691,FIELD_IDENTIFIER,ZombieException,0
+0,writeProcessState,18,3074457345618258692,FIELD_IDENTIFIER,address,0
+0,writeProcessState,19,3074457345618258693,LITERAL,0,0
+0,writeProcessState,20,3074457345618258694,BLOCK,<empty>,0
+0,writeProcessState,21,3074457345618258695,writer->beginObject,"writer->beginObject(writer, KSCrashField_LastDeallocedNSException)",0
+0,writeProcessState,22,3074457345618258696,indirectFieldAccess,writer->beginObject,1
+0,writeProcessState,23,3074457345618258697,IDENTIFIER,writer,0
+0,writeProcessState,24,3074457345618258698,FIELD_IDENTIFIER,beginObject,0
+0,writeProcessState,25,3074457345618258699,IDENTIFIER,writer,0
+0,writeProcessState,26,3074457345618258700,IDENTIFIER,KSCrashField_LastDeallocedNSException,0
+0,writeProcessState,27,3074457345618258701,BLOCK,<empty>,0
+0,writeProcessState,28,3074457345618258702,writer->addUIntegerElement,"writer->addUIntegerElement(writer, KSCrashField_Address, monitorContext->ZombieException.address)",0
+0,writeProcessState,29,3074457345618258703,indirectFieldAccess,writer->addUIntegerElement,1
+0,writeProcessState,30,3074457345618258704,IDENTIFIER,writer,0
+0,writeProcessState,31,3074457345618258705,FIELD_IDENTIFIER,addUIntegerElement,0
+0,writeProcessState,32,3074457345618258706,IDENTIFIER,writer,0
+0,writeProcessState,33,3074457345618258707,IDENTIFIER,KSCrashField_Address,0
+0,writeProcessState,34,3074457345618258708,fieldAccess,monitorContext->ZombieException.address,1
+0,writeProcessState,35,3074457345618258709,indirectFieldAccess,monitorContext->ZombieException,1
+0,writeProcessState,36,3074457345618258710,IDENTIFIER,monitorContext,0
+0,writeProcessState,37,3074457345618258711,FIELD_IDENTIFIER,ZombieException,0
+0,writeProcessState,38,3074457345618258712,FIELD_IDENTIFIER,address,0
+0,writeProcessState,39,3074457345618258713,writer->addStringElement,"writer->addStringElement(writer, KSCrashField_Name, monitorContext->ZombieException.name)",0
+0,writeProcessState,40,3074457345618258714,indirectFieldAccess,writer->addStringElement,1
+0,writeProcessState,41,3074457345618258715,IDENTIFIER,writer,0
+0,writeProcessState,42,3074457345618258716,FIELD_IDENTIFIER,addStringElement,0
+0,writeProcessState,43,3074457345618258717,IDENTIFIER,writer,0
+0,writeProcessState,44,3074457345618258718,IDENTIFIER,KSCrashField_Name,0
+0,writeProcessState,45,3074457345618258719,fieldAccess,monitorContext->ZombieException.name,1
+0,writeProcessState,46,3074457345618258720,indirectFieldAccess,monitorContext->ZombieException,1
+0,writeProcessState,47,3074457345618258721,IDENTIFIER,monitorContext,0
+0,writeProcessState,48,3074457345618258722,FIELD_IDENTIFIER,ZombieException,0
+0,writeProcessState,49,3074457345618258723,FIELD_IDENTIFIER,name,0
+0,writeProcessState,50,3074457345618258724,writer->addStringElement,"writer->addStringElement(writer, KSCrashField_Reason, monitorContext->ZombieException.reason)",0
+0,writeProcessState,51,3074457345618258725,indirectFieldAccess,writer->addStringElement,1
+0,writeProcessState,52,3074457345618258726,IDENTIFIER,writer,0
+0,writeProcessState,53,3074457345618258727,FIELD_IDENTIFIER,addStringElement,0
+0,writeProcessState,54,3074457345618258728,IDENTIFIER,writer,0
+0,writeProcessState,55,3074457345618258729,IDENTIFIER,KSCrashField_Reason,0
+0,writeProcessState,56,3074457345618258730,fieldAccess,monitorContext->ZombieException.reason,1
+0,writeProcessState,57,3074457345618258731,indirectFieldAccess,monitorContext->ZombieException,1
+0,writeProcessState,58,3074457345618258732,IDENTIFIER,monitorContext,0
+0,writeProcessState,59,3074457345618258733,FIELD_IDENTIFIER,ZombieException,0
+0,writeProcessState,60,3074457345618258734,FIELD_IDENTIFIER,reason,0
+0,writeProcessState,61,3074457345618258735,writeAddressReferencedByString,"writeAddressReferencedByString(writer, KSCrashField_ReferencedObject, monitorContext->ZombieException.reason)",0
+0,writeProcessState,62,3074457345618258736,IDENTIFIER,writer,0
+0,writeProcessState,63,3074457345618258737,IDENTIFIER,KSCrashField_ReferencedObject,0
+0,writeProcessState,64,3074457345618258738,fieldAccess,monitorContext->ZombieException.reason,1
+0,writeProcessState,65,3074457345618258739,indirectFieldAccess,monitorContext->ZombieException,1
+0,writeProcessState,66,3074457345618258740,IDENTIFIER,monitorContext,0
+0,writeProcessState,67,3074457345618258741,FIELD_IDENTIFIER,ZombieException,0
+0,writeProcessState,68,3074457345618258742,FIELD_IDENTIFIER,reason,0
+0,writeProcessState,69,3074457345618258743,writer->endContainer,writer->endContainer(writer),0
+0,writeProcessState,70,3074457345618258744,indirectFieldAccess,writer->endContainer,1
+0,writeProcessState,71,3074457345618258745,IDENTIFIER,writer,0
+0,writeProcessState,72,3074457345618258746,FIELD_IDENTIFIER,endContainer,0
+0,writeProcessState,73,3074457345618258747,IDENTIFIER,writer,0
+0,writeProcessState,74,3074457345618258748,writer->endContainer,writer->endContainer(writer),0
+0,writeProcessState,75,3074457345618258749,indirectFieldAccess,writer->endContainer,1
+0,writeProcessState,76,3074457345618258750,IDENTIFIER,writer,0
+0,writeProcessState,77,3074457345618258751,FIELD_IDENTIFIER,endContainer,0
+0,writeProcessState,78,3074457345618258752,IDENTIFIER,writer,0
+0,writeProcessState,79,3074457345618258753,METHOD_RETURN,void,0

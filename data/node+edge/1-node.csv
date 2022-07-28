@@ -1,0 +1,65 @@
+,function_name,id,number,first,next,type
+0,add_handle_to_iocp,0,3074457345618258674,METHOD,"ANY add_handle_to_iocp (SeafWTMonitor *monitor,HANDLE hAdd)",0
+0,add_handle_to_iocp,1,3074457345618258675,PARAM,SeafWTMonitor *monitor,0
+0,add_handle_to_iocp,2,3074457345618258676,PARAM,HANDLE hAdd,0
+0,add_handle_to_iocp,3,3074457345618258677,BLOCK,<empty>,0
+0,add_handle_to_iocp,4,3074457345618258678,LOCAL,SeafWTMonitorPriv priv,0
+0,add_handle_to_iocp,5,3074457345618258679,assignment,*priv = monitor->priv,1
+0,add_handle_to_iocp,6,3074457345618258680,IDENTIFIER,priv,0
+0,add_handle_to_iocp,7,3074457345618258681,indirectFieldAccess,monitor->priv,1
+0,add_handle_to_iocp,8,3074457345618258682,IDENTIFIER,monitor,0
+0,add_handle_to_iocp,9,3074457345618258683,FIELD_IDENTIFIER,priv,0
+0,add_handle_to_iocp,10,3074457345618258684,CONTROL_STRUCTURE,if (!priv || !hAdd),0
+0,add_handle_to_iocp,11,3074457345618258685,logicalOr,!priv || !hAdd,1
+0,add_handle_to_iocp,12,3074457345618258686,logicalNot,!priv,1
+0,add_handle_to_iocp,13,3074457345618258687,IDENTIFIER,priv,0
+0,add_handle_to_iocp,14,3074457345618258688,logicalNot,!hAdd,1
+0,add_handle_to_iocp,15,3074457345618258689,IDENTIFIER,hAdd,0
+0,add_handle_to_iocp,16,3074457345618258690,RETURN,return FALSE;,0
+0,add_handle_to_iocp,17,3074457345618258691,IDENTIFIER,FALSE,0
+0,add_handle_to_iocp,18,3074457345618258692,assignment,"priv->iocp_handle = CreateIoCompletionPort (hAdd,  /* handle to add */  priv->iocp_handle, /* iocp handle */  (ULONG_PTR)hAdd,   /* key for this handle */  1)",1
+0,add_handle_to_iocp,19,3074457345618258693,indirectFieldAccess,priv->iocp_handle,1
+0,add_handle_to_iocp,20,3074457345618258694,IDENTIFIER,priv,0
+0,add_handle_to_iocp,21,3074457345618258695,FIELD_IDENTIFIER,iocp_handle,0
+0,add_handle_to_iocp,22,3074457345618258696,CreateIoCompletionPort,"CreateIoCompletionPort (hAdd,  /* handle to add */  priv->iocp_handle, /* iocp handle */  (ULONG_PTR)hAdd,   /* key for this handle */  1)",0
+0,add_handle_to_iocp,23,3074457345618258697,IDENTIFIER,hAdd,0
+0,add_handle_to_iocp,24,3074457345618258698,indirectFieldAccess,priv->iocp_handle,1
+0,add_handle_to_iocp,25,3074457345618258699,IDENTIFIER,priv,0
+0,add_handle_to_iocp,26,3074457345618258700,FIELD_IDENTIFIER,iocp_handle,0
+0,add_handle_to_iocp,27,3074457345618258701,cast,(ULONG_PTR)hAdd,1
+0,add_handle_to_iocp,28,3074457345618258702,UNKNOWN,ULONG_PTR,0
+0,add_handle_to_iocp,29,3074457345618258703,IDENTIFIER,hAdd,0
+0,add_handle_to_iocp,30,3074457345618258704,LITERAL,1,0
+0,add_handle_to_iocp,31,3074457345618258705,CONTROL_STRUCTURE,if (!priv->iocp_handle),0
+0,add_handle_to_iocp,32,3074457345618258706,logicalNot,!priv->iocp_handle,1
+0,add_handle_to_iocp,33,3074457345618258707,indirectFieldAccess,priv->iocp_handle,1
+0,add_handle_to_iocp,34,3074457345618258708,IDENTIFIER,priv,0
+0,add_handle_to_iocp,35,3074457345618258709,FIELD_IDENTIFIER,iocp_handle,0
+0,add_handle_to_iocp,36,3074457345618258710,BLOCK,<empty>,0
+0,add_handle_to_iocp,37,3074457345618258711,seaf_warning,"seaf_warning (""failed to create/add iocp, error code %lu"",   GetLastError())",0
+0,add_handle_to_iocp,38,3074457345618258712,LITERAL,"""failed to create/add iocp, error code %lu""",0
+0,add_handle_to_iocp,39,3074457345618258713,GetLastError,GetLastError(),0
+0,add_handle_to_iocp,40,3074457345618258714,RETURN,return FALSE;,0
+0,add_handle_to_iocp,41,3074457345618258715,IDENTIFIER,FALSE,0
+0,add_handle_to_iocp,42,3074457345618258716,CONTROL_STRUCTURE,if (hAdd == (HANDLE)monitor->cmd_pipe[0]),0
+0,add_handle_to_iocp,43,3074457345618258717,equals,hAdd == (HANDLE)monitor->cmd_pipe[0],1
+0,add_handle_to_iocp,44,3074457345618258718,IDENTIFIER,hAdd,0
+0,add_handle_to_iocp,45,3074457345618258719,cast,(HANDLE)monitor->cmd_pipe[0],1
+0,add_handle_to_iocp,46,3074457345618258720,UNKNOWN,HANDLE,0
+0,add_handle_to_iocp,47,3074457345618258721,indirectIndexAccess,monitor->cmd_pipe[0],1
+0,add_handle_to_iocp,48,3074457345618258722,indirectFieldAccess,monitor->cmd_pipe,1
+0,add_handle_to_iocp,49,3074457345618258723,IDENTIFIER,monitor,0
+0,add_handle_to_iocp,50,3074457345618258724,FIELD_IDENTIFIER,cmd_pipe,0
+0,add_handle_to_iocp,51,3074457345618258725,LITERAL,0,0
+0,add_handle_to_iocp,52,3074457345618258726,BLOCK,<empty>,0
+0,add_handle_to_iocp,53,3074457345618258727,RETURN,"return start_watch_cmd_pipe (monitor, NULL);",0
+0,add_handle_to_iocp,54,3074457345618258728,start_watch_cmd_pipe,"start_watch_cmd_pipe (monitor, NULL)",0
+0,add_handle_to_iocp,55,3074457345618258729,IDENTIFIER,monitor,0
+0,add_handle_to_iocp,56,3074457345618258730,IDENTIFIER,NULL,0
+0,add_handle_to_iocp,57,3074457345618258731,CONTROL_STRUCTURE,else,0
+0,add_handle_to_iocp,58,3074457345618258732,BLOCK,<empty>,0
+0,add_handle_to_iocp,59,3074457345618258733,RETURN,"return start_watch_dir_change (priv, hAdd);",0
+0,add_handle_to_iocp,60,3074457345618258734,start_watch_dir_change,"start_watch_dir_change (priv, hAdd)",0
+0,add_handle_to_iocp,61,3074457345618258735,IDENTIFIER,priv,0
+0,add_handle_to_iocp,62,3074457345618258736,IDENTIFIER,hAdd,0
+0,add_handle_to_iocp,63,3074457345618258737,METHOD_RETURN,ANY,0

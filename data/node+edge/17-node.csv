@@ -1,0 +1,41 @@
+,function_name,id,number,first,next,type
+0,ccnet_key_file_get_string,0,3074457345618258674,METHOD,"ANY ccnet_key_file_get_string (GKeyFile *keyf,const char *category,const char *key)",0
+0,ccnet_key_file_get_string,1,3074457345618258675,PARAM,GKeyFile *keyf,0
+0,ccnet_key_file_get_string,2,3074457345618258676,PARAM,const char *category,0
+0,ccnet_key_file_get_string,3,3074457345618258677,PARAM,const char *key,0
+0,ccnet_key_file_get_string,4,3074457345618258678,BLOCK,<empty>,0
+0,ccnet_key_file_get_string,5,3074457345618258679,LOCAL,gchar v,0
+0,ccnet_key_file_get_string,6,3074457345618258680,CONTROL_STRUCTURE,"if (!g_key_file_has_key (keyf, category, key, NULL))",0
+0,ccnet_key_file_get_string,7,3074457345618258681,logicalNot,"!g_key_file_has_key (keyf, category, key, NULL)",1
+0,ccnet_key_file_get_string,8,3074457345618258682,g_key_file_has_key,"g_key_file_has_key (keyf, category, key, NULL)",0
+0,ccnet_key_file_get_string,9,3074457345618258683,IDENTIFIER,keyf,0
+0,ccnet_key_file_get_string,10,3074457345618258684,IDENTIFIER,category,0
+0,ccnet_key_file_get_string,11,3074457345618258685,IDENTIFIER,key,0
+0,ccnet_key_file_get_string,12,3074457345618258686,IDENTIFIER,NULL,0
+0,ccnet_key_file_get_string,13,3074457345618258687,RETURN,return NULL;,0
+0,ccnet_key_file_get_string,14,3074457345618258688,IDENTIFIER,NULL,0
+0,ccnet_key_file_get_string,15,3074457345618258689,assignment,"v = g_key_file_get_string (keyf, category, key, NULL)",1
+0,ccnet_key_file_get_string,16,3074457345618258690,IDENTIFIER,v,0
+0,ccnet_key_file_get_string,17,3074457345618258691,g_key_file_get_string,"g_key_file_get_string (keyf, category, key, NULL)",0
+0,ccnet_key_file_get_string,18,3074457345618258692,IDENTIFIER,keyf,0
+0,ccnet_key_file_get_string,19,3074457345618258693,IDENTIFIER,category,0
+0,ccnet_key_file_get_string,20,3074457345618258694,IDENTIFIER,key,0
+0,ccnet_key_file_get_string,21,3074457345618258695,IDENTIFIER,NULL,0
+0,ccnet_key_file_get_string,22,3074457345618258696,CONTROL_STRUCTURE,if (v != NULL && v[0] == '\0'),0
+0,ccnet_key_file_get_string,23,3074457345618258697,logicalAnd,v != NULL && v[0] == '\0',1
+0,ccnet_key_file_get_string,24,3074457345618258698,notEquals,v != NULL,1
+0,ccnet_key_file_get_string,25,3074457345618258699,IDENTIFIER,v,0
+0,ccnet_key_file_get_string,26,3074457345618258700,IDENTIFIER,NULL,0
+0,ccnet_key_file_get_string,27,3074457345618258701,equals,v[0] == '\0',1
+0,ccnet_key_file_get_string,28,3074457345618258702,indirectIndexAccess,v[0],1
+0,ccnet_key_file_get_string,29,3074457345618258703,IDENTIFIER,v,0
+0,ccnet_key_file_get_string,30,3074457345618258704,LITERAL,0,0
+0,ccnet_key_file_get_string,31,3074457345618258705,LITERAL,'\0',0
+0,ccnet_key_file_get_string,32,3074457345618258706,BLOCK,<empty>,0
+0,ccnet_key_file_get_string,33,3074457345618258707,g_free,g_free(v),0
+0,ccnet_key_file_get_string,34,3074457345618258708,IDENTIFIER,v,0
+0,ccnet_key_file_get_string,35,3074457345618258709,RETURN,return NULL;,0
+0,ccnet_key_file_get_string,36,3074457345618258710,IDENTIFIER,NULL,0
+0,ccnet_key_file_get_string,37,3074457345618258711,RETURN,return v;,0
+0,ccnet_key_file_get_string,38,3074457345618258712,IDENTIFIER,v,0
+0,ccnet_key_file_get_string,39,3074457345618258713,METHOD_RETURN,ANY,0
