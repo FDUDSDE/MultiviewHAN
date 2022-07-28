@@ -1,0 +1,54 @@
+,function_name,id,number,first,next,type
+0,sqlite3ExprAffinity,0,3074457345618258674,METHOD,char sqlite3ExprAffinity (Expr *pExpr),0
+0,sqlite3ExprAffinity,1,3074457345618258675,PARAM,Expr *pExpr,0
+0,sqlite3ExprAffinity,2,3074457345618258676,BLOCK,<empty>,0
+0,sqlite3ExprAffinity,3,3074457345618258677,LOCAL,int op,0
+0,sqlite3ExprAffinity,4,3074457345618258678,assignment,op = pExpr->op,1
+0,sqlite3ExprAffinity,5,3074457345618258679,IDENTIFIER,op,0
+0,sqlite3ExprAffinity,6,3074457345618258680,indirectFieldAccess,pExpr->op,1
+0,sqlite3ExprAffinity,7,3074457345618258681,IDENTIFIER,pExpr,0
+0,sqlite3ExprAffinity,8,3074457345618258682,FIELD_IDENTIFIER,op,0
+0,sqlite3ExprAffinity,9,3074457345618258683,CONTROL_STRUCTURE,if (op==TK_AS),0
+0,sqlite3ExprAffinity,10,3074457345618258684,equals,op==TK_AS,1
+0,sqlite3ExprAffinity,11,3074457345618258685,IDENTIFIER,op,0
+0,sqlite3ExprAffinity,12,3074457345618258686,IDENTIFIER,TK_AS,0
+0,sqlite3ExprAffinity,13,3074457345618258687,BLOCK,<empty>,0
+0,sqlite3ExprAffinity,14,3074457345618258688,RETURN,return sqlite3ExprAffinity(pExpr->pLeft);,0
+0,sqlite3ExprAffinity,15,3074457345618258689,sqlite3ExprAffinity,sqlite3ExprAffinity(pExpr->pLeft),0
+0,sqlite3ExprAffinity,16,3074457345618258690,indirectFieldAccess,pExpr->pLeft,1
+0,sqlite3ExprAffinity,17,3074457345618258691,IDENTIFIER,pExpr,0
+0,sqlite3ExprAffinity,18,3074457345618258692,FIELD_IDENTIFIER,pLeft,0
+0,sqlite3ExprAffinity,19,3074457345618258693,CONTROL_STRUCTURE,if (op==TK_SELECT),0
+0,sqlite3ExprAffinity,20,3074457345618258694,equals,op==TK_SELECT,1
+0,sqlite3ExprAffinity,21,3074457345618258695,IDENTIFIER,op,0
+0,sqlite3ExprAffinity,22,3074457345618258696,IDENTIFIER,TK_SELECT,0
+0,sqlite3ExprAffinity,23,3074457345618258697,BLOCK,<empty>,0
+0,sqlite3ExprAffinity,24,3074457345618258698,RETURN,return sqlite3ExprAffinity(pExpr->pSelect->pEList->a[0].pExpr);,0
+0,sqlite3ExprAffinity,25,3074457345618258699,sqlite3ExprAffinity,sqlite3ExprAffinity(pExpr->pSelect->pEList->a[0].pExpr),0
+0,sqlite3ExprAffinity,26,3074457345618258700,fieldAccess,pExpr->pSelect->pEList->a[0].pExpr,1
+0,sqlite3ExprAffinity,27,3074457345618258701,indirectIndexAccess,pExpr->pSelect->pEList->a[0],1
+0,sqlite3ExprAffinity,28,3074457345618258702,indirectFieldAccess,pExpr->pSelect->pEList->a,1
+0,sqlite3ExprAffinity,29,3074457345618258703,indirectFieldAccess,pExpr->pSelect->pEList,1
+0,sqlite3ExprAffinity,30,3074457345618258704,indirectFieldAccess,pExpr->pSelect,1
+0,sqlite3ExprAffinity,31,3074457345618258705,IDENTIFIER,pExpr,0
+0,sqlite3ExprAffinity,32,3074457345618258706,FIELD_IDENTIFIER,pSelect,0
+0,sqlite3ExprAffinity,33,3074457345618258707,FIELD_IDENTIFIER,pEList,0
+0,sqlite3ExprAffinity,34,3074457345618258708,FIELD_IDENTIFIER,a,0
+0,sqlite3ExprAffinity,35,3074457345618258709,LITERAL,0,0
+0,sqlite3ExprAffinity,36,3074457345618258710,FIELD_IDENTIFIER,pExpr,0
+0,sqlite3ExprAffinity,37,3074457345618258711,CONTROL_STRUCTURE,if (op==TK_CAST),0
+0,sqlite3ExprAffinity,38,3074457345618258712,equals,op==TK_CAST,1
+0,sqlite3ExprAffinity,39,3074457345618258713,IDENTIFIER,op,0
+0,sqlite3ExprAffinity,40,3074457345618258714,IDENTIFIER,TK_CAST,0
+0,sqlite3ExprAffinity,41,3074457345618258715,BLOCK,<empty>,0
+0,sqlite3ExprAffinity,42,3074457345618258716,RETURN,return sqlite3AffinityType(&pExpr->token);,0
+0,sqlite3ExprAffinity,43,3074457345618258717,sqlite3AffinityType,sqlite3AffinityType(&pExpr->token),0
+0,sqlite3ExprAffinity,44,3074457345618258718,addressOf,&pExpr->token,1
+0,sqlite3ExprAffinity,45,3074457345618258719,indirectFieldAccess,pExpr->token,1
+0,sqlite3ExprAffinity,46,3074457345618258720,IDENTIFIER,pExpr,0
+0,sqlite3ExprAffinity,47,3074457345618258721,FIELD_IDENTIFIER,token,0
+0,sqlite3ExprAffinity,48,3074457345618258722,RETURN,return pExpr->affinity;,0
+0,sqlite3ExprAffinity,49,3074457345618258723,indirectFieldAccess,pExpr->affinity,1
+0,sqlite3ExprAffinity,50,3074457345618258724,IDENTIFIER,pExpr,0
+0,sqlite3ExprAffinity,51,3074457345618258725,FIELD_IDENTIFIER,affinity,0
+0,sqlite3ExprAffinity,52,3074457345618258726,METHOD_RETURN,char,0

@@ -1,0 +1,23 @@
+,function_name,id,number,first,next,type
+0,extractTaggedNSDate,0,3074457345618258674,METHOD,CFAbsoluteTime extractTaggedNSDate (const void* const object),0
+0,extractTaggedNSDate,1,3074457345618258675,PARAM,const void* const object,0
+0,extractTaggedNSDate,2,3074457345618258676,BLOCK,<empty>,0
+0,extractTaggedNSDate,3,3074457345618258677,LOCAL,uintptr_t payload,0
+0,extractTaggedNSDate,4,3074457345618258678,assignment,payload = getTaggedPayload(object),1
+0,extractTaggedNSDate,5,3074457345618258679,IDENTIFIER,payload,0
+0,extractTaggedNSDate,6,3074457345618258680,getTaggedPayload,getTaggedPayload(object),0
+0,extractTaggedNSDate,7,3074457345618258681,IDENTIFIER,object,0
+0,extractTaggedNSDate,8,3074457345618258682,<operators>.assignmentShiftLeft,payload <<= 4,0
+0,extractTaggedNSDate,9,3074457345618258683,IDENTIFIER,payload,0
+0,extractTaggedNSDate,10,3074457345618258684,LITERAL,4,0
+0,extractTaggedNSDate,11,3074457345618258685,LOCAL,CFAbsoluteTime value,0
+0,extractTaggedNSDate,12,3074457345618258686,assignment,value = *((CFAbsoluteTime*)&payload),1
+0,extractTaggedNSDate,13,3074457345618258687,IDENTIFIER,value,0
+0,extractTaggedNSDate,14,3074457345618258688,indirection,*((CFAbsoluteTime*)&payload),1
+0,extractTaggedNSDate,15,3074457345618258689,cast,(CFAbsoluteTime*)&payload,1
+0,extractTaggedNSDate,16,3074457345618258690,UNKNOWN,CFAbsoluteTime*,0
+0,extractTaggedNSDate,17,3074457345618258691,addressOf,&payload,1
+0,extractTaggedNSDate,18,3074457345618258692,IDENTIFIER,payload,0
+0,extractTaggedNSDate,19,3074457345618258693,RETURN,return value;,0
+0,extractTaggedNSDate,20,3074457345618258694,IDENTIFIER,value,0
+0,extractTaggedNSDate,21,3074457345618258695,METHOD_RETURN,CFAbsoluteTime,0

@@ -1,0 +1,26 @@
+,function_name,id,number,first,next,type
+0,sqlite3ParserTokenName,0,3074457345618258674,METHOD,const char* sqlite3ParserTokenName (int tokenType),0
+0,sqlite3ParserTokenName,1,3074457345618258675,PARAM,int tokenType,0
+0,sqlite3ParserTokenName,2,3074457345618258676,BLOCK,<empty>,0
+0,sqlite3ParserTokenName,3,3074457345618258677,CONTROL_STRUCTURE,if (tokenType>0 && tokenType<(sizeof(yyTokenName)/sizeof(yyTokenName[0]))),0
+0,sqlite3ParserTokenName,4,3074457345618258678,logicalAnd,tokenType>0 && tokenType<(sizeof(yyTokenName)/sizeof(yyTokenName[0])),1
+0,sqlite3ParserTokenName,5,3074457345618258679,greaterThan,tokenType>0,1
+0,sqlite3ParserTokenName,6,3074457345618258680,IDENTIFIER,tokenType,0
+0,sqlite3ParserTokenName,7,3074457345618258681,LITERAL,0,0
+0,sqlite3ParserTokenName,8,3074457345618258682,lessThan,tokenType<(sizeof(yyTokenName)/sizeof(yyTokenName[0])),1
+0,sqlite3ParserTokenName,9,3074457345618258683,IDENTIFIER,tokenType,0
+0,sqlite3ParserTokenName,10,3074457345618258684,division,sizeof(yyTokenName)/sizeof(yyTokenName[0]),1
+0,sqlite3ParserTokenName,11,3074457345618258685,sizeOf,sizeof(yyTokenName),1
+0,sqlite3ParserTokenName,12,3074457345618258686,IDENTIFIER,yyTokenName,0
+0,sqlite3ParserTokenName,13,3074457345618258687,sizeOf,sizeof(yyTokenName[0]),1
+0,sqlite3ParserTokenName,14,3074457345618258688,IDENTIFIER,yyTokenName,0
+0,sqlite3ParserTokenName,15,3074457345618258689,BLOCK,<empty>,0
+0,sqlite3ParserTokenName,16,3074457345618258690,RETURN,return yyTokenName[tokenType];,0
+0,sqlite3ParserTokenName,17,3074457345618258691,indirectIndexAccess,yyTokenName[tokenType],1
+0,sqlite3ParserTokenName,18,3074457345618258692,IDENTIFIER,yyTokenName,0
+0,sqlite3ParserTokenName,19,3074457345618258693,IDENTIFIER,tokenType,0
+0,sqlite3ParserTokenName,20,3074457345618258694,CONTROL_STRUCTURE,else,0
+0,sqlite3ParserTokenName,21,3074457345618258695,BLOCK,<empty>,0
+0,sqlite3ParserTokenName,22,3074457345618258696,RETURN,"return ""Unknown"";",0
+0,sqlite3ParserTokenName,23,3074457345618258697,LITERAL,"""Unknown""",0
+0,sqlite3ParserTokenName,24,3074457345618258698,METHOD_RETURN,const char*,0

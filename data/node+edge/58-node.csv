@@ -1,0 +1,38 @@
+,function_name,id,number,first,next,type
+0,addQuotedEscapedString,0,3074457345618258674,METHOD,"int addQuotedEscapedString (KSJSONEncodeContext* const context,const char* restrict const string,int length)",0
+0,addQuotedEscapedString,1,3074457345618258675,PARAM,KSJSONEncodeContext* const context,0
+0,addQuotedEscapedString,2,3074457345618258676,PARAM,const char* restrict const string,0
+0,addQuotedEscapedString,3,3074457345618258677,PARAM,int length,0
+0,addQuotedEscapedString,4,3074457345618258678,BLOCK,<empty>,0
+0,addQuotedEscapedString,5,3074457345618258679,LOCAL,int result,0
+0,addQuotedEscapedString,6,3074457345618258680,unlikely_if,"unlikely_if((result = addJSONData(context, ""\"""", 1)) != KSJSON_OK)",0
+0,addQuotedEscapedString,7,3074457345618258681,notEquals,"(result = addJSONData(context, ""\"""", 1)) != KSJSON_OK",1
+0,addQuotedEscapedString,8,3074457345618258682,assignment,"result = addJSONData(context, ""\"""", 1)",1
+0,addQuotedEscapedString,9,3074457345618258683,IDENTIFIER,result,0
+0,addQuotedEscapedString,10,3074457345618258684,addJSONData,"addJSONData(context, ""\"""", 1)",0
+0,addQuotedEscapedString,11,3074457345618258685,IDENTIFIER,context,0
+0,addQuotedEscapedString,12,3074457345618258686,LITERAL,"""\""""",0
+0,addQuotedEscapedString,13,3074457345618258687,LITERAL,1,0
+0,addQuotedEscapedString,14,3074457345618258688,IDENTIFIER,KSJSON_OK,0
+0,addQuotedEscapedString,15,3074457345618258689,UNKNOWN,),0
+0,addQuotedEscapedString,16,3074457345618258690,BLOCK,<empty>,0
+0,addQuotedEscapedString,17,3074457345618258691,RETURN,return result;,0
+0,addQuotedEscapedString,18,3074457345618258692,IDENTIFIER,result,0
+0,addQuotedEscapedString,19,3074457345618258693,assignment,"result = addEscapedString(context, string, length)",1
+0,addQuotedEscapedString,20,3074457345618258694,IDENTIFIER,result,0
+0,addQuotedEscapedString,21,3074457345618258695,addEscapedString,"addEscapedString(context, string, length)",0
+0,addQuotedEscapedString,22,3074457345618258696,IDENTIFIER,context,0
+0,addQuotedEscapedString,23,3074457345618258697,IDENTIFIER,string,0
+0,addQuotedEscapedString,24,3074457345618258698,IDENTIFIER,length,0
+0,addQuotedEscapedString,25,3074457345618258699,LOCAL,int closeResult,0
+0,addQuotedEscapedString,26,3074457345618258700,assignment,"closeResult = addJSONData(context, ""\"""", 1)",1
+0,addQuotedEscapedString,27,3074457345618258701,IDENTIFIER,closeResult,0
+0,addQuotedEscapedString,28,3074457345618258702,addJSONData,"addJSONData(context, ""\"""", 1)",0
+0,addQuotedEscapedString,29,3074457345618258703,IDENTIFIER,context,0
+0,addQuotedEscapedString,30,3074457345618258704,LITERAL,"""\""""",0
+0,addQuotedEscapedString,31,3074457345618258705,LITERAL,1,0
+0,addQuotedEscapedString,32,3074457345618258706,RETURN,return result || closeResult;,0
+0,addQuotedEscapedString,33,3074457345618258707,logicalOr,result || closeResult,1
+0,addQuotedEscapedString,34,3074457345618258708,IDENTIFIER,result,0
+0,addQuotedEscapedString,35,3074457345618258709,IDENTIFIER,closeResult,0
+0,addQuotedEscapedString,36,3074457345618258710,METHOD_RETURN,int,0

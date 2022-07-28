@@ -1,0 +1,22 @@
+,function_name,id,number,first,next,type
+0,extractTaggedNSNumber,0,3074457345618258674,METHOD,int64_t extractTaggedNSNumber (const void* const object),0
+0,extractTaggedNSNumber,1,3074457345618258675,PARAM,const void* const object,0
+0,extractTaggedNSNumber,2,3074457345618258676,BLOCK,<empty>,0
+0,extractTaggedNSNumber,3,3074457345618258677,LOCAL,intptr_t signedPointer,0
+0,extractTaggedNSNumber,4,3074457345618258678,assignment,signedPointer = (intptr_t)object,1
+0,extractTaggedNSNumber,5,3074457345618258679,IDENTIFIER,signedPointer,0
+0,extractTaggedNSNumber,6,3074457345618258680,cast,(intptr_t)object,1
+0,extractTaggedNSNumber,7,3074457345618258681,UNKNOWN,intptr_t,0
+0,extractTaggedNSNumber,8,3074457345618258682,IDENTIFIER,object,0
+0,extractTaggedNSNumber,9,3074457345618258683,LOCAL,intptr_t value,0
+0,extractTaggedNSNumber,10,3074457345618258684,assignment,value = signedPointer & 0,1
+0,extractTaggedNSNumber,11,3074457345618258685,IDENTIFIER,value,0
+0,extractTaggedNSNumber,12,3074457345618258686,and,signedPointer & 0,1
+0,extractTaggedNSNumber,13,3074457345618258687,IDENTIFIER,signedPointer,0
+0,extractTaggedNSNumber,14,3074457345618258688,LITERAL,0,0
+0,extractTaggedNSNumber,15,3074457345618258689,RETURN,return (int64_t)(value >> 4);,0
+0,extractTaggedNSNumber,16,3074457345618258690,int64_t,(int64_t)(value >> 4),0
+0,extractTaggedNSNumber,17,3074457345618258691,arithmeticShiftRight,value >> 4,1
+0,extractTaggedNSNumber,18,3074457345618258692,IDENTIFIER,value,0
+0,extractTaggedNSNumber,19,3074457345618258693,LITERAL,4,0
+0,extractTaggedNSNumber,20,3074457345618258694,METHOD_RETURN,int64_t,0

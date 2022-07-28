@@ -1,0 +1,23 @@
+,function_name,id,number,first,next,type
+0,full_fsync,0,3074457345618258674,METHOD,"int full_fsync (int fd,int fullSync,int dataOnly)",0
+0,full_fsync,1,3074457345618258675,PARAM,int fd,0
+0,full_fsync,2,3074457345618258676,PARAM,int fullSync,0
+0,full_fsync,3,3074457345618258677,PARAM,int dataOnly,0
+0,full_fsync,4,3074457345618258678,BLOCK,<empty>,0
+0,full_fsync,5,3074457345618258679,LOCAL,int rc,0
+0,full_fsync,6,3074457345618258680,CONTROL_STRUCTURE,if (dataOnly),0
+0,full_fsync,7,3074457345618258681,IDENTIFIER,dataOnly,0
+0,full_fsync,8,3074457345618258682,BLOCK,<empty>,0
+0,full_fsync,9,3074457345618258683,assignment,rc = fdatasync(fd),1
+0,full_fsync,10,3074457345618258684,IDENTIFIER,rc,0
+0,full_fsync,11,3074457345618258685,fdatasync,fdatasync(fd),0
+0,full_fsync,12,3074457345618258686,IDENTIFIER,fd,0
+0,full_fsync,13,3074457345618258687,CONTROL_STRUCTURE,else,0
+0,full_fsync,14,3074457345618258688,BLOCK,<empty>,0
+0,full_fsync,15,3074457345618258689,assignment,rc = fsync(fd),1
+0,full_fsync,16,3074457345618258690,IDENTIFIER,rc,0
+0,full_fsync,17,3074457345618258691,fsync,fsync(fd),0
+0,full_fsync,18,3074457345618258692,IDENTIFIER,fd,0
+0,full_fsync,19,3074457345618258693,RETURN,return rc;,0
+0,full_fsync,20,3074457345618258694,IDENTIFIER,rc,0
+0,full_fsync,21,3074457345618258695,METHOD_RETURN,int,0

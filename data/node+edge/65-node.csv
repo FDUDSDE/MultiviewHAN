@@ -1,0 +1,53 @@
+,function_name,id,number,first,next,type
+0,sqlite3CompareAffinity,0,3074457345618258674,METHOD,"char sqlite3CompareAffinity (Expr *pExpr,char aff2)",0
+0,sqlite3CompareAffinity,1,3074457345618258675,PARAM,Expr *pExpr,0
+0,sqlite3CompareAffinity,2,3074457345618258676,PARAM,char aff2,0
+0,sqlite3CompareAffinity,3,3074457345618258677,BLOCK,<empty>,0
+0,sqlite3CompareAffinity,4,3074457345618258678,LOCAL,char aff1,0
+0,sqlite3CompareAffinity,5,3074457345618258679,assignment,aff1 = sqlite3ExprAffinity(pExpr),1
+0,sqlite3CompareAffinity,6,3074457345618258680,IDENTIFIER,aff1,0
+0,sqlite3CompareAffinity,7,3074457345618258681,sqlite3ExprAffinity,sqlite3ExprAffinity(pExpr),0
+0,sqlite3CompareAffinity,8,3074457345618258682,IDENTIFIER,pExpr,0
+0,sqlite3CompareAffinity,9,3074457345618258683,CONTROL_STRUCTURE,if (aff1 && aff2),0
+0,sqlite3CompareAffinity,10,3074457345618258684,logicalAnd,aff1 && aff2,1
+0,sqlite3CompareAffinity,11,3074457345618258685,IDENTIFIER,aff1,0
+0,sqlite3CompareAffinity,12,3074457345618258686,IDENTIFIER,aff2,0
+0,sqlite3CompareAffinity,13,3074457345618258687,BLOCK,<empty>,0
+0,sqlite3CompareAffinity,14,3074457345618258688,CONTROL_STRUCTURE,if (sqlite3IsNumericAffinity(aff1) || sqlite3IsNumericAffinity(aff2)),0
+0,sqlite3CompareAffinity,15,3074457345618258689,logicalOr,sqlite3IsNumericAffinity(aff1) || sqlite3IsNumericAffinity(aff2),1
+0,sqlite3CompareAffinity,16,3074457345618258690,sqlite3IsNumericAffinity,sqlite3IsNumericAffinity(aff1),0
+0,sqlite3CompareAffinity,17,3074457345618258691,IDENTIFIER,aff1,0
+0,sqlite3CompareAffinity,18,3074457345618258692,sqlite3IsNumericAffinity,sqlite3IsNumericAffinity(aff2),0
+0,sqlite3CompareAffinity,19,3074457345618258693,IDENTIFIER,aff2,0
+0,sqlite3CompareAffinity,20,3074457345618258694,BLOCK,<empty>,0
+0,sqlite3CompareAffinity,21,3074457345618258695,RETURN,return SQLITE_AFF_NUMERIC;,0
+0,sqlite3CompareAffinity,22,3074457345618258696,IDENTIFIER,SQLITE_AFF_NUMERIC,0
+0,sqlite3CompareAffinity,23,3074457345618258697,CONTROL_STRUCTURE,else,0
+0,sqlite3CompareAffinity,24,3074457345618258698,BLOCK,<empty>,0
+0,sqlite3CompareAffinity,25,3074457345618258699,RETURN,return SQLITE_AFF_NONE;,0
+0,sqlite3CompareAffinity,26,3074457345618258700,IDENTIFIER,SQLITE_AFF_NONE,0
+0,sqlite3CompareAffinity,27,3074457345618258701,CONTROL_STRUCTURE,else,0
+0,sqlite3CompareAffinity,28,3074457345618258702,CONTROL_STRUCTURE,if (!aff1 && !aff2),0
+0,sqlite3CompareAffinity,29,3074457345618258703,logicalAnd,!aff1 && !aff2,1
+0,sqlite3CompareAffinity,30,3074457345618258704,logicalNot,!aff1,1
+0,sqlite3CompareAffinity,31,3074457345618258705,IDENTIFIER,aff1,0
+0,sqlite3CompareAffinity,32,3074457345618258706,logicalNot,!aff2,1
+0,sqlite3CompareAffinity,33,3074457345618258707,IDENTIFIER,aff2,0
+0,sqlite3CompareAffinity,34,3074457345618258708,BLOCK,<empty>,0
+0,sqlite3CompareAffinity,35,3074457345618258709,RETURN,return SQLITE_AFF_NONE;,0
+0,sqlite3CompareAffinity,36,3074457345618258710,IDENTIFIER,SQLITE_AFF_NONE,0
+0,sqlite3CompareAffinity,37,3074457345618258711,CONTROL_STRUCTURE,else,0
+0,sqlite3CompareAffinity,38,3074457345618258712,BLOCK,<empty>,0
+0,sqlite3CompareAffinity,39,3074457345618258713,assert,assert( aff1==0 || aff2==0 ),0
+0,sqlite3CompareAffinity,40,3074457345618258714,logicalOr,aff1==0 || aff2==0,1
+0,sqlite3CompareAffinity,41,3074457345618258715,equals,aff1==0,1
+0,sqlite3CompareAffinity,42,3074457345618258716,IDENTIFIER,aff1,0
+0,sqlite3CompareAffinity,43,3074457345618258717,LITERAL,0,0
+0,sqlite3CompareAffinity,44,3074457345618258718,equals,aff2==0,1
+0,sqlite3CompareAffinity,45,3074457345618258719,IDENTIFIER,aff2,0
+0,sqlite3CompareAffinity,46,3074457345618258720,LITERAL,0,0
+0,sqlite3CompareAffinity,47,3074457345618258721,RETURN,return (aff1 + aff2);,0
+0,sqlite3CompareAffinity,48,3074457345618258722,addition,aff1 + aff2,1
+0,sqlite3CompareAffinity,49,3074457345618258723,IDENTIFIER,aff1,0
+0,sqlite3CompareAffinity,50,3074457345618258724,IDENTIFIER,aff2,0
+0,sqlite3CompareAffinity,51,3074457345618258725,METHOD_RETURN,char,0

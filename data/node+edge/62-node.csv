@@ -1,0 +1,26 @@
+,function_name,id,number,first,next,type
+0,xh_elf_gnu_hash,0,3074457345618258674,METHOD,uint32_t xh_elf_gnu_hash (const uint8_t *name),0
+0,xh_elf_gnu_hash,1,3074457345618258675,PARAM,const uint8_t *name,0
+0,xh_elf_gnu_hash,2,3074457345618258676,BLOCK,<empty>,0
+0,xh_elf_gnu_hash,3,3074457345618258677,LOCAL,uint32_t h,0
+0,xh_elf_gnu_hash,4,3074457345618258678,assignment,h = 5381,1
+0,xh_elf_gnu_hash,5,3074457345618258679,IDENTIFIER,h,0
+0,xh_elf_gnu_hash,6,3074457345618258680,LITERAL,5381,0
+0,xh_elf_gnu_hash,7,3074457345618258681,CONTROL_STRUCTURE,while (*name != 0),0
+0,xh_elf_gnu_hash,8,3074457345618258682,notEquals,*name != 0,1
+0,xh_elf_gnu_hash,9,3074457345618258683,indirection,*name,1
+0,xh_elf_gnu_hash,10,3074457345618258684,IDENTIFIER,name,0
+0,xh_elf_gnu_hash,11,3074457345618258685,LITERAL,0,0
+0,xh_elf_gnu_hash,12,3074457345618258686,BLOCK,<empty>,0
+0,xh_elf_gnu_hash,13,3074457345618258687,assignmentPlus,h += (h << 5) + *name++,1
+0,xh_elf_gnu_hash,14,3074457345618258688,IDENTIFIER,h,0
+0,xh_elf_gnu_hash,15,3074457345618258689,addition,(h << 5) + *name++,1
+0,xh_elf_gnu_hash,16,3074457345618258690,shiftLeft,h << 5,1
+0,xh_elf_gnu_hash,17,3074457345618258691,IDENTIFIER,h,0
+0,xh_elf_gnu_hash,18,3074457345618258692,LITERAL,5,0
+0,xh_elf_gnu_hash,19,3074457345618258693,indirection,*name++,1
+0,xh_elf_gnu_hash,20,3074457345618258694,postIncrement,name++,1
+0,xh_elf_gnu_hash,21,3074457345618258695,IDENTIFIER,name,0
+0,xh_elf_gnu_hash,22,3074457345618258696,RETURN,return h;,0
+0,xh_elf_gnu_hash,23,3074457345618258697,IDENTIFIER,h,0
+0,xh_elf_gnu_hash,24,3074457345618258698,METHOD_RETURN,uint32_t,0

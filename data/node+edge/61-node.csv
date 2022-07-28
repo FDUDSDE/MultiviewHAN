@@ -1,0 +1,38 @@
+,function_name,id,number,first,next,type
+0,xh_elf_hash,0,3074457345618258674,METHOD,uint32_t xh_elf_hash (const uint8_t *name),0
+0,xh_elf_hash,1,3074457345618258675,PARAM,const uint8_t *name,0
+0,xh_elf_hash,2,3074457345618258676,BLOCK,<empty>,0
+0,xh_elf_hash,3,3074457345618258677,LOCAL,uint32_t h,0
+0,xh_elf_hash,4,3074457345618258678,LOCAL,uint32_t g,0
+0,xh_elf_hash,5,3074457345618258679,assignment,h = 0,1
+0,xh_elf_hash,6,3074457345618258680,IDENTIFIER,h,0
+0,xh_elf_hash,7,3074457345618258681,LITERAL,0,0
+0,xh_elf_hash,8,3074457345618258682,CONTROL_STRUCTURE,while (*name),0
+0,xh_elf_hash,9,3074457345618258683,indirection,*name,1
+0,xh_elf_hash,10,3074457345618258684,IDENTIFIER,name,0
+0,xh_elf_hash,11,3074457345618258685,BLOCK,<empty>,0
+0,xh_elf_hash,12,3074457345618258686,assignment,h = (h << 4) + *name++,1
+0,xh_elf_hash,13,3074457345618258687,IDENTIFIER,h,0
+0,xh_elf_hash,14,3074457345618258688,addition,(h << 4) + *name++,1
+0,xh_elf_hash,15,3074457345618258689,shiftLeft,h << 4,1
+0,xh_elf_hash,16,3074457345618258690,IDENTIFIER,h,0
+0,xh_elf_hash,17,3074457345618258691,LITERAL,4,0
+0,xh_elf_hash,18,3074457345618258692,indirection,*name++,1
+0,xh_elf_hash,19,3074457345618258693,postIncrement,name++,1
+0,xh_elf_hash,20,3074457345618258694,IDENTIFIER,name,0
+0,xh_elf_hash,21,3074457345618258695,assignment,g = h & 0xf0000000,1
+0,xh_elf_hash,22,3074457345618258696,IDENTIFIER,g,0
+0,xh_elf_hash,23,3074457345618258697,and,h & 0xf0000000,1
+0,xh_elf_hash,24,3074457345618258698,IDENTIFIER,h,0
+0,xh_elf_hash,25,3074457345618258699,LITERAL,0xf0000000,0
+0,xh_elf_hash,26,3074457345618258700,<operators>.assignmentXor,h ^= g,0
+0,xh_elf_hash,27,3074457345618258701,IDENTIFIER,h,0
+0,xh_elf_hash,28,3074457345618258702,IDENTIFIER,g,0
+0,xh_elf_hash,29,3074457345618258703,<operators>.assignmentXor,h ^= g >> 24,0
+0,xh_elf_hash,30,3074457345618258704,IDENTIFIER,h,0
+0,xh_elf_hash,31,3074457345618258705,arithmeticShiftRight,g >> 24,1
+0,xh_elf_hash,32,3074457345618258706,IDENTIFIER,g,0
+0,xh_elf_hash,33,3074457345618258707,LITERAL,24,0
+0,xh_elf_hash,34,3074457345618258708,RETURN,return h;,0
+0,xh_elf_hash,35,3074457345618258709,IDENTIFIER,h,0
+0,xh_elf_hash,36,3074457345618258710,METHOD_RETURN,uint32_t,0

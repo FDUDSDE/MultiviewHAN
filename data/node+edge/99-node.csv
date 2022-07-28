@@ -1,0 +1,41 @@
+,function_name,id,number,first,next,type
+0,sqlite3UnixSyncDirectory,0,3074457345618258674,METHOD,int sqlite3UnixSyncDirectory (const char *zDirname),0
+0,sqlite3UnixSyncDirectory,1,3074457345618258675,PARAM,const char *zDirname,0
+0,sqlite3UnixSyncDirectory,2,3074457345618258676,BLOCK,<empty>,0
+0,sqlite3UnixSyncDirectory,3,3074457345618258677,LOCAL,int fd,0
+0,sqlite3UnixSyncDirectory,4,3074457345618258678,LOCAL,int r,0
+0,sqlite3UnixSyncDirectory,5,3074457345618258679,SimulateIOError,SimulateIOError(SQLITE_IOERR),0
+0,sqlite3UnixSyncDirectory,6,3074457345618258680,IDENTIFIER,SQLITE_IOERR,0
+0,sqlite3UnixSyncDirectory,7,3074457345618258681,assignment,"fd = open(zDirname, O_RDONLY|O_BINARY, 0)",1
+0,sqlite3UnixSyncDirectory,8,3074457345618258682,IDENTIFIER,fd,0
+0,sqlite3UnixSyncDirectory,9,3074457345618258683,open,"open(zDirname, O_RDONLY|O_BINARY, 0)",0
+0,sqlite3UnixSyncDirectory,10,3074457345618258684,IDENTIFIER,zDirname,0
+0,sqlite3UnixSyncDirectory,11,3074457345618258685,or,O_RDONLY|O_BINARY,1
+0,sqlite3UnixSyncDirectory,12,3074457345618258686,IDENTIFIER,O_RDONLY,0
+0,sqlite3UnixSyncDirectory,13,3074457345618258687,IDENTIFIER,O_BINARY,0
+0,sqlite3UnixSyncDirectory,14,3074457345618258688,LITERAL,0,0
+0,sqlite3UnixSyncDirectory,15,3074457345618258689,TRACE3,"TRACE3(""DIRSYNC %-3d (%s)\n"", fd, zDirname)",0
+0,sqlite3UnixSyncDirectory,16,3074457345618258690,LITERAL,"""DIRSYNC %-3d (%s)\n""",0
+0,sqlite3UnixSyncDirectory,17,3074457345618258691,IDENTIFIER,fd,0
+0,sqlite3UnixSyncDirectory,18,3074457345618258692,IDENTIFIER,zDirname,0
+0,sqlite3UnixSyncDirectory,19,3074457345618258693,CONTROL_STRUCTURE,if (fd<0),0
+0,sqlite3UnixSyncDirectory,20,3074457345618258694,lessThan,fd<0,1
+0,sqlite3UnixSyncDirectory,21,3074457345618258695,IDENTIFIER,fd,0
+0,sqlite3UnixSyncDirectory,22,3074457345618258696,LITERAL,0,0
+0,sqlite3UnixSyncDirectory,23,3074457345618258697,BLOCK,<empty>,0
+0,sqlite3UnixSyncDirectory,24,3074457345618258698,RETURN,return SQLITE_CANTOPEN;,0
+0,sqlite3UnixSyncDirectory,25,3074457345618258699,IDENTIFIER,SQLITE_CANTOPEN,0
+0,sqlite3UnixSyncDirectory,26,3074457345618258700,assignment,r = fsync(fd),1
+0,sqlite3UnixSyncDirectory,27,3074457345618258701,IDENTIFIER,r,0
+0,sqlite3UnixSyncDirectory,28,3074457345618258702,fsync,fsync(fd),0
+0,sqlite3UnixSyncDirectory,29,3074457345618258703,IDENTIFIER,fd,0
+0,sqlite3UnixSyncDirectory,30,3074457345618258704,close,close(fd),0
+0,sqlite3UnixSyncDirectory,31,3074457345618258705,IDENTIFIER,fd,0
+0,sqlite3UnixSyncDirectory,32,3074457345618258706,RETURN,return ((r==0)?SQLITE_OK:SQLITE_IOERR);,0
+0,sqlite3UnixSyncDirectory,33,3074457345618258707,conditional,(r==0)?SQLITE_OK:SQLITE_IOERR,1
+0,sqlite3UnixSyncDirectory,34,3074457345618258708,equals,r==0,1
+0,sqlite3UnixSyncDirectory,35,3074457345618258709,IDENTIFIER,r,0
+0,sqlite3UnixSyncDirectory,36,3074457345618258710,LITERAL,0,0
+0,sqlite3UnixSyncDirectory,37,3074457345618258711,IDENTIFIER,SQLITE_OK,0
+0,sqlite3UnixSyncDirectory,38,3074457345618258712,IDENTIFIER,SQLITE_IOERR,0
+0,sqlite3UnixSyncDirectory,39,3074457345618258713,METHOD_RETURN,int,0

@@ -1,0 +1,91 @@
+,function_name,id,number,first,next,type
+0,sqlite3ExprSpan,0,3074457345618258674,METHOD,"void sqlite3ExprSpan (Expr *pExpr,Token *pLeft,Token *pRight)",0
+0,sqlite3ExprSpan,1,3074457345618258675,PARAM,Expr *pExpr,0
+0,sqlite3ExprSpan,2,3074457345618258676,PARAM,Token *pLeft,0
+0,sqlite3ExprSpan,3,3074457345618258677,PARAM,Token *pRight,0
+0,sqlite3ExprSpan,4,3074457345618258678,BLOCK,<empty>,0
+0,sqlite3ExprSpan,5,3074457345618258679,assert,assert( pRight!=0 ),0
+0,sqlite3ExprSpan,6,3074457345618258680,notEquals,pRight!=0,1
+0,sqlite3ExprSpan,7,3074457345618258681,IDENTIFIER,pRight,0
+0,sqlite3ExprSpan,8,3074457345618258682,LITERAL,0,0
+0,sqlite3ExprSpan,9,3074457345618258683,assert,assert( pLeft!=0 ),0
+0,sqlite3ExprSpan,10,3074457345618258684,notEquals,pLeft!=0,1
+0,sqlite3ExprSpan,11,3074457345618258685,IDENTIFIER,pLeft,0
+0,sqlite3ExprSpan,12,3074457345618258686,LITERAL,0,0
+0,sqlite3ExprSpan,13,3074457345618258687,CONTROL_STRUCTURE,if (!sqlite3MallocFailed() && pRight->z && pLeft->z),0
+0,sqlite3ExprSpan,14,3074457345618258688,logicalAnd,!sqlite3MallocFailed() && pRight->z && pLeft->z,1
+0,sqlite3ExprSpan,15,3074457345618258689,logicalAnd,!sqlite3MallocFailed() && pRight->z,1
+0,sqlite3ExprSpan,16,3074457345618258690,logicalNot,!sqlite3MallocFailed(),1
+0,sqlite3ExprSpan,17,3074457345618258691,sqlite3MallocFailed,sqlite3MallocFailed(),0
+0,sqlite3ExprSpan,18,3074457345618258692,indirectFieldAccess,pRight->z,1
+0,sqlite3ExprSpan,19,3074457345618258693,IDENTIFIER,pRight,0
+0,sqlite3ExprSpan,20,3074457345618258694,FIELD_IDENTIFIER,z,0
+0,sqlite3ExprSpan,21,3074457345618258695,indirectFieldAccess,pLeft->z,1
+0,sqlite3ExprSpan,22,3074457345618258696,IDENTIFIER,pLeft,0
+0,sqlite3ExprSpan,23,3074457345618258697,FIELD_IDENTIFIER,z,0
+0,sqlite3ExprSpan,24,3074457345618258698,BLOCK,<empty>,0
+0,sqlite3ExprSpan,25,3074457345618258699,assert,assert( pLeft->dyn==0 || pLeft->z[pLeft->n]==0 ),0
+0,sqlite3ExprSpan,26,3074457345618258700,logicalOr,pLeft->dyn==0 || pLeft->z[pLeft->n]==0,1
+0,sqlite3ExprSpan,27,3074457345618258701,equals,pLeft->dyn==0,1
+0,sqlite3ExprSpan,28,3074457345618258702,indirectFieldAccess,pLeft->dyn,1
+0,sqlite3ExprSpan,29,3074457345618258703,IDENTIFIER,pLeft,0
+0,sqlite3ExprSpan,30,3074457345618258704,FIELD_IDENTIFIER,dyn,0
+0,sqlite3ExprSpan,31,3074457345618258705,LITERAL,0,0
+0,sqlite3ExprSpan,32,3074457345618258706,equals,pLeft->z[pLeft->n]==0,1
+0,sqlite3ExprSpan,33,3074457345618258707,indirectIndexAccess,pLeft->z[pLeft->n],1
+0,sqlite3ExprSpan,34,3074457345618258708,indirectFieldAccess,pLeft->z,1
+0,sqlite3ExprSpan,35,3074457345618258709,IDENTIFIER,pLeft,0
+0,sqlite3ExprSpan,36,3074457345618258710,FIELD_IDENTIFIER,z,0
+0,sqlite3ExprSpan,37,3074457345618258711,indirectFieldAccess,pLeft->n,1
+0,sqlite3ExprSpan,38,3074457345618258712,IDENTIFIER,pLeft,0
+0,sqlite3ExprSpan,39,3074457345618258713,FIELD_IDENTIFIER,n,0
+0,sqlite3ExprSpan,40,3074457345618258714,LITERAL,0,0
+0,sqlite3ExprSpan,41,3074457345618258715,CONTROL_STRUCTURE,if (pLeft->dyn==0 && pRight->dyn==0),0
+0,sqlite3ExprSpan,42,3074457345618258716,logicalAnd,pLeft->dyn==0 && pRight->dyn==0,1
+0,sqlite3ExprSpan,43,3074457345618258717,equals,pLeft->dyn==0,1
+0,sqlite3ExprSpan,44,3074457345618258718,indirectFieldAccess,pLeft->dyn,1
+0,sqlite3ExprSpan,45,3074457345618258719,IDENTIFIER,pLeft,0
+0,sqlite3ExprSpan,46,3074457345618258720,FIELD_IDENTIFIER,dyn,0
+0,sqlite3ExprSpan,47,3074457345618258721,LITERAL,0,0
+0,sqlite3ExprSpan,48,3074457345618258722,equals,pRight->dyn==0,1
+0,sqlite3ExprSpan,49,3074457345618258723,indirectFieldAccess,pRight->dyn,1
+0,sqlite3ExprSpan,50,3074457345618258724,IDENTIFIER,pRight,0
+0,sqlite3ExprSpan,51,3074457345618258725,FIELD_IDENTIFIER,dyn,0
+0,sqlite3ExprSpan,52,3074457345618258726,LITERAL,0,0
+0,sqlite3ExprSpan,53,3074457345618258727,BLOCK,<empty>,0
+0,sqlite3ExprSpan,54,3074457345618258728,assignment,pExpr->span.z = pLeft->z,1
+0,sqlite3ExprSpan,55,3074457345618258729,fieldAccess,pExpr->span.z,1
+0,sqlite3ExprSpan,56,3074457345618258730,indirectFieldAccess,pExpr->span,1
+0,sqlite3ExprSpan,57,3074457345618258731,IDENTIFIER,pExpr,0
+0,sqlite3ExprSpan,58,3074457345618258732,FIELD_IDENTIFIER,span,0
+0,sqlite3ExprSpan,59,3074457345618258733,FIELD_IDENTIFIER,z,0
+0,sqlite3ExprSpan,60,3074457345618258734,indirectFieldAccess,pLeft->z,1
+0,sqlite3ExprSpan,61,3074457345618258735,IDENTIFIER,pLeft,0
+0,sqlite3ExprSpan,62,3074457345618258736,FIELD_IDENTIFIER,z,0
+0,sqlite3ExprSpan,63,3074457345618258737,assignment,pExpr->span.n = pRight->n + (pRight->z - pLeft->z),1
+0,sqlite3ExprSpan,64,3074457345618258738,fieldAccess,pExpr->span.n,1
+0,sqlite3ExprSpan,65,3074457345618258739,indirectFieldAccess,pExpr->span,1
+0,sqlite3ExprSpan,66,3074457345618258740,IDENTIFIER,pExpr,0
+0,sqlite3ExprSpan,67,3074457345618258741,FIELD_IDENTIFIER,span,0
+0,sqlite3ExprSpan,68,3074457345618258742,FIELD_IDENTIFIER,n,0
+0,sqlite3ExprSpan,69,3074457345618258743,addition,pRight->n + (pRight->z - pLeft->z),1
+0,sqlite3ExprSpan,70,3074457345618258744,indirectFieldAccess,pRight->n,1
+0,sqlite3ExprSpan,71,3074457345618258745,IDENTIFIER,pRight,0
+0,sqlite3ExprSpan,72,3074457345618258746,FIELD_IDENTIFIER,n,0
+0,sqlite3ExprSpan,73,3074457345618258747,subtraction,pRight->z - pLeft->z,1
+0,sqlite3ExprSpan,74,3074457345618258748,indirectFieldAccess,pRight->z,1
+0,sqlite3ExprSpan,75,3074457345618258749,IDENTIFIER,pRight,0
+0,sqlite3ExprSpan,76,3074457345618258750,FIELD_IDENTIFIER,z,0
+0,sqlite3ExprSpan,77,3074457345618258751,indirectFieldAccess,pLeft->z,1
+0,sqlite3ExprSpan,78,3074457345618258752,IDENTIFIER,pLeft,0
+0,sqlite3ExprSpan,79,3074457345618258753,FIELD_IDENTIFIER,z,0
+0,sqlite3ExprSpan,80,3074457345618258754,CONTROL_STRUCTURE,else,0
+0,sqlite3ExprSpan,81,3074457345618258755,BLOCK,<empty>,0
+0,sqlite3ExprSpan,82,3074457345618258756,assignment,pExpr->span.z = 0,1
+0,sqlite3ExprSpan,83,3074457345618258757,fieldAccess,pExpr->span.z,1
+0,sqlite3ExprSpan,84,3074457345618258758,indirectFieldAccess,pExpr->span,1
+0,sqlite3ExprSpan,85,3074457345618258759,IDENTIFIER,pExpr,0
+0,sqlite3ExprSpan,86,3074457345618258760,FIELD_IDENTIFIER,span,0
+0,sqlite3ExprSpan,87,3074457345618258761,FIELD_IDENTIFIER,z,0
+0,sqlite3ExprSpan,88,3074457345618258762,LITERAL,0,0
+0,sqlite3ExprSpan,89,3074457345618258763,METHOD_RETURN,void,0

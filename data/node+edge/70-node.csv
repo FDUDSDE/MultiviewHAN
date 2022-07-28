@@ -1,0 +1,73 @@
+,function_name,id,number,first,next,type
+0,sqlite3ExprListDelete,0,3074457345618258674,METHOD,void sqlite3ExprListDelete (ExprList *pList),0
+0,sqlite3ExprListDelete,1,3074457345618258675,PARAM,ExprList *pList,0
+0,sqlite3ExprListDelete,2,3074457345618258676,BLOCK,<empty>,0
+0,sqlite3ExprListDelete,3,3074457345618258677,LOCAL,int i,0
+0,sqlite3ExprListDelete,4,3074457345618258678,LOCAL,struct ExprList_item* pItem,0
+0,sqlite3ExprListDelete,5,3074457345618258679,CONTROL_STRUCTURE,if (pList==0),0
+0,sqlite3ExprListDelete,6,3074457345618258680,equals,pList==0,1
+0,sqlite3ExprListDelete,7,3074457345618258681,IDENTIFIER,pList,0
+0,sqlite3ExprListDelete,8,3074457345618258682,LITERAL,0,0
+0,sqlite3ExprListDelete,9,3074457345618258683,RETURN,return;,0
+0,sqlite3ExprListDelete,10,3074457345618258684,assert,assert( pList->a!=0 || (pList->nExpr==0 && pList->nAlloc==0) ),0
+0,sqlite3ExprListDelete,11,3074457345618258685,logicalOr,pList->a!=0 || (pList->nExpr==0 && pList->nAlloc==0),1
+0,sqlite3ExprListDelete,12,3074457345618258686,notEquals,pList->a!=0,1
+0,sqlite3ExprListDelete,13,3074457345618258687,indirectFieldAccess,pList->a,1
+0,sqlite3ExprListDelete,14,3074457345618258688,IDENTIFIER,pList,0
+0,sqlite3ExprListDelete,15,3074457345618258689,FIELD_IDENTIFIER,a,0
+0,sqlite3ExprListDelete,16,3074457345618258690,LITERAL,0,0
+0,sqlite3ExprListDelete,17,3074457345618258691,logicalAnd,pList->nExpr==0 && pList->nAlloc==0,1
+0,sqlite3ExprListDelete,18,3074457345618258692,equals,pList->nExpr==0,1
+0,sqlite3ExprListDelete,19,3074457345618258693,indirectFieldAccess,pList->nExpr,1
+0,sqlite3ExprListDelete,20,3074457345618258694,IDENTIFIER,pList,0
+0,sqlite3ExprListDelete,21,3074457345618258695,FIELD_IDENTIFIER,nExpr,0
+0,sqlite3ExprListDelete,22,3074457345618258696,LITERAL,0,0
+0,sqlite3ExprListDelete,23,3074457345618258697,equals,pList->nAlloc==0,1
+0,sqlite3ExprListDelete,24,3074457345618258698,indirectFieldAccess,pList->nAlloc,1
+0,sqlite3ExprListDelete,25,3074457345618258699,IDENTIFIER,pList,0
+0,sqlite3ExprListDelete,26,3074457345618258700,FIELD_IDENTIFIER,nAlloc,0
+0,sqlite3ExprListDelete,27,3074457345618258701,LITERAL,0,0
+0,sqlite3ExprListDelete,28,3074457345618258702,assert,assert( pList->nExpr<=pList->nAlloc ),0
+0,sqlite3ExprListDelete,29,3074457345618258703,lessEqualsThan,pList->nExpr<=pList->nAlloc,1
+0,sqlite3ExprListDelete,30,3074457345618258704,indirectFieldAccess,pList->nExpr,1
+0,sqlite3ExprListDelete,31,3074457345618258705,IDENTIFIER,pList,0
+0,sqlite3ExprListDelete,32,3074457345618258706,FIELD_IDENTIFIER,nExpr,0
+0,sqlite3ExprListDelete,33,3074457345618258707,indirectFieldAccess,pList->nAlloc,1
+0,sqlite3ExprListDelete,34,3074457345618258708,IDENTIFIER,pList,0
+0,sqlite3ExprListDelete,35,3074457345618258709,FIELD_IDENTIFIER,nAlloc,0
+0,sqlite3ExprListDelete,36,3074457345618258710,CONTROL_STRUCTURE,"for (pItem=pList->a, i=0;i<pList->nExpr;i++, pItem++)",0
+0,sqlite3ExprListDelete,37,3074457345618258711,BLOCK,<empty>,0
+0,sqlite3ExprListDelete,38,3074457345618258712,assignment,pItem=pList->a,1
+0,sqlite3ExprListDelete,39,3074457345618258713,IDENTIFIER,pItem,0
+0,sqlite3ExprListDelete,40,3074457345618258714,indirectFieldAccess,pList->a,1
+0,sqlite3ExprListDelete,41,3074457345618258715,IDENTIFIER,pList,0
+0,sqlite3ExprListDelete,42,3074457345618258716,FIELD_IDENTIFIER,a,0
+0,sqlite3ExprListDelete,43,3074457345618258717,assignment,i=0,1
+0,sqlite3ExprListDelete,44,3074457345618258718,IDENTIFIER,i,0
+0,sqlite3ExprListDelete,45,3074457345618258719,LITERAL,0,0
+0,sqlite3ExprListDelete,46,3074457345618258720,lessThan,i<pList->nExpr,1
+0,sqlite3ExprListDelete,47,3074457345618258721,IDENTIFIER,i,0
+0,sqlite3ExprListDelete,48,3074457345618258722,indirectFieldAccess,pList->nExpr,1
+0,sqlite3ExprListDelete,49,3074457345618258723,IDENTIFIER,pList,0
+0,sqlite3ExprListDelete,50,3074457345618258724,FIELD_IDENTIFIER,nExpr,0
+0,sqlite3ExprListDelete,51,3074457345618258725,BLOCK,<empty>,0
+0,sqlite3ExprListDelete,52,3074457345618258726,postIncrement,i++,1
+0,sqlite3ExprListDelete,53,3074457345618258727,IDENTIFIER,i,0
+0,sqlite3ExprListDelete,54,3074457345618258728,postIncrement,pItem++,1
+0,sqlite3ExprListDelete,55,3074457345618258729,IDENTIFIER,pItem,0
+0,sqlite3ExprListDelete,56,3074457345618258730,BLOCK,<empty>,0
+0,sqlite3ExprListDelete,57,3074457345618258731,sqlite3ExprDelete,sqlite3ExprDelete(pItem->pExpr),0
+0,sqlite3ExprListDelete,58,3074457345618258732,indirectFieldAccess,pItem->pExpr,1
+0,sqlite3ExprListDelete,59,3074457345618258733,IDENTIFIER,pItem,0
+0,sqlite3ExprListDelete,60,3074457345618258734,FIELD_IDENTIFIER,pExpr,0
+0,sqlite3ExprListDelete,61,3074457345618258735,sqliteFree,sqliteFree(pItem->zName),0
+0,sqlite3ExprListDelete,62,3074457345618258736,indirectFieldAccess,pItem->zName,1
+0,sqlite3ExprListDelete,63,3074457345618258737,IDENTIFIER,pItem,0
+0,sqlite3ExprListDelete,64,3074457345618258738,FIELD_IDENTIFIER,zName,0
+0,sqlite3ExprListDelete,65,3074457345618258739,sqliteFree,sqliteFree(pList->a),0
+0,sqlite3ExprListDelete,66,3074457345618258740,indirectFieldAccess,pList->a,1
+0,sqlite3ExprListDelete,67,3074457345618258741,IDENTIFIER,pList,0
+0,sqlite3ExprListDelete,68,3074457345618258742,FIELD_IDENTIFIER,a,0
+0,sqlite3ExprListDelete,69,3074457345618258743,sqliteFree,sqliteFree(pList),0
+0,sqlite3ExprListDelete,70,3074457345618258744,IDENTIFIER,pList,0
+0,sqlite3ExprListDelete,71,3074457345618258745,METHOD_RETURN,void,0

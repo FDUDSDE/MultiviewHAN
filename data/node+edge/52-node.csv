@@ -1,0 +1,10 @@
+,function_name,id,number,first,next,type
+0,isTaggedPointerNSString,0,3074457345618258674,METHOD,bool isTaggedPointerNSString (const void* const object),0
+0,isTaggedPointerNSString,1,3074457345618258675,PARAM,const void* const object,0
+0,isTaggedPointerNSString,2,3074457345618258676,BLOCK,<empty>,0
+0,isTaggedPointerNSString,3,3074457345618258677,RETURN,return getTaggedSlot(object) == OBJC_TAG_NSString;,0
+0,isTaggedPointerNSString,4,3074457345618258678,equals,getTaggedSlot(object) == OBJC_TAG_NSString,1
+0,isTaggedPointerNSString,5,3074457345618258679,getTaggedSlot,getTaggedSlot(object),0
+0,isTaggedPointerNSString,6,3074457345618258680,IDENTIFIER,object,0
+0,isTaggedPointerNSString,7,3074457345618258681,IDENTIFIER,OBJC_TAG_NSString,0
+0,isTaggedPointerNSString,8,3074457345618258682,METHOD_RETURN,bool,0

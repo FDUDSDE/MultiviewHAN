@@ -1,0 +1,56 @@
+,function_name,id,number,first,next,type
+0,sqlite3ExprDelete,0,3074457345618258674,METHOD,void sqlite3ExprDelete (Expr *p),0
+0,sqlite3ExprDelete,1,3074457345618258675,PARAM,Expr *p,0
+0,sqlite3ExprDelete,2,3074457345618258676,BLOCK,<empty>,0
+0,sqlite3ExprDelete,3,3074457345618258677,CONTROL_STRUCTURE,if (p==0),0
+0,sqlite3ExprDelete,4,3074457345618258678,equals,p==0,1
+0,sqlite3ExprDelete,5,3074457345618258679,IDENTIFIER,p,0
+0,sqlite3ExprDelete,6,3074457345618258680,LITERAL,0,0
+0,sqlite3ExprDelete,7,3074457345618258681,RETURN,return;,0
+0,sqlite3ExprDelete,8,3074457345618258682,CONTROL_STRUCTURE,if (p->span.dyn),0
+0,sqlite3ExprDelete,9,3074457345618258683,fieldAccess,p->span.dyn,1
+0,sqlite3ExprDelete,10,3074457345618258684,indirectFieldAccess,p->span,1
+0,sqlite3ExprDelete,11,3074457345618258685,IDENTIFIER,p,0
+0,sqlite3ExprDelete,12,3074457345618258686,FIELD_IDENTIFIER,span,0
+0,sqlite3ExprDelete,13,3074457345618258687,FIELD_IDENTIFIER,dyn,0
+0,sqlite3ExprDelete,14,3074457345618258688,sqliteFree,sqliteFree((char*)p->span.z),0
+0,sqlite3ExprDelete,15,3074457345618258689,cast,(char*)p->span.z,1
+0,sqlite3ExprDelete,16,3074457345618258690,UNKNOWN,char*,0
+0,sqlite3ExprDelete,17,3074457345618258691,fieldAccess,p->span.z,1
+0,sqlite3ExprDelete,18,3074457345618258692,indirectFieldAccess,p->span,1
+0,sqlite3ExprDelete,19,3074457345618258693,IDENTIFIER,p,0
+0,sqlite3ExprDelete,20,3074457345618258694,FIELD_IDENTIFIER,span,0
+0,sqlite3ExprDelete,21,3074457345618258695,FIELD_IDENTIFIER,z,0
+0,sqlite3ExprDelete,22,3074457345618258696,CONTROL_STRUCTURE,if (p->token.dyn),0
+0,sqlite3ExprDelete,23,3074457345618258697,fieldAccess,p->token.dyn,1
+0,sqlite3ExprDelete,24,3074457345618258698,indirectFieldAccess,p->token,1
+0,sqlite3ExprDelete,25,3074457345618258699,IDENTIFIER,p,0
+0,sqlite3ExprDelete,26,3074457345618258700,FIELD_IDENTIFIER,token,0
+0,sqlite3ExprDelete,27,3074457345618258701,FIELD_IDENTIFIER,dyn,0
+0,sqlite3ExprDelete,28,3074457345618258702,sqliteFree,sqliteFree((char*)p->token.z),0
+0,sqlite3ExprDelete,29,3074457345618258703,cast,(char*)p->token.z,1
+0,sqlite3ExprDelete,30,3074457345618258704,UNKNOWN,char*,0
+0,sqlite3ExprDelete,31,3074457345618258705,fieldAccess,p->token.z,1
+0,sqlite3ExprDelete,32,3074457345618258706,indirectFieldAccess,p->token,1
+0,sqlite3ExprDelete,33,3074457345618258707,IDENTIFIER,p,0
+0,sqlite3ExprDelete,34,3074457345618258708,FIELD_IDENTIFIER,token,0
+0,sqlite3ExprDelete,35,3074457345618258709,FIELD_IDENTIFIER,z,0
+0,sqlite3ExprDelete,36,3074457345618258710,sqlite3ExprDelete,sqlite3ExprDelete(p->pLeft),0
+0,sqlite3ExprDelete,37,3074457345618258711,indirectFieldAccess,p->pLeft,1
+0,sqlite3ExprDelete,38,3074457345618258712,IDENTIFIER,p,0
+0,sqlite3ExprDelete,39,3074457345618258713,FIELD_IDENTIFIER,pLeft,0
+0,sqlite3ExprDelete,40,3074457345618258714,sqlite3ExprDelete,sqlite3ExprDelete(p->pRight),0
+0,sqlite3ExprDelete,41,3074457345618258715,indirectFieldAccess,p->pRight,1
+0,sqlite3ExprDelete,42,3074457345618258716,IDENTIFIER,p,0
+0,sqlite3ExprDelete,43,3074457345618258717,FIELD_IDENTIFIER,pRight,0
+0,sqlite3ExprDelete,44,3074457345618258718,sqlite3ExprListDelete,sqlite3ExprListDelete(p->pList),0
+0,sqlite3ExprDelete,45,3074457345618258719,indirectFieldAccess,p->pList,1
+0,sqlite3ExprDelete,46,3074457345618258720,IDENTIFIER,p,0
+0,sqlite3ExprDelete,47,3074457345618258721,FIELD_IDENTIFIER,pList,0
+0,sqlite3ExprDelete,48,3074457345618258722,sqlite3SelectDelete,sqlite3SelectDelete(p->pSelect),0
+0,sqlite3ExprDelete,49,3074457345618258723,indirectFieldAccess,p->pSelect,1
+0,sqlite3ExprDelete,50,3074457345618258724,IDENTIFIER,p,0
+0,sqlite3ExprDelete,51,3074457345618258725,FIELD_IDENTIFIER,pSelect,0
+0,sqlite3ExprDelete,52,3074457345618258726,sqliteFree,sqliteFree(p),0
+0,sqlite3ExprDelete,53,3074457345618258727,IDENTIFIER,p,0
+0,sqlite3ExprDelete,54,3074457345618258728,METHOD_RETURN,void,0

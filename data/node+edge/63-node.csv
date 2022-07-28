@@ -1,0 +1,41 @@
+,function_name,id,number,first,next,type
+0,sqlite3Update,0,3074457345618258674,METHOD,"void sqlite3Update (Parse *pParse,SrcList *pTabList,ExprList *pChanges,Expr *pWhere,int onError,Expr *pLimit,Expr *pOffset)",0
+0,sqlite3Update,1,3074457345618258675,PARAM,Parse *pParse,0
+0,sqlite3Update,2,3074457345618258676,PARAM,SrcList *pTabList,0
+0,sqlite3Update,3,3074457345618258677,PARAM,ExprList *pChanges,0
+0,sqlite3Update,4,3074457345618258678,PARAM,Expr *pWhere,0
+0,sqlite3Update,5,3074457345618258679,PARAM,int onError,0
+0,sqlite3Update,6,3074457345618258680,PARAM,Expr *pLimit,0
+0,sqlite3Update,7,3074457345618258681,PARAM,Expr *pOffset,0
+0,sqlite3Update,8,3074457345618258682,BLOCK,<empty>,0
+0,sqlite3Update,9,3074457345618258683,LOCAL,Update updateObj,0
+0,sqlite3Update,10,3074457345618258684,assignment,"*updateObj = sqlite3UpdateNew(pTabList, pChanges, pWhere, onError, pLimit, pOffset)",1
+0,sqlite3Update,11,3074457345618258685,IDENTIFIER,updateObj,0
+0,sqlite3Update,12,3074457345618258686,sqlite3UpdateNew,"sqlite3UpdateNew(pTabList, pChanges, pWhere, onError, pLimit, pOffset)",0
+0,sqlite3Update,13,3074457345618258687,IDENTIFIER,pTabList,0
+0,sqlite3Update,14,3074457345618258688,IDENTIFIER,pChanges,0
+0,sqlite3Update,15,3074457345618258689,IDENTIFIER,pWhere,0
+0,sqlite3Update,16,3074457345618258690,IDENTIFIER,onError,0
+0,sqlite3Update,17,3074457345618258691,IDENTIFIER,pLimit,0
+0,sqlite3Update,18,3074457345618258692,IDENTIFIER,pOffset,0
+0,sqlite3Update,19,3074457345618258693,LOCAL,ParsedResultItem item,0
+0,sqlite3Update,20,3074457345618258694,assignment,item.sqltype = SQLTYPE_UPDATE,1
+0,sqlite3Update,21,3074457345618258695,fieldAccess,item.sqltype,1
+0,sqlite3Update,22,3074457345618258696,IDENTIFIER,item,0
+0,sqlite3Update,23,3074457345618258697,FIELD_IDENTIFIER,sqltype,0
+0,sqlite3Update,24,3074457345618258698,IDENTIFIER,SQLTYPE_UPDATE,0
+0,sqlite3Update,25,3074457345618258699,assignment,item.result.updateObj = updateObj,1
+0,sqlite3Update,26,3074457345618258700,fieldAccess,item.result.updateObj,1
+0,sqlite3Update,27,3074457345618258701,fieldAccess,item.result,1
+0,sqlite3Update,28,3074457345618258702,IDENTIFIER,item,0
+0,sqlite3Update,29,3074457345618258703,FIELD_IDENTIFIER,result,0
+0,sqlite3Update,30,3074457345618258704,FIELD_IDENTIFIER,updateObj,0
+0,sqlite3Update,31,3074457345618258705,IDENTIFIER,updateObj,0
+0,sqlite3Update,32,3074457345618258706,sqlite3ParsedResultArrayAppend,"sqlite3ParsedResultArrayAppend(&pParse->parsed, &item)",0
+0,sqlite3Update,33,3074457345618258707,addressOf,&pParse->parsed,1
+0,sqlite3Update,34,3074457345618258708,indirectFieldAccess,pParse->parsed,1
+0,sqlite3Update,35,3074457345618258709,IDENTIFIER,pParse,0
+0,sqlite3Update,36,3074457345618258710,FIELD_IDENTIFIER,parsed,0
+0,sqlite3Update,37,3074457345618258711,addressOf,&item,1
+0,sqlite3Update,38,3074457345618258712,IDENTIFIER,item,0
+0,sqlite3Update,39,3074457345618258713,METHOD_RETURN,void,0

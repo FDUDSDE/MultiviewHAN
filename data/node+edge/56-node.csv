@@ -1,0 +1,61 @@
+,function_name,id,number,first,next,type
+0,getClassData,0,3074457345618258674,METHOD,ClassData getClassData (const void* class),0
+0,getClassData,1,3074457345618258675,PARAM,const void* class,0
+0,getClassData,2,3074457345618258676,BLOCK,<empty>,0
+0,getClassData,3,3074457345618258677,LOCAL,const char* className,0
+0,getClassData,4,3074457345618258678,assignment,* className = getClassName(class),1
+0,getClassData,5,3074457345618258679,IDENTIFIER,className,0
+0,getClassData,6,3074457345618258680,getClassName,getClassName(class),0
+0,getClassData,7,3074457345618258681,IDENTIFIER,class,0
+0,getClassData,8,3074457345618258682,CONTROL_STRUCTURE,for (ClassData* data = g_classData;;data++),0
+0,getClassData,9,3074457345618258683,LOCAL,ClassData data,0
+0,getClassData,10,3074457345618258684,assignment,* data = g_classData,1
+0,getClassData,11,3074457345618258685,IDENTIFIER,data,0
+0,getClassData,12,3074457345618258686,IDENTIFIER,g_classData,0
+0,getClassData,13,3074457345618258687,postIncrement,data++,1
+0,getClassData,14,3074457345618258688,IDENTIFIER,data,0
+0,getClassData,15,3074457345618258689,BLOCK,<empty>,0
+0,getClassData,16,3074457345618258690,unlikely_if,unlikely_if(data->name == NULL),0
+0,getClassData,17,3074457345618258691,equals,data->name == NULL,1
+0,getClassData,18,3074457345618258692,indirectFieldAccess,data->name,1
+0,getClassData,19,3074457345618258693,IDENTIFIER,data,0
+0,getClassData,20,3074457345618258694,FIELD_IDENTIFIER,name,0
+0,getClassData,21,3074457345618258695,IDENTIFIER,NULL,0
+0,getClassData,22,3074457345618258696,UNKNOWN,),0
+0,getClassData,23,3074457345618258697,BLOCK,<empty>,0
+0,getClassData,24,3074457345618258698,RETURN,return data;,0
+0,getClassData,25,3074457345618258699,IDENTIFIER,data,0
+0,getClassData,26,3074457345618258700,unlikely_if,unlikely_if(class == data->class),0
+0,getClassData,27,3074457345618258701,equals,class == data->class,1
+0,getClassData,28,3074457345618258702,IDENTIFIER,class,0
+0,getClassData,29,3074457345618258703,indirectFieldAccess,data->class,1
+0,getClassData,30,3074457345618258704,IDENTIFIER,data,0
+0,getClassData,31,3074457345618258705,FIELD_IDENTIFIER,class,0
+0,getClassData,32,3074457345618258706,UNKNOWN,),0
+0,getClassData,33,3074457345618258707,BLOCK,<empty>,0
+0,getClassData,34,3074457345618258708,RETURN,return data;,0
+0,getClassData,35,3074457345618258709,IDENTIFIER,data,0
+0,getClassData,36,3074457345618258710,unlikely_if,"unlikely_if(data->class == NULL && strcmp(className, data->name) == 0)",0
+0,getClassData,37,3074457345618258711,logicalAnd,"data->class == NULL && strcmp(className, data->name) == 0",1
+0,getClassData,38,3074457345618258712,equals,data->class == NULL,1
+0,getClassData,39,3074457345618258713,indirectFieldAccess,data->class,1
+0,getClassData,40,3074457345618258714,IDENTIFIER,data,0
+0,getClassData,41,3074457345618258715,FIELD_IDENTIFIER,class,0
+0,getClassData,42,3074457345618258716,IDENTIFIER,NULL,0
+0,getClassData,43,3074457345618258717,equals,"strcmp(className, data->name) == 0",1
+0,getClassData,44,3074457345618258718,strcmp,"strcmp(className, data->name)",0
+0,getClassData,45,3074457345618258719,IDENTIFIER,className,0
+0,getClassData,46,3074457345618258720,indirectFieldAccess,data->name,1
+0,getClassData,47,3074457345618258721,IDENTIFIER,data,0
+0,getClassData,48,3074457345618258722,FIELD_IDENTIFIER,name,0
+0,getClassData,49,3074457345618258723,LITERAL,0,0
+0,getClassData,50,3074457345618258724,UNKNOWN,),0
+0,getClassData,51,3074457345618258725,BLOCK,<empty>,0
+0,getClassData,52,3074457345618258726,assignment,data->class = class,1
+0,getClassData,53,3074457345618258727,indirectFieldAccess,data->class,1
+0,getClassData,54,3074457345618258728,IDENTIFIER,data,0
+0,getClassData,55,3074457345618258729,FIELD_IDENTIFIER,class,0
+0,getClassData,56,3074457345618258730,IDENTIFIER,class,0
+0,getClassData,57,3074457345618258731,RETURN,return data;,0
+0,getClassData,58,3074457345618258732,IDENTIFIER,data,0
+0,getClassData,59,3074457345618258733,METHOD_RETURN,ClassData,0

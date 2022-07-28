@@ -1,0 +1,26 @@
+,function_name,id,number,first,next,type
+0,threadLockingTest,0,3074457345618258674,METHOD,void* threadLockingTest (void *pArg),0
+0,threadLockingTest,1,3074457345618258675,PARAM,void *pArg,0
+0,threadLockingTest,2,3074457345618258676,BLOCK,<empty>,0
+0,threadLockingTest,3,3074457345618258677,LOCAL,struct threadTestData* pData,0
+0,threadLockingTest,4,3074457345618258678,assignment,*pData = (struct threadTestData*)pArg,1
+0,threadLockingTest,5,3074457345618258679,IDENTIFIER,pData,0
+0,threadLockingTest,6,3074457345618258680,cast,(struct threadTestData*)pArg,1
+0,threadLockingTest,7,3074457345618258681,UNKNOWN,struct threadTestData*,0
+0,threadLockingTest,8,3074457345618258682,IDENTIFIER,pArg,0
+0,threadLockingTest,9,3074457345618258683,assignment,"pData->result = fcntl(pData->fd, F_SETLK, &pData->lock)",1
+0,threadLockingTest,10,3074457345618258684,indirectFieldAccess,pData->result,1
+0,threadLockingTest,11,3074457345618258685,IDENTIFIER,pData,0
+0,threadLockingTest,12,3074457345618258686,FIELD_IDENTIFIER,result,0
+0,threadLockingTest,13,3074457345618258687,fcntl,"fcntl(pData->fd, F_SETLK, &pData->lock)",0
+0,threadLockingTest,14,3074457345618258688,indirectFieldAccess,pData->fd,1
+0,threadLockingTest,15,3074457345618258689,IDENTIFIER,pData,0
+0,threadLockingTest,16,3074457345618258690,FIELD_IDENTIFIER,fd,0
+0,threadLockingTest,17,3074457345618258691,IDENTIFIER,F_SETLK,0
+0,threadLockingTest,18,3074457345618258692,addressOf,&pData->lock,1
+0,threadLockingTest,19,3074457345618258693,indirectFieldAccess,pData->lock,1
+0,threadLockingTest,20,3074457345618258694,IDENTIFIER,pData,0
+0,threadLockingTest,21,3074457345618258695,FIELD_IDENTIFIER,lock,0
+0,threadLockingTest,22,3074457345618258696,RETURN,return pArg;,0
+0,threadLockingTest,23,3074457345618258697,IDENTIFIER,pArg,0
+0,threadLockingTest,24,3074457345618258698,METHOD_RETURN,void*,0

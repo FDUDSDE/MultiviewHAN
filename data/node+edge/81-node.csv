@@ -1,0 +1,60 @@
+,function_name,id,number,first,next,type
+0,yy_pop_parser_stack,0,3074457345618258674,METHOD,int yy_pop_parser_stack (yyParser *pParser),0
+0,yy_pop_parser_stack,1,3074457345618258675,PARAM,yyParser *pParser,0
+0,yy_pop_parser_stack,2,3074457345618258676,BLOCK,<empty>,0
+0,yy_pop_parser_stack,3,3074457345618258677,LOCAL,YYCODETYPE yymajor,0
+0,yy_pop_parser_stack,4,3074457345618258678,LOCAL,yyStackEntry yytos,0
+0,yy_pop_parser_stack,5,3074457345618258679,assignment,*yytos = &pParser->yystack[pParser->yyidx],1
+0,yy_pop_parser_stack,6,3074457345618258680,IDENTIFIER,yytos,0
+0,yy_pop_parser_stack,7,3074457345618258681,addressOf,&pParser->yystack[pParser->yyidx],1
+0,yy_pop_parser_stack,8,3074457345618258682,indirectIndexAccess,pParser->yystack[pParser->yyidx],1
+0,yy_pop_parser_stack,9,3074457345618258683,indirectFieldAccess,pParser->yystack,1
+0,yy_pop_parser_stack,10,3074457345618258684,IDENTIFIER,pParser,0
+0,yy_pop_parser_stack,11,3074457345618258685,FIELD_IDENTIFIER,yystack,0
+0,yy_pop_parser_stack,12,3074457345618258686,indirectFieldAccess,pParser->yyidx,1
+0,yy_pop_parser_stack,13,3074457345618258687,IDENTIFIER,pParser,0
+0,yy_pop_parser_stack,14,3074457345618258688,FIELD_IDENTIFIER,yyidx,0
+0,yy_pop_parser_stack,15,3074457345618258689,CONTROL_STRUCTURE,if (pParser->yyidx<0),0
+0,yy_pop_parser_stack,16,3074457345618258690,lessThan,pParser->yyidx<0,1
+0,yy_pop_parser_stack,17,3074457345618258691,indirectFieldAccess,pParser->yyidx,1
+0,yy_pop_parser_stack,18,3074457345618258692,IDENTIFIER,pParser,0
+0,yy_pop_parser_stack,19,3074457345618258693,FIELD_IDENTIFIER,yyidx,0
+0,yy_pop_parser_stack,20,3074457345618258694,LITERAL,0,0
+0,yy_pop_parser_stack,21,3074457345618258695,RETURN,return 0;,0
+0,yy_pop_parser_stack,22,3074457345618258696,LITERAL,0,0
+0,yy_pop_parser_stack,23,3074457345618258697,CONTROL_STRUCTURE,if (yyTraceFILE && pParser->yyidx>=0),0
+0,yy_pop_parser_stack,24,3074457345618258698,logicalAnd,yyTraceFILE && pParser->yyidx>=0,1
+0,yy_pop_parser_stack,25,3074457345618258699,IDENTIFIER,yyTraceFILE,0
+0,yy_pop_parser_stack,26,3074457345618258700,greaterEqualsThan,pParser->yyidx>=0,1
+0,yy_pop_parser_stack,27,3074457345618258701,indirectFieldAccess,pParser->yyidx,1
+0,yy_pop_parser_stack,28,3074457345618258702,IDENTIFIER,pParser,0
+0,yy_pop_parser_stack,29,3074457345618258703,FIELD_IDENTIFIER,yyidx,0
+0,yy_pop_parser_stack,30,3074457345618258704,LITERAL,0,0
+0,yy_pop_parser_stack,31,3074457345618258705,BLOCK,<empty>,0
+0,yy_pop_parser_stack,32,3074457345618258706,fprintf,"fprintf(yyTraceFILE,""%sPopping %s\n"",   yyTracePrompt,   yyTokenName[yytos->major])",0
+0,yy_pop_parser_stack,33,3074457345618258707,IDENTIFIER,yyTraceFILE,0
+0,yy_pop_parser_stack,34,3074457345618258708,LITERAL,"""%sPopping %s\n""",0
+0,yy_pop_parser_stack,35,3074457345618258709,IDENTIFIER,yyTracePrompt,0
+0,yy_pop_parser_stack,36,3074457345618258710,indirectIndexAccess,yyTokenName[yytos->major],1
+0,yy_pop_parser_stack,37,3074457345618258711,IDENTIFIER,yyTokenName,0
+0,yy_pop_parser_stack,38,3074457345618258712,indirectFieldAccess,yytos->major,1
+0,yy_pop_parser_stack,39,3074457345618258713,IDENTIFIER,yytos,0
+0,yy_pop_parser_stack,40,3074457345618258714,FIELD_IDENTIFIER,major,0
+0,yy_pop_parser_stack,41,3074457345618258715,assignment,yymajor = yytos->major,1
+0,yy_pop_parser_stack,42,3074457345618258716,IDENTIFIER,yymajor,0
+0,yy_pop_parser_stack,43,3074457345618258717,indirectFieldAccess,yytos->major,1
+0,yy_pop_parser_stack,44,3074457345618258718,IDENTIFIER,yytos,0
+0,yy_pop_parser_stack,45,3074457345618258719,FIELD_IDENTIFIER,major,0
+0,yy_pop_parser_stack,46,3074457345618258720,yy_destructor,"yy_destructor( yymajor, &yytos->minor)",0
+0,yy_pop_parser_stack,47,3074457345618258721,IDENTIFIER,yymajor,0
+0,yy_pop_parser_stack,48,3074457345618258722,addressOf,&yytos->minor,1
+0,yy_pop_parser_stack,49,3074457345618258723,indirectFieldAccess,yytos->minor,1
+0,yy_pop_parser_stack,50,3074457345618258724,IDENTIFIER,yytos,0
+0,yy_pop_parser_stack,51,3074457345618258725,FIELD_IDENTIFIER,minor,0
+0,yy_pop_parser_stack,52,3074457345618258726,postDecrement,pParser->yyidx--,1
+0,yy_pop_parser_stack,53,3074457345618258727,indirectFieldAccess,pParser->yyidx,1
+0,yy_pop_parser_stack,54,3074457345618258728,IDENTIFIER,pParser,0
+0,yy_pop_parser_stack,55,3074457345618258729,FIELD_IDENTIFIER,yyidx,0
+0,yy_pop_parser_stack,56,3074457345618258730,RETURN,return yymajor;,0
+0,yy_pop_parser_stack,57,3074457345618258731,IDENTIFIER,yymajor,0
+0,yy_pop_parser_stack,58,3074457345618258732,METHOD_RETURN,int,0

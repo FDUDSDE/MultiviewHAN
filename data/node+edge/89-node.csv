@@ -1,0 +1,9 @@
+,function_name,id,number,first,next,type
+0,sqlite3UnixDelete,0,3074457345618258674,METHOD,int sqlite3UnixDelete (const char *zFilename),0
+0,sqlite3UnixDelete,1,3074457345618258675,PARAM,const char *zFilename,0
+0,sqlite3UnixDelete,2,3074457345618258676,BLOCK,<empty>,0
+0,sqlite3UnixDelete,3,3074457345618258677,unlink,unlink(zFilename),0
+0,sqlite3UnixDelete,4,3074457345618258678,IDENTIFIER,zFilename,0
+0,sqlite3UnixDelete,5,3074457345618258679,RETURN,return SQLITE_OK;,0
+0,sqlite3UnixDelete,6,3074457345618258680,IDENTIFIER,SQLITE_OK,0
+0,sqlite3UnixDelete,7,3074457345618258681,METHOD_RETURN,int,0

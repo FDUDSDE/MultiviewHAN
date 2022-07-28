@@ -1,0 +1,33 @@
+,function_name,id,number,first,next,type
+0,firstCmdAfterHeader,0,3074457345618258674,METHOD,uintptr_t firstCmdAfterHeader (const struct mach_header* const header),0
+0,firstCmdAfterHeader,1,3074457345618258675,PARAM,const struct mach_header* const header,0
+0,firstCmdAfterHeader,2,3074457345618258676,BLOCK,<empty>,0
+0,firstCmdAfterHeader,3,3074457345618258677,CONTROL_STRUCTURE,switch(header->magic),0
+0,firstCmdAfterHeader,4,3074457345618258678,indirectFieldAccess,header->magic,1
+0,firstCmdAfterHeader,5,3074457345618258679,IDENTIFIER,header,0
+0,firstCmdAfterHeader,6,3074457345618258680,FIELD_IDENTIFIER,magic,0
+0,firstCmdAfterHeader,7,3074457345618258681,BLOCK,<empty>,0
+0,firstCmdAfterHeader,8,3074457345618258682,JUMP_TARGET,case MH_MAGIC:,0
+0,firstCmdAfterHeader,9,3074457345618258683,IDENTIFIER,MH_MAGIC,0
+0,firstCmdAfterHeader,10,3074457345618258684,JUMP_TARGET,case MH_CIGAM:,0
+0,firstCmdAfterHeader,11,3074457345618258685,IDENTIFIER,MH_CIGAM,0
+0,firstCmdAfterHeader,12,3074457345618258686,RETURN,return (uintptr_t)(header + 1);,0
+0,firstCmdAfterHeader,13,3074457345618258687,uintptr_t,(uintptr_t)(header + 1),0
+0,firstCmdAfterHeader,14,3074457345618258688,addition,header + 1,1
+0,firstCmdAfterHeader,15,3074457345618258689,IDENTIFIER,header,0
+0,firstCmdAfterHeader,16,3074457345618258690,LITERAL,1,0
+0,firstCmdAfterHeader,17,3074457345618258691,JUMP_TARGET,case MH_MAGIC_64:,0
+0,firstCmdAfterHeader,18,3074457345618258692,IDENTIFIER,MH_MAGIC_64,0
+0,firstCmdAfterHeader,19,3074457345618258693,JUMP_TARGET,case MH_CIGAM_64:,0
+0,firstCmdAfterHeader,20,3074457345618258694,IDENTIFIER,MH_CIGAM_64,0
+0,firstCmdAfterHeader,21,3074457345618258695,RETURN,return (uintptr_t)(((struct mach_header_64*)header) + 1);,0
+0,firstCmdAfterHeader,22,3074457345618258696,uintptr_t,(uintptr_t)(((struct mach_header_64*)header) + 1),0
+0,firstCmdAfterHeader,23,3074457345618258697,addition,((struct mach_header_64*)header) + 1,1
+0,firstCmdAfterHeader,24,3074457345618258698,cast,(struct mach_header_64*)header,1
+0,firstCmdAfterHeader,25,3074457345618258699,UNKNOWN,struct mach_header_64*,0
+0,firstCmdAfterHeader,26,3074457345618258700,IDENTIFIER,header,0
+0,firstCmdAfterHeader,27,3074457345618258701,LITERAL,1,0
+0,firstCmdAfterHeader,28,3074457345618258702,JUMP_TARGET,default:,0
+0,firstCmdAfterHeader,29,3074457345618258703,RETURN,return 0;,0
+0,firstCmdAfterHeader,30,3074457345618258704,LITERAL,0,0
+0,firstCmdAfterHeader,31,3074457345618258705,METHOD_RETURN,uintptr_t,0

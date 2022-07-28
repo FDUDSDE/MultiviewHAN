@@ -1,0 +1,31 @@
+,function_name,id,number,first,next,type
+0,sqlite3ParserFree,0,3074457345618258674,METHOD,"void sqlite3ParserFree (void *p,void (*freeProc)(void*))",0
+0,sqlite3ParserFree,1,3074457345618258675,PARAM,void *p,0
+0,sqlite3ParserFree,2,3074457345618258676,PARAM,void (*freeProc)(void*),0
+0,sqlite3ParserFree,3,3074457345618258677,BLOCK,<empty>,0
+0,sqlite3ParserFree,4,3074457345618258678,LOCAL,yyParser pParser,0
+0,sqlite3ParserFree,5,3074457345618258679,assignment,*pParser = (yyParser*)p,1
+0,sqlite3ParserFree,6,3074457345618258680,IDENTIFIER,pParser,0
+0,sqlite3ParserFree,7,3074457345618258681,cast,(yyParser*)p,1
+0,sqlite3ParserFree,8,3074457345618258682,UNKNOWN,yyParser*,0
+0,sqlite3ParserFree,9,3074457345618258683,IDENTIFIER,p,0
+0,sqlite3ParserFree,10,3074457345618258684,CONTROL_STRUCTURE,if (pParser==0),0
+0,sqlite3ParserFree,11,3074457345618258685,equals,pParser==0,1
+0,sqlite3ParserFree,12,3074457345618258686,IDENTIFIER,pParser,0
+0,sqlite3ParserFree,13,3074457345618258687,LITERAL,0,0
+0,sqlite3ParserFree,14,3074457345618258688,RETURN,return;,0
+0,sqlite3ParserFree,15,3074457345618258689,CONTROL_STRUCTURE,while (pParser->yyidx>=0),0
+0,sqlite3ParserFree,16,3074457345618258690,greaterEqualsThan,pParser->yyidx>=0,1
+0,sqlite3ParserFree,17,3074457345618258691,indirectFieldAccess,pParser->yyidx,1
+0,sqlite3ParserFree,18,3074457345618258692,IDENTIFIER,pParser,0
+0,sqlite3ParserFree,19,3074457345618258693,FIELD_IDENTIFIER,yyidx,0
+0,sqlite3ParserFree,20,3074457345618258694,LITERAL,0,0
+0,sqlite3ParserFree,21,3074457345618258695,yy_pop_parser_stack,yy_pop_parser_stack(pParser),0
+0,sqlite3ParserFree,22,3074457345618258696,IDENTIFIER,pParser,0
+0,sqlite3ParserFree,23,3074457345618258697,*freeProc,(*freeProc)((void*)pParser),0
+0,sqlite3ParserFree,24,3074457345618258698,indirection,*freeProc,1
+0,sqlite3ParserFree,25,3074457345618258699,IDENTIFIER,freeProc,0
+0,sqlite3ParserFree,26,3074457345618258700,cast,(void*)pParser,1
+0,sqlite3ParserFree,27,3074457345618258701,UNKNOWN,void*,0
+0,sqlite3ParserFree,28,3074457345618258702,IDENTIFIER,pParser,0
+0,sqlite3ParserFree,29,3074457345618258703,METHOD_RETURN,void,0

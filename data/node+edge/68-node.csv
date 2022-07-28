@@ -1,0 +1,54 @@
+,function_name,id,number,first,next,type
+0,sqlite3ExprFunction,0,3074457345618258674,METHOD,"Expr sqlite3ExprFunction (ExprList *pList,Token *pToken)",0
+0,sqlite3ExprFunction,1,3074457345618258675,PARAM,ExprList *pList,0
+0,sqlite3ExprFunction,2,3074457345618258676,PARAM,Token *pToken,0
+0,sqlite3ExprFunction,3,3074457345618258677,BLOCK,<empty>,0
+0,sqlite3ExprFunction,4,3074457345618258678,LOCAL,Expr pNew,0
+0,sqlite3ExprFunction,5,3074457345618258679,assert,assert( pToken ),0
+0,sqlite3ExprFunction,6,3074457345618258680,IDENTIFIER,pToken,0
+0,sqlite3ExprFunction,7,3074457345618258681,assignment,pNew = sqliteMalloc( sizeof(Expr) ),1
+0,sqlite3ExprFunction,8,3074457345618258682,IDENTIFIER,pNew,0
+0,sqlite3ExprFunction,9,3074457345618258683,sqliteMalloc,sqliteMalloc( sizeof(Expr) ),0
+0,sqlite3ExprFunction,10,3074457345618258684,sizeOf,sizeof(Expr),1
+0,sqlite3ExprFunction,11,3074457345618258685,IDENTIFIER,Expr,0
+0,sqlite3ExprFunction,12,3074457345618258686,CONTROL_STRUCTURE,if (pNew==0),0
+0,sqlite3ExprFunction,13,3074457345618258687,equals,pNew==0,1
+0,sqlite3ExprFunction,14,3074457345618258688,IDENTIFIER,pNew,0
+0,sqlite3ExprFunction,15,3074457345618258689,LITERAL,0,0
+0,sqlite3ExprFunction,16,3074457345618258690,BLOCK,<empty>,0
+0,sqlite3ExprFunction,17,3074457345618258691,sqlite3ExprListDelete,sqlite3ExprListDelete(pList),0
+0,sqlite3ExprFunction,18,3074457345618258692,IDENTIFIER,pList,0
+0,sqlite3ExprFunction,19,3074457345618258693,RETURN,return 0;,0
+0,sqlite3ExprFunction,20,3074457345618258694,LITERAL,0,0
+0,sqlite3ExprFunction,21,3074457345618258695,assignment,pNew->op = TK_FUNCTION,1
+0,sqlite3ExprFunction,22,3074457345618258696,indirectFieldAccess,pNew->op,1
+0,sqlite3ExprFunction,23,3074457345618258697,IDENTIFIER,pNew,0
+0,sqlite3ExprFunction,24,3074457345618258698,FIELD_IDENTIFIER,op,0
+0,sqlite3ExprFunction,25,3074457345618258699,IDENTIFIER,TK_FUNCTION,0
+0,sqlite3ExprFunction,26,3074457345618258700,assignment,pNew->pList = pList,1
+0,sqlite3ExprFunction,27,3074457345618258701,indirectFieldAccess,pNew->pList,1
+0,sqlite3ExprFunction,28,3074457345618258702,IDENTIFIER,pNew,0
+0,sqlite3ExprFunction,29,3074457345618258703,FIELD_IDENTIFIER,pList,0
+0,sqlite3ExprFunction,30,3074457345618258704,IDENTIFIER,pList,0
+0,sqlite3ExprFunction,31,3074457345618258705,assert,assert( pToken->dyn==0 ),0
+0,sqlite3ExprFunction,32,3074457345618258706,equals,pToken->dyn==0,1
+0,sqlite3ExprFunction,33,3074457345618258707,indirectFieldAccess,pToken->dyn,1
+0,sqlite3ExprFunction,34,3074457345618258708,IDENTIFIER,pToken,0
+0,sqlite3ExprFunction,35,3074457345618258709,FIELD_IDENTIFIER,dyn,0
+0,sqlite3ExprFunction,36,3074457345618258710,LITERAL,0,0
+0,sqlite3ExprFunction,37,3074457345618258711,assignment,pNew->token = *pToken,1
+0,sqlite3ExprFunction,38,3074457345618258712,indirectFieldAccess,pNew->token,1
+0,sqlite3ExprFunction,39,3074457345618258713,IDENTIFIER,pNew,0
+0,sqlite3ExprFunction,40,3074457345618258714,FIELD_IDENTIFIER,token,0
+0,sqlite3ExprFunction,41,3074457345618258715,indirection,*pToken,1
+0,sqlite3ExprFunction,42,3074457345618258716,IDENTIFIER,pToken,0
+0,sqlite3ExprFunction,43,3074457345618258717,assignment,pNew->span = pNew->token,1
+0,sqlite3ExprFunction,44,3074457345618258718,indirectFieldAccess,pNew->span,1
+0,sqlite3ExprFunction,45,3074457345618258719,IDENTIFIER,pNew,0
+0,sqlite3ExprFunction,46,3074457345618258720,FIELD_IDENTIFIER,span,0
+0,sqlite3ExprFunction,47,3074457345618258721,indirectFieldAccess,pNew->token,1
+0,sqlite3ExprFunction,48,3074457345618258722,IDENTIFIER,pNew,0
+0,sqlite3ExprFunction,49,3074457345618258723,FIELD_IDENTIFIER,token,0
+0,sqlite3ExprFunction,50,3074457345618258724,RETURN,return pNew;,0
+0,sqlite3ExprFunction,51,3074457345618258725,IDENTIFIER,pNew,0
+0,sqlite3ExprFunction,52,3074457345618258726,METHOD_RETURN,Expr,0
